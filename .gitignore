@@ -2,7 +2,7 @@
 src/
 
 # Caso você queira ser mais específico, pode ignorar apenas os arquivos CSV dentro da pasta src
-# src/*.csv
+src/*.csv
 
 # Outros arquivos comuns para ignorar em projetos Python
 __pycache__/
