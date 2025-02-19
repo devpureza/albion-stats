@@ -2,30 +2,39 @@ import streamlit as st
 
 # Configuração da página
 st.set_page_config(
-    page_title="Alô Gordão!",
-    page_icon="🍔",
-    layout="wide"
+    page_title="Albion Stats",
+    page_icon="⚔️",
+    layout="wide",
+    initial_sidebar_state="expanded"  # Mantém o sidebar sempre aberto
 )
 
-# Título e introdução
-st.title("Alô Gordão! 🍔")
+# Customiza o título no menu
+st.sidebar.header("📊 Dashboard")  # Isso vai aparecer no topo do sidebar
 
-st.write("Bem-vindo à nossa página!")
+# Sidebar
+with st.sidebar:
+    st.write("Escolha uma opção abaixo:")
+    
+    # Você pode adicionar mais elementos ao sidebar aqui
+    st.divider()
+    st.write("Desenvolvido com ❤️ pelo przdeCenoura")
 
 # Conteúdo principal
-st.markdown("""
-       Uma página simples com uma mensagem calorosa para nosso gordão!
+st.title("Dashboard Albion Stats ⚔️")
+
+# Métricas principais
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.metric(label="Total de Hunts Solo", value="0")
     
-    #### O que oferecemos:
-    * Doação de sets 💝
-    * Mortes em avalon 🤗
-    * Rhandim pistola💪
-""")
+with col2:
+    st.metric(label="Total de Hunts em Grupo", value="0")
+    
+with col3:
+    st.metric(label="Total de Mortes", value="0")
 
-# Adiciona um separador
-st.divider()
-
-# Adiciona um botão interativo
-if st.button("Clique aqui para uma surpresa! 🎉"):
-    st.balloons()
-    st.success("Rhandim bilauzudo!")
+# Gráfico exemplo
+st.subheader("Atividades Recentes")
+chart_data = {"Tipo": [], "Quantidade": []}
+st.line_chart(chart_data)
