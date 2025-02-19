@@ -28,4 +28,4 @@ st.divider()
 # Adiciona um botão interativo
 if st.button("Clique aqui para uma surpresa! 🎉"):
     st.balloons()
-    st.success("Você é incrível do jeito que é!")
+    st.success("Rhandim bilauzudo!")
