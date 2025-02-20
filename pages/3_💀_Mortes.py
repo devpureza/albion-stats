@@ -59,7 +59,7 @@ with st.sidebar:
     )
     data_inicio, data_fim = st.date_input(
         "Intervalo de Data",
-        value=(datetime.now(), datetime.now()),
+        value=(datetime.now().date() - pd.Timedelta(days=30), datetime.now().date()),
         key="date_range"
     )
 
