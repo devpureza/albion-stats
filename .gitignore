@@ -4,15 +4,12 @@ src/
 # Caso você queira ser mais específico, pode ignorar apenas os arquivos CSV dentro da pasta src
 src/*.csv
 
-# Outros arquivos comuns para ignorar em projetos Python
+# Outros arquivos que geralmente devem ser ignorados
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
 .env
-.venv
-env/
+.venv/
 venv/
-ENV/
 .idea/
 .vscode/
 *.log 
