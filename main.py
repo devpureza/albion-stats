@@ -1,9 +1,10 @@
 import streamlit as st
+from config import PAGINA_TITULO, PAGINA_ICONE
 
 # Configuração da página
 st.set_page_config(
-    page_title="Albion Stats",
-    page_icon="⚔️",
+    page_title=PAGINA_TITULO,
+    page_icon=PAGINA_ICONE,
     layout="wide",
     initial_sidebar_state="expanded"  # Mantém o sidebar sempre aberto
 )

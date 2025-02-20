@@ -3,6 +3,7 @@ import pandas as pd
 from datetime import datetime
 import csv
 import os
+from config import get_personagens
 
 st.set_page_config(page_title="Hunts em Grupo", page_icon="👥")
 
@@ -53,8 +54,8 @@ with st.expander("Adicionar Nova Hunt em Grupo", expanded=True):
         # Seleção múltipla de personagens
         personagens = st.multiselect(
             "Selecione os Personagens",
-            options=["Przdecenoura", "Capetadecenoura", "Mouzindecenoura"],
-            default=["Przdecenoura"]
+            options=get_personagens(),
+            default=[get_personagens()[0]]  # Seleciona o primeiro personagem por padrão
         )
     with col2:
         valor_por_pessoa = st.number_input("Valor por Pessoa (Silver)", min_value=0, step=1000)

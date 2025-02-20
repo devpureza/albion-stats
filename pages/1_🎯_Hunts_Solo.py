@@ -3,6 +3,7 @@ import pandas as pd
 from datetime import datetime
 import csv
 import os
+from config import get_personagens
 
 st.set_page_config(page_title="Hunts Solo", page_icon="🎯")
 
@@ -40,7 +41,7 @@ with st.sidebar:
     st.title("Filtros")
     personagem_filtro = st.selectbox(
         "Personagem",
-        options=["Todos", "Przdecenoura", "Capetadecenoura", "Mouzindecenoura"]
+        options=["Todos"] + get_personagens()
     )
     tipo_hunt = st.selectbox("Tipo de Hunt", ["Todos", "Solo", "Corrupted", "HCE"])
     data_inicio, data_fim = st.date_input(
@@ -58,7 +59,7 @@ with st.expander("Adicionar Nova Hunt", expanded=True):
         data = st.date_input("Data da Hunt")
         personagem = st.selectbox(
             "Personagem",
-            options=["Przdecenoura", "Capetadecenoura", "Mouzindecenoura"]
+            options=get_personagens()
         )
     with col2:
         tipo_hunt = st.selectbox("Tipo", ["Solo", "Corrupted", "HCE"])
