@@ -15,23 +15,23 @@ def carregar_dados():
             # Criar arquivo com cabeçalho correto
             with open('src/hunts_grupo.csv', 'w', newline='', encoding='utf-8') as file:
                 writer = csv.writer(file)
-                writer.writerow(['data', 'personagens', 'valor_por_pessoa', 'observacoes'])
-            return pd.DataFrame(columns=['data', 'personagens', 'valor_por_pessoa', 'observacoes'])
+                writer.writerow(['data', 'personagens', 'valor_total', 'observacoes'])
+            return pd.DataFrame(columns=['data', 'personagens', 'valor_total', 'observacoes'])
         
         df = pd.read_csv('src/hunts_grupo.csv')
         df['data'] = pd.to_datetime(df['data'], format='%d/%m/%Y', errors='coerce')
         return df
     except Exception as e:
         st.error(f"Erro ao carregar dados: {str(e)}")
-        return pd.DataFrame(columns=['data', 'personagens', 'valor_por_pessoa', 'observacoes'])
+        return pd.DataFrame(columns=['data', 'personagens', 'valor_total', 'observacoes'])
 
 # Função para salvar dados no CSV
-def salvar_hunt(data, personagens, valor_por_pessoa, observacoes):
+def salvar_hunt(data, personagens, valor_total, observacoes):
     data_formatada = data.strftime('%d/%m/%Y')
     personagens_str = ", ".join(personagens)  # Converte lista de personagens em string
     with open('src/hunts_grupo.csv', mode='a', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow([data_formatada, personagens_str, valor_por_pessoa, observacoes])
+        writer.writerow([data_formatada, personagens_str, valor_total, observacoes])
     return True
 
 # Sidebar
@@ -58,13 +58,13 @@ with st.expander("Adicionar Nova Hunt em Grupo", expanded=True):
             default=[get_personagens()[0]]  # Seleciona o primeiro personagem por padrão
         )
     with col2:
-        valor_por_pessoa = st.number_input("Valor por Pessoa (Silver)", min_value=0, step=1000)
+        valor_total = st.number_input("Valor Total da Hunt (Silver)", min_value=0, step=1000)
     
     observacoes = st.text_area("Observações")
     
     if st.button("Salvar Hunt"):
         if len(personagens) > 0:  # Verificar se pelo menos um personagem foi selecionado
-            if salvar_hunt(data, personagens, valor_por_pessoa, observacoes):
+            if salvar_hunt(data, personagens, valor_total, observacoes):
                 st.success("Hunt em grupo registrada com sucesso!")
                 st.balloons()
         else:
@@ -87,6 +87,9 @@ dados['data'] = pd.to_datetime(dados['data'], format='%d/%m/%Y')
 dados = dados[(dados['data'].dt.date >= data_inicio) & (dados['data'].dt.date <= data_fim)]
 dados['data'] = dados['data'].dt.strftime('%d/%m/%Y')
 
+# Calcular valor por pessoa
+dados['valor_por_pessoa'] = dados['valor_total'] / dados['num_participantes']
+
 # Exibir dataframe
 st.dataframe(
     dados,
@@ -95,6 +98,11 @@ st.dataframe(
     column_config={
         "data": "Data",
         "personagens": "Personagens",
+        "valor_total": st.column_config.NumberColumn(
+            "Valor Total",
+            format="R$ %d",
+            help="Valor total da hunt em Silver"
+        ),
         "valor_por_pessoa": st.column_config.NumberColumn(
             "Valor por Pessoa",
             format="R$ %d",
@@ -108,9 +116,10 @@ st.dataframe(
 st.subheader("Análise de Hunts em Grupo")
 
 # Métricas totais
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 with col1:
     st.metric("Média de Participantes", f"{dados['num_participantes'].mean():.1f}")
 with col2:
-    valor_total = dados['valor_por_pessoa'] * dados['num_participantes']
-    st.metric("Valor Total Estimado", f"R$ {valor_total.sum():,.2f}")
+    st.metric("Valor Total Acumulado", f"R$ {dados['valor_total'].sum():,.2f}")
+with col3:
+    st.metric("Média por Pessoa", f"R$ {dados['valor_por_pessoa'].mean():,.2f}")
