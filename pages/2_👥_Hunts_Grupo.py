@@ -11,14 +11,14 @@ st.set_page_config(page_title="Hunts em Grupo", page_icon="👥")
 def carregar_dados():
     try:
         # Verificar se o arquivo existe
-        if not os.path.exists('src/hunts_grupo.csv'):
+        if not os.path.exists('data/hunts_grupo.csv'):
             # Criar arquivo com cabeçalho correto
-            with open('src/hunts_grupo.csv', 'w', newline='', encoding='utf-8') as file:
+            with open('data/hunts_grupo.csv', 'w', newline='', encoding='utf-8') as file:
                 writer = csv.writer(file)
                 writer.writerow(['data', 'personagens', 'valor_total', 'observacoes'])
             return pd.DataFrame(columns=['data', 'personagens', 'valor_total', 'observacoes'])
         
-        df = pd.read_csv('src/hunts_grupo.csv')
+        df = pd.read_csv('data/hunts_grupo.csv')
         df['data'] = pd.to_datetime(df['data'], format='%d/%m/%Y', errors='coerce')
         return df
     except Exception as e:
@@ -29,7 +29,7 @@ def carregar_dados():
 def salvar_hunt(data, personagens, valor_total, observacoes):
     data_formatada = data.strftime('%d/%m/%Y')
     personagens_str = ", ".join(personagens)  # Converte lista de personagens em string
-    with open('src/hunts_grupo.csv', mode='a', newline='', encoding='utf-8') as file:
+    with open('data/hunts_grupo.csv', mode='a', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow([data_formatada, personagens_str, valor_total, observacoes])
     return True

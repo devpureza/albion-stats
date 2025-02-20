@@ -1,10 +1,5 @@
-# Ignorar toda a pasta src e seu conteúdo
-src/
-
-# Caso você queira ser mais específico, pode ignorar apenas os arquivos CSV dentro da pasta src
+# Ignorar apenas arquivos temporários/desenvolvimento
 src/*.csv
-
-# Outros arquivos que geralmente devem ser ignorados
 __pycache__/
 *.pyc
 .env

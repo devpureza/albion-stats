@@ -9,7 +9,7 @@ st.set_page_config(page_title="Registro de Mortes", page_icon="💀")
 # Função para carregar os dados do CSV
 def carregar_dados():
     try:
-        df = pd.read_csv('src/mortes.csv')
+        df = pd.read_csv('data/mortes.csv')
         # Converte a coluna de data para datetime e depois para o formato brasileiro
         df['data'] = pd.to_datetime(df['data']).dt.strftime('%d/%m/%Y')
         return df
@@ -20,7 +20,7 @@ def carregar_dados():
 def salvar_morte(personagem, data, valor_perdido, descricao):
     # Converte a data para o formato brasileiro antes de salvar
     data_formatada = data.strftime('%d/%m/%Y')
-    with open('src/mortes.csv', mode='a', newline='', encoding='utf-8') as file:
+    with open('data/mortes.csv', mode='a', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow([personagem, data_formatada, valor_perdido, descricao])
     return True

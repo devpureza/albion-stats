@@ -11,14 +11,14 @@ st.set_page_config(page_title="Hunts Solo", page_icon="🎯")
 def carregar_dados():
     try:
         # Verificar se o arquivo existe
-        if not os.path.exists('src/hunts_solo.csv'):
+        if not os.path.exists('data/hunts_solo.csv'):
             # Criar arquivo com cabeçalho correto
-            with open('src/hunts_solo.csv', 'w', newline='', encoding='utf-8') as file:
+            with open('data/hunts_solo.csv', 'w', newline='', encoding='utf-8') as file:
                 writer = csv.writer(file)
                 writer.writerow(['data', 'personagem', 'tipo_hunt', 'lucro_itens', 'descricao'])
             return pd.DataFrame(columns=['data', 'personagem', 'tipo_hunt', 'lucro_itens', 'descricao'])
         
-        df = pd.read_csv('src/hunts_solo.csv')
+        df = pd.read_csv('data/hunts_solo.csv')
         # Converter lucro_itens para numérico
         df['lucro_itens'] = pd.to_numeric(df['lucro_itens'], errors='coerce')
         # Converter data para datetime
@@ -31,7 +31,7 @@ def carregar_dados():
 # Função para salvar dados no CSV
 def salvar_hunt(data, personagem, tipo_hunt, lucro_itens, descricao):
     data_formatada = data.strftime('%d/%m/%Y')
-    with open('src/hunts_solo.csv', mode='a', newline='', encoding='utf-8') as file:
+    with open('data/hunts_solo.csv', mode='a', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow([data_formatada, personagem, tipo_hunt, lucro_itens, descricao])
     return True
