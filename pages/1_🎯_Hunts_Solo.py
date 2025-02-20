@@ -1,64 +1,52 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-import csv
-import os
+from database import get_db_connection, init_db
 from config import get_personagens
 
 st.set_page_config(page_title="Hunts Solo", page_icon="🎯")
 
-# Função para carregar os dados do CSV
+# Inicializar banco de dados
+init_db()
+
+# Função para carregar os dados do banco
 def carregar_dados():
     try:
-        # Verificar se o arquivo existe
-        if not os.path.exists('data/hunts_solo.csv'):
-            # Criar arquivo com cabeçalho correto
-            with open('data/hunts_solo.csv', 'w', newline='', encoding='utf-8') as file:
-                writer = csv.writer(file)
-                writer.writerow(['data', 'personagem', 'tipo_hunt', 'lucro_itens', 'descricao'])
-            return pd.DataFrame(columns=['data', 'personagem', 'tipo_hunt', 'lucro_itens', 'descricao'])
-        
-        df = pd.read_csv('data/hunts_solo.csv')
-        # Converter lucro_itens para numérico
-        df['lucro_itens'] = pd.to_numeric(df['lucro_itens'], errors='coerce')
-        # Converter data para datetime
-        df['data'] = pd.to_datetime(df['data'], format='%d/%m/%Y', errors='coerce')
-        return df
+        with get_db_connection() as conn:
+            query = "SELECT * FROM hunts_solo ORDER BY data DESC"
+            df = pd.read_sql_query(query, conn)
+            # Converter a coluna de data para datetime e depois para o formato brasileiro
+            df['data'] = pd.to_datetime(df['data']).dt.strftime('%d/%m/%Y')
+            return df
     except Exception as e:
         st.error(f"Erro ao carregar dados: {str(e)}")
-        return pd.DataFrame(columns=['data', 'personagem', 'tipo_hunt', 'lucro_itens', 'descricao'])
+        return pd.DataFrame(columns=['id', 'data', 'personagem', 'tipo_hunt', 'lucro_itens', 'descricao'])
 
-# Função para salvar dados no CSV
+# Função para salvar hunt no banco
 def salvar_hunt(data, personagem, tipo_hunt, lucro_itens, descricao):
     try:
-        # Garantir que o diretório data existe
-        os.makedirs('data', exist_ok=True)
-        
-        # Criar arquivo se não existir
-        if not os.path.exists('data/hunts_solo.csv'):
-            with open('data/hunts_solo.csv', 'w', newline='', encoding='utf-8') as file:
-                writer = csv.writer(file)
-                writer.writerow(['data', 'personagem', 'tipo_hunt', 'lucro_itens', 'descricao'])
-        
-        data_formatada = data.strftime('%d/%m/%Y')
-        with open('data/hunts_solo.csv', mode='a', newline='', encoding='utf-8') as file:
-            writer = csv.writer(file)
-            writer.writerow([data_formatada, personagem, tipo_hunt, lucro_itens, descricao])
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                INSERT INTO hunts_solo (data, personagem, tipo_hunt, lucro_itens, descricao)
+                VALUES (?, ?, ?, ?, ?)
+            """, (data.strftime('%Y-%m-%d'), personagem, tipo_hunt, lucro_itens, descricao))
+            conn.commit()
         return True
     except Exception as e:
         st.error(f"Erro ao salvar dados: {str(e)}")
         return False
 
-# Função para deletar uma linha do CSV
-def deletar_linha(index, df):
+# Função para deletar uma hunt do banco
+def deletar_hunt(id):
     try:
-        # Remove a linha do DataFrame
-        df = df.drop(index)
-        # Salva o DataFrame atualizado no CSV
-        df.to_csv('data/hunts_solo.csv', index=False)
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM hunts_solo WHERE id = ?", (id,))
+            conn.commit()
         return True
     except Exception as e:
-        st.error(f"Erro ao deletar linha: {str(e)}")
+        st.error(f"Erro ao deletar registro: {str(e)}")
         return False
 
 # Sidebar
@@ -113,16 +101,15 @@ dados = dados[(dados['data'].dt.date >= data_inicio) & (dados['data'].dt.date <=
 dados['data'] = dados['data'].dt.strftime('%d/%m/%Y')
 
 # Adicionar coluna com botão de deletar
-dados_com_botao = dados.copy()
-for idx in dados.index:
-    if st.button("🗑️ Deletar", key=f"del_{idx}"):
-        if deletar_linha(idx, dados):
+for idx, row in dados.iterrows():
+    if st.button("🗑️ Deletar", key=f"del_{row['id']}"):
+        if deletar_hunt(row['id']):
             st.success("Registro deletado com sucesso!")
             st.rerun()
 
 # Exibir dataframe
 st.dataframe(
-    dados,
+    dados.drop('id', axis=1),  # Remove a coluna ID da visualização
     use_container_width=True,
     hide_index=True,
     column_config={
