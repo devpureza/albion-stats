@@ -4,7 +4,7 @@ from datetime import datetime
 import csv
 import os
 
-st.set_page_config(page_title="Registro de Mortes", page_icon="💀")
+st.set_page_config(page_title="Registro de Mortes!", page_icon="💀")
 
 # Função para carregar os dados do CSV
 def carregar_dados():
