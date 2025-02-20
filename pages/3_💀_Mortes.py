@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime
 import os
 from database import get_db_connection, init_db
-from config import PERSONAGENS
+from config import get_personagens
 
 st.set_page_config(page_title="Registro de Mortes!", page_icon="💀")
 
@@ -55,7 +55,7 @@ with st.sidebar:
     st.title("Filtros")
     personagem_filtro = st.selectbox(
         "Personagem",
-        options=["Todos"] + PERSONAGENS
+        options=["Todos"] + get_personagens()
     )
     data_inicio, data_fim = st.date_input(
         "Intervalo de Data",
@@ -69,7 +69,7 @@ st.title("Registro de Mortes 💀")
 with st.expander("Registrar Nova Morte", expanded=True):
     personagem = st.selectbox(
         "Personagem",
-        options=PERSONAGENS
+        options=get_personagens()
     )
     
     col1, col2 = st.columns(2)
