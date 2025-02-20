@@ -30,11 +30,24 @@ def carregar_dados():
 
 # Função para salvar dados no CSV
 def salvar_hunt(data, personagem, tipo_hunt, lucro_itens, descricao):
-    data_formatada = data.strftime('%d/%m/%Y')
-    with open('data/hunts_solo.csv', mode='a', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow([data_formatada, personagem, tipo_hunt, lucro_itens, descricao])
-    return True
+    try:
+        # Garantir que o diretório data existe
+        os.makedirs('data', exist_ok=True)
+        
+        # Criar arquivo se não existir
+        if not os.path.exists('data/hunts_solo.csv'):
+            with open('data/hunts_solo.csv', 'w', newline='', encoding='utf-8') as file:
+                writer = csv.writer(file)
+                writer.writerow(['data', 'personagem', 'tipo_hunt', 'lucro_itens', 'descricao'])
+        
+        data_formatada = data.strftime('%d/%m/%Y')
+        with open('data/hunts_solo.csv', mode='a', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            writer.writerow([data_formatada, personagem, tipo_hunt, lucro_itens, descricao])
+        return True
+    except Exception as e:
+        st.error(f"Erro ao salvar dados: {str(e)}")
+        return False
 
 # Sidebar
 with st.sidebar:

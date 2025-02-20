@@ -18,12 +18,24 @@ def carregar_dados():
 
 # Função para salvar dados no CSV
 def salvar_morte(personagem, data, valor_perdido, descricao):
-    # Converte a data para o formato brasileiro antes de salvar
-    data_formatada = data.strftime('%d/%m/%Y')
-    with open('data/mortes.csv', mode='a', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow([personagem, data_formatada, valor_perdido, descricao])
-    return True
+    try:
+        # Garantir que o diretório data existe
+        os.makedirs('data', exist_ok=True)
+        
+        # Criar arquivo se não existir
+        if not os.path.exists('data/mortes.csv'):
+            with open('data/mortes.csv', 'w', newline='', encoding='utf-8') as file:
+                writer = csv.writer(file)
+                writer.writerow(['personagem', 'data', 'valor_perdido', 'descricao'])
+        
+        data_formatada = data.strftime('%d/%m/%Y')
+        with open('data/mortes.csv', mode='a', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            writer.writerow([personagem, data_formatada, valor_perdido, descricao])
+        return True
+    except Exception as e:
+        st.error(f"Erro ao salvar dados: {str(e)}")
+        return False
 
 # Sidebar
 with st.sidebar:
