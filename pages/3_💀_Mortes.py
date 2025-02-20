@@ -1,52 +1,52 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-import csv
 import os
+from database import get_db_connection, init_db
 
 st.set_page_config(page_title="Registro de Mortes!", page_icon="💀")
 
-# Função para carregar os dados do CSV
+# Inicializar banco de dados
+init_db()
+
+# Função para carregar os dados do banco
 def carregar_dados():
     try:
-        df = pd.read_csv('data/mortes.csv')
-        # Converte a coluna de data para datetime e depois para o formato brasileiro
-        df['data'] = pd.to_datetime(df['data']).dt.strftime('%d/%m/%Y')
-        return df
-    except:
-        return pd.DataFrame(columns=['personagem', 'data', 'valor_perdido', 'descricao'])
+        with get_db_connection() as conn:
+            query = "SELECT * FROM mortes ORDER BY data DESC"
+            df = pd.read_sql_query(query, conn)
+            # Converter a coluna de data para datetime e depois para o formato brasileiro
+            df['data'] = pd.to_datetime(df['data']).dt.strftime('%d/%m/%Y')
+            return df
+    except Exception as e:
+        st.error(f"Erro ao carregar dados: {str(e)}")
+        return pd.DataFrame(columns=['id', 'data', 'personagem', 'valor_perdido', 'descricao'])
 
-# Função para salvar dados no CSV
+# Função para salvar morte no banco
 def salvar_morte(personagem, data, valor_perdido, descricao):
     try:
-        # Garantir que o diretório data existe
-        os.makedirs('data', exist_ok=True)
-        
-        # Criar arquivo se não existir
-        if not os.path.exists('data/mortes.csv'):
-            with open('data/mortes.csv', 'w', newline='', encoding='utf-8') as file:
-                writer = csv.writer(file)
-                writer.writerow(['personagem', 'data', 'valor_perdido', 'descricao'])
-        
-        data_formatada = data.strftime('%d/%m/%Y')
-        with open('data/mortes.csv', mode='a', newline='', encoding='utf-8') as file:
-            writer = csv.writer(file)
-            writer.writerow([personagem, data_formatada, valor_perdido, descricao])
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                INSERT INTO mortes (data, personagem, valor_perdido, descricao)
+                VALUES (?, ?, ?, ?)
+            """, (data.strftime('%Y-%m-%d'), personagem, valor_perdido, descricao))
+            conn.commit()
         return True
     except Exception as e:
         st.error(f"Erro ao salvar dados: {str(e)}")
         return False
 
-# Função para deletar uma linha do CSV
-def deletar_linha(index, df):
+# Função para deletar uma morte do banco
+def deletar_morte(id):
     try:
-        # Remove a linha do DataFrame
-        df = df.drop(index)
-        # Salva o DataFrame atualizado no CSV
-        df.to_csv('data/mortes.csv', index=False)
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM mortes WHERE id = ?", (id,))
+            conn.commit()
         return True
     except Exception as e:
-        st.error(f"Erro ao deletar linha: {str(e)}")
+        st.error(f"Erro ao deletar registro: {str(e)}")
         return False
 
 # Sidebar
@@ -84,7 +84,7 @@ with st.expander("Registrar Nova Morte", expanded=True):
             st.success("Morte registrada com sucesso!")
             st.balloons()
 
-# Exibir dados com botão de deletar
+# Exibir dados
 st.subheader("Histórico de Mortes")
 dados = carregar_dados()
 
@@ -98,16 +98,15 @@ dados = dados[(dados['data'].dt.date >= data_inicio) & (dados['data'].dt.date <=
 dados['data'] = dados['data'].dt.strftime('%d/%m/%Y')
 
 # Adicionar coluna com botão de deletar
-dados_com_botao = dados.copy()
-for idx in dados.index:
-    if st.button("🗑️ Deletar", key=f"del_{idx}"):
-        if deletar_linha(idx, dados):
+for idx, row in dados.iterrows():
+    if st.button("🗑️ Deletar", key=f"del_{row['id']}"):
+        if deletar_morte(row['id']):
             st.success("Registro deletado com sucesso!")
             st.rerun()
 
 # Exibir dataframe
 st.dataframe(
-    dados,
+    dados.drop('id', axis=1),  # Remove a coluna ID da visualização
     use_container_width=True,
     hide_index=True,
     column_config={
@@ -122,7 +121,7 @@ st.dataframe(
     }
 )
 
-# Após o dataframe, adicionar o gráfico
+# Análise de Perdas por Personagem
 st.subheader("Análise de Perdas por Personagem")
 
 # Preparar dados para o gráfico
