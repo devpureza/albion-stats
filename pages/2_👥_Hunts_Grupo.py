@@ -47,6 +47,18 @@ def salvar_hunt(data, personagens, valor_total, observacoes):
         st.error(f"Erro ao salvar dados: {str(e)}")
         return False
 
+# Função para deletar uma linha do CSV
+def deletar_linha(index, df):
+    try:
+        # Remove a linha do DataFrame
+        df = df.drop(index)
+        # Salva o DataFrame atualizado no CSV
+        df.to_csv('data/hunts_grupo.csv', index=False)
+        return True
+    except Exception as e:
+        st.error(f"Erro ao deletar linha: {str(e)}")
+        return False
+
 # Sidebar
 with st.sidebar:
     st.title("Filtros")
@@ -83,7 +95,7 @@ with st.expander("Adicionar Nova Hunt em Grupo", expanded=True):
         else:
             st.error("Selecione pelo menos um personagem!")
 
-# Exibir dados
+# Exibir dados com botão de deletar
 st.subheader("Histórico de Hunts em Grupo")
 dados = carregar_dados()
 
@@ -102,6 +114,14 @@ dados['data'] = dados['data'].dt.strftime('%d/%m/%Y')
 
 # Calcular valor por pessoa
 dados['valor_por_pessoa'] = dados['valor_total'] / dados['num_participantes']
+
+# Adicionar coluna com botão de deletar
+dados_com_botao = dados.copy()
+for idx in dados.index:
+    if st.button("🗑️ Deletar", key=f"del_{idx}"):
+        if deletar_linha(idx, dados):
+            st.success("Registro deletado com sucesso!")
+            st.rerun()
 
 # Exibir dataframe
 st.dataframe(

@@ -49,6 +49,18 @@ def salvar_hunt(data, personagem, tipo_hunt, lucro_itens, descricao):
         st.error(f"Erro ao salvar dados: {str(e)}")
         return False
 
+# Função para deletar uma linha do CSV
+def deletar_linha(index, df):
+    try:
+        # Remove a linha do DataFrame
+        df = df.drop(index)
+        # Salva o DataFrame atualizado no CSV
+        df.to_csv('data/hunts_solo.csv', index=False)
+        return True
+    except Exception as e:
+        st.error(f"Erro ao deletar linha: {str(e)}")
+        return False
+
 # Sidebar
 with st.sidebar:
     st.title("Filtros")
@@ -99,6 +111,14 @@ if tipo_hunt != "Todos":
 dados['data'] = pd.to_datetime(dados['data'], format='%d/%m/%Y')
 dados = dados[(dados['data'].dt.date >= data_inicio) & (dados['data'].dt.date <= data_fim)]
 dados['data'] = dados['data'].dt.strftime('%d/%m/%Y')
+
+# Adicionar coluna com botão de deletar
+dados_com_botao = dados.copy()
+for idx in dados.index:
+    if st.button("🗑️ Deletar", key=f"del_{idx}"):
+        if deletar_linha(idx, dados):
+            st.success("Registro deletado com sucesso!")
+            st.rerun()
 
 # Exibir dataframe
 st.dataframe(

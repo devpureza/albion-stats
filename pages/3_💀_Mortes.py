@@ -37,6 +37,18 @@ def salvar_morte(personagem, data, valor_perdido, descricao):
         st.error(f"Erro ao salvar dados: {str(e)}")
         return False
 
+# Função para deletar uma linha do CSV
+def deletar_linha(index, df):
+    try:
+        # Remove a linha do DataFrame
+        df = df.drop(index)
+        # Salva o DataFrame atualizado no CSV
+        df.to_csv('data/mortes.csv', index=False)
+        return True
+    except Exception as e:
+        st.error(f"Erro ao deletar linha: {str(e)}")
+        return False
+
 # Sidebar
 with st.sidebar:
     st.title("Filtros")
@@ -72,7 +84,7 @@ with st.expander("Registrar Nova Morte", expanded=True):
             st.success("Morte registrada com sucesso!")
             st.balloons()
 
-# Exibir dados
+# Exibir dados com botão de deletar
 st.subheader("Histórico de Mortes")
 dados = carregar_dados()
 
@@ -85,17 +97,26 @@ dados['data'] = pd.to_datetime(dados['data'], format='%d/%m/%Y')
 dados = dados[(dados['data'].dt.date >= data_inicio) & (dados['data'].dt.date <= data_fim)]
 dados['data'] = dados['data'].dt.strftime('%d/%m/%Y')
 
+# Adicionar coluna com botão de deletar
+dados_com_botao = dados.copy()
+for idx in dados.index:
+    if st.button("🗑️ Deletar", key=f"del_{idx}"):
+        if deletar_linha(idx, dados):
+            st.success("Registro deletado com sucesso!")
+            st.rerun()
+
+# Exibir dataframe
 st.dataframe(
     dados,
-    use_container_width=True,  # Faz o dataframe usar toda a largura disponível
-    hide_index=True,           # Esconde a coluna de índice
+    use_container_width=True,
+    hide_index=True,
     column_config={
         "personagem": "Personagem",
         "data": "Data",
         "valor_perdido": st.column_config.NumberColumn(
             "Valor Perdido",
-            format="R$ %.2f",  # Alterado para mostrar decimais
-            help="Valor perdido em Reais"  # Alterado de Silver para Reais
+            format="R$ %.2f",
+            help="Valor perdido em Reais"
         ),
         "descricao": "Descrição"
     }
