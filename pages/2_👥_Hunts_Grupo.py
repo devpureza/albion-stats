@@ -100,13 +100,13 @@ st.dataframe(
         "personagens": "Personagens",
         "valor_total": st.column_config.NumberColumn(
             "Valor Total",
-            format="R$ %d",
-            help="Valor total da hunt em Silver"
+            format="R$ %.2f",
+            help="Valor total da hunt em Reais"
         ),
         "valor_por_pessoa": st.column_config.NumberColumn(
             "Valor por Pessoa",
-            format="R$ %d",
-            help="Valor por pessoa em Silver"
+            format="R$ %.2f",
+            help="Valor por pessoa em Reais"
         ),
         "observacoes": "Observações"
     }

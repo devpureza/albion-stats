@@ -98,8 +98,8 @@ st.dataframe(
         "tipo_hunt": "Tipo",
         "lucro_itens": st.column_config.NumberColumn(
             "Lucro em Itens",
-            format="R$ %d",
-            help="Lucro em Silver"
+            format="R$ %.2f",
+            help="Lucro em Reais"
         ),
         "descricao": "Descrição"
     }

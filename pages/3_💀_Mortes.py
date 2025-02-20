@@ -82,8 +82,8 @@ st.dataframe(
         "data": "Data",
         "valor_perdido": st.column_config.NumberColumn(
             "Valor Perdido",
-            format="R$ %d",
-            help="Valor perdido em Silver"
+            format="R$ %.2f",  # Alterado para mostrar decimais
+            help="Valor perdido em Reais"  # Alterado de Silver para Reais
         ),
         "descricao": "Descrição"
     }
