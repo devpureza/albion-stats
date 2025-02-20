@@ -1,62 +1,53 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-import csv
-import os
+from database import get_db_connection, init_db
 from config import get_personagens
 
 st.set_page_config(page_title="Hunts em Grupo", page_icon="👥")
 
-# Função para carregar os dados do CSV
+# Inicializar banco de dados
+init_db()
+
+# Função para carregar os dados do banco
 def carregar_dados():
     try:
-        # Verificar se o arquivo existe
-        if not os.path.exists('data/hunts_grupo.csv'):
-            # Criar arquivo com cabeçalho correto
-            with open('data/hunts_grupo.csv', 'w', newline='', encoding='utf-8') as file:
-                writer = csv.writer(file)
-                writer.writerow(['data', 'personagens', 'valor_total', 'observacoes'])
-            return pd.DataFrame(columns=['data', 'personagens', 'valor_total', 'observacoes'])
-        
-        df = pd.read_csv('data/hunts_grupo.csv')
-        df['data'] = pd.to_datetime(df['data'], format='%d/%m/%Y', errors='coerce')
-        return df
+        with get_db_connection() as conn:
+            query = "SELECT * FROM hunts_grupo ORDER BY data DESC"
+            df = pd.read_sql_query(query, conn)
+            # Converter a coluna de data para datetime e depois para o formato brasileiro
+            df['data'] = pd.to_datetime(df['data']).dt.strftime('%d/%m/%Y')
+            return df
     except Exception as e:
         st.error(f"Erro ao carregar dados: {str(e)}")
-        return pd.DataFrame(columns=['data', 'personagens', 'valor_total', 'observacoes'])
+        return pd.DataFrame(columns=['id', 'data', 'personagens', 'valor_total', 'observacoes'])
 
-# Função para salvar dados no CSV
+# Função para salvar hunt no banco
 def salvar_hunt(data, personagens, valor_total, observacoes):
     try:
-        # Garantir que o diretório data existe
-        os.makedirs('data', exist_ok=True)
-        
-        # Criar arquivo se não existir
-        if not os.path.exists('data/hunts_grupo.csv'):
-            with open('data/hunts_grupo.csv', 'w', newline='', encoding='utf-8') as file:
-                writer = csv.writer(file)
-                writer.writerow(['data', 'personagens', 'valor_total', 'observacoes'])
-        
-        data_formatada = data.strftime('%d/%m/%Y')
-        personagens_str = ", ".join(personagens)
-        with open('data/hunts_grupo.csv', mode='a', newline='', encoding='utf-8') as file:
-            writer = csv.writer(file)
-            writer.writerow([data_formatada, personagens_str, valor_total, observacoes])
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+            personagens_str = ", ".join(personagens)
+            cursor.execute("""
+                INSERT INTO hunts_grupo (data, personagens, valor_total, observacoes)
+                VALUES (?, ?, ?, ?)
+            """, (data.strftime('%Y-%m-%d'), personagens_str, valor_total, observacoes))
+            conn.commit()
         return True
     except Exception as e:
         st.error(f"Erro ao salvar dados: {str(e)}")
         return False
 
-# Função para deletar uma linha do CSV
-def deletar_linha(index, df):
+# Função para deletar uma hunt do banco
+def deletar_hunt(id):
     try:
-        # Remove a linha do DataFrame
-        df = df.drop(index)
-        # Salva o DataFrame atualizado no CSV
-        df.to_csv('data/hunts_grupo.csv', index=False)
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM hunts_grupo WHERE id = ?", (id,))
+            conn.commit()
         return True
     except Exception as e:
-        st.error(f"Erro ao deletar linha: {str(e)}")
+        st.error(f"Erro ao deletar registro: {str(e)}")
         return False
 
 # Sidebar
@@ -83,7 +74,7 @@ with st.expander("Adicionar Nova Hunt em Grupo", expanded=True):
             default=[get_personagens()[0]]  # Seleciona o primeiro personagem por padrão
         )
     with col2:
-        valor_total = st.number_input("Valor Total da Hunt (Silver)", min_value=0, step=1000)
+        valor_total = st.number_input("Valor Total da Hunt", min_value=0, step=1000)
     
     observacoes = st.text_area("Observações")
     
@@ -95,12 +86,12 @@ with st.expander("Adicionar Nova Hunt em Grupo", expanded=True):
         else:
             st.error("Selecione pelo menos um personagem!")
 
-# Exibir dados com botão de deletar
+# Exibir dados
 st.subheader("Histórico de Hunts em Grupo")
 dados = carregar_dados()
 
 # Aplicar filtros
-# Filtro por número de participantes agora é baseado no número de personagens selecionados
+# Filtro por número de participantes
 dados['num_participantes'] = dados['personagens'].str.count(',') + 1
 dados = dados[
     (dados['num_participantes'] >= tamanho_grupo[0]) & 
@@ -116,16 +107,15 @@ dados['data'] = dados['data'].dt.strftime('%d/%m/%Y')
 dados['valor_por_pessoa'] = dados['valor_total'] / dados['num_participantes']
 
 # Adicionar coluna com botão de deletar
-dados_com_botao = dados.copy()
-for idx in dados.index:
-    if st.button("🗑️ Deletar", key=f"del_{idx}"):
-        if deletar_linha(idx, dados):
+for idx, row in dados.iterrows():
+    if st.button("🗑️ Deletar", key=f"del_{row['id']}"):
+        if deletar_hunt(row['id']):
             st.success("Registro deletado com sucesso!")
             st.rerun()
 
 # Exibir dataframe
 st.dataframe(
-    dados,
+    dados.drop(['id', 'num_participantes'], axis=1),  # Remove colunas técnicas
     use_container_width=True,
     hide_index=True,
     column_config={
