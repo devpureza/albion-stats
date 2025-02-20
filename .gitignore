@@ -1,5 +1,7 @@
-# Ignorar apenas arquivos temporários/desenvolvimento
-src/*.csv
+# Ignorar todos os arquivos CSV
+*.csv
+
+# Ignorar arquivos temporários/desenvolvimento
 __pycache__/
 *.pyc
 .env
