@@ -1,13 +1,14 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-from database import get_db_connection, init_db
+from database import get_db_connection, init_db, upgrade_db
 from config import get_personagens, get_equipamentos
 
 st.set_page_config(page_title="Builds", page_icon="⚔️", layout="wide")
 
-# Inicializar banco de dados
+# Inicializar e atualizar banco de dados
 init_db()
+upgrade_db()
 
 # Funções do banco de dados
 def carregar_builds():
@@ -274,7 +275,7 @@ for _, build in builds.iterrows():
             <div class="build-card">
                 <div class="equipment-section">
                     <div class="equipment-item">🗡️ Arma: {build['arma']}</div>
-                    <div class="equipment-item">🛡️ Secundária: {build['secundaria']}</div>
+                    <div class="equipment-item">🛡️ Secundária: {build.get('secundaria', 'Nenhuma')}</div>
                     <div class="equipment-item">🎭 Cabeça: {build['cabeca']}</div>
                     <div class="equipment-item">👕 Armadura: {build['peito']}</div>
                     <div class="equipment-item">👢 Botas: {build['botas']}</div>
