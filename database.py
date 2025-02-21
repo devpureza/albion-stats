@@ -58,6 +58,7 @@ def init_db():
             nome TEXT NOT NULL,
             tipo TEXT NOT NULL,
             arma TEXT NOT NULL,
+            secundaria TEXT,
             cabeca TEXT,
             peito TEXT,
             botas TEXT,
@@ -70,4 +71,14 @@ def init_db():
         )
         ''')
         
-        conn.commit() 
+        conn.commit()
+
+def upgrade_db():
+    with get_db_connection() as conn:
+        cursor = conn.cursor()
+        try:
+            cursor.execute('ALTER TABLE builds ADD COLUMN secundaria TEXT')
+            conn.commit()
+        except sqlite3.OperationalError:
+            # Coluna já existe
+            pass 

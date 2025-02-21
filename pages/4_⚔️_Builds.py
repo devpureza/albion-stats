@@ -19,29 +19,29 @@ def carregar_builds():
         st.error(f"Erro ao carregar builds: {str(e)}")
         return pd.DataFrame()
 
-def salvar_build(nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem):
+def salvar_build(nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem, secundaria):
     try:
         with get_db_connection() as conn:
             cursor = conn.cursor()
             cursor.execute("""
-                INSERT INTO builds (nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """, (nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem))
+                INSERT INTO builds (nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem, secundaria)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem, secundaria))
             conn.commit()
         return True
     except Exception as e:
         st.error(f"Erro ao salvar build: {str(e)}")
         return False
 
-def atualizar_build(id, nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem):
+def atualizar_build(id, nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem, secundaria):
     try:
         with get_db_connection() as conn:
             cursor = conn.cursor()
             cursor.execute("""
                 UPDATE builds 
-                SET nome=?, tipo=?, arma=?, cabeca=?, peito=?, botas=?, capa=?, potion=?, food=?, notas=?, personagem=?
+                SET nome=?, tipo=?, arma=?, cabeca=?, peito=?, botas=?, capa=?, potion=?, food=?, notas=?, personagem=?, secundaria=?
                 WHERE id=?
-            """, (nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem, id))
+            """, (nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem, secundaria, id))
             conn.commit()
         return True
     except Exception as e:
@@ -132,6 +132,11 @@ with st.expander("Adicionar Nova Build", expanded=False):
             options=[""] + get_equipamentos("armas"),
             format_func=lambda x: "Selecione uma arma" if x == "" else x
         )
+        secundaria = st.selectbox(
+            "Mão Secundária",
+            options=[""] + get_equipamentos("secundarias"),
+            format_func=lambda x: "Selecione item secundário" if x == "" else x
+        )
         cabeca = st.selectbox(
             "Cabeça",
             options=[""] + get_equipamentos("cabecas"),
@@ -171,7 +176,7 @@ with st.expander("Adicionar Nova Build", expanded=False):
     
     if st.button("Salvar Build"):
         if nome and arma:  # Validação básica
-            if salvar_build(nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem):
+            if salvar_build(nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem, secundaria):
                 st.success("Build salva com sucesso!")
                 st.balloons()
         else:
@@ -211,6 +216,10 @@ if 'editing_build' in st.session_state:
             options=[""] + get_equipamentos("armas"),
             index=get_equipamentos("armas").index(build['arma']) + 1,
             key="edit_arma")
+        secundaria = st.selectbox("Mão Secundária",
+            options=[""] + get_equipamentos("secundarias"),
+            index=(get_equipamentos("secundarias").index(build['secundaria']) + 1) if build['secundaria'] else 0,
+            key="edit_secundaria")
         cabeca = st.selectbox("Cabeça",
             options=[""] + get_equipamentos("cabecas"),
             index=(get_equipamentos("cabecas").index(build['cabeca']) + 1) if build['cabeca'] else 0,
@@ -246,7 +255,7 @@ if 'editing_build' in st.session_state:
     with col5:
         if st.button("Salvar Alterações"):
             if nome and arma:
-                if atualizar_build(build['id'], nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem):
+                if atualizar_build(build['id'], nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem, secundaria):
                     st.success("Build atualizada com sucesso!")
                     del st.session_state.editing_build
                     st.rerun()
@@ -265,6 +274,7 @@ for _, build in builds.iterrows():
             <div class="build-card">
                 <div class="equipment-section">
                     <div class="equipment-item">🗡️ Arma: {build['arma']}</div>
+                    <div class="equipment-item">🛡️ Secundária: {build['secundaria']}</div>
                     <div class="equipment-item">🎭 Cabeça: {build['cabeca']}</div>
                     <div class="equipment-item">👕 Armadura: {build['peito']}</div>
                     <div class="equipment-item">👢 Botas: {build['botas']}</div>
