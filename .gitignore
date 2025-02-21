@@ -1,5 +1,6 @@
 # Ignorar todos os arquivos CSV
 *.csv
+albion.db
 
 # Ignorar arquivos temporários/desenvolvimento
 __pycache__/
