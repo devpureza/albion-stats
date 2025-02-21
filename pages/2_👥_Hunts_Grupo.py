@@ -106,13 +106,6 @@ dados['data'] = dados['data'].dt.strftime('%d/%m/%Y')
 # Calcular valor por pessoa
 dados['valor_por_pessoa'] = dados['valor_total'] / dados['num_participantes']
 
-# Adicionar coluna com botão de deletar
-for idx, row in dados.iterrows():
-    if st.button("🗑️ Deletar", key=f"del_{row['id']}"):
-        if deletar_hunt(row['id']):
-            st.success("Registro deletado com sucesso!")
-            st.rerun()
-
 # Exibir dataframe
 st.dataframe(
     dados.drop(['id', 'num_participantes'], axis=1),  # Remove colunas técnicas

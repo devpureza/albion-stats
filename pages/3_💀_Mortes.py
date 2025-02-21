@@ -98,13 +98,6 @@ dados['data'] = pd.to_datetime(dados['data'], format='%d/%m/%Y')
 dados = dados[(dados['data'].dt.date >= data_inicio) & (dados['data'].dt.date <= data_fim)]
 dados['data'] = dados['data'].dt.strftime('%d/%m/%Y')
 
-# Adicionar coluna com botão de deletar
-for idx, row in dados.iterrows():
-    if st.button("🗑️ Deletar", key=f"del_{row['id']}"):
-        if deletar_morte(row['id']):
-            st.success("Registro deletado com sucesso!")
-            st.rerun()
-
 # Exibir dataframe
 st.dataframe(
     dados.drop('id', axis=1),  # Remove a coluna ID da visualização
