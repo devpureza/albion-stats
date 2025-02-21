@@ -52,4 +52,22 @@ def init_db():
         )
         ''')
         
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS builds (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            nome TEXT NOT NULL,
+            tipo TEXT NOT NULL,
+            arma TEXT NOT NULL,
+            cabeca TEXT,
+            peito TEXT,
+            botas TEXT,
+            capa TEXT,
+            potion TEXT,
+            food TEXT,
+            notas TEXT,
+            personagem TEXT NOT NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+        ''')
+        
         conn.commit() 

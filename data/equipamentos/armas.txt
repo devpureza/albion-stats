@@ -1,0 +1,33 @@
+Espada Larga
+Espada Claymore
+Espadas Duplas
+Espada Entalhada
+Par de Galatinas
+Adaga
+Adagas Sangrentas
+Adagas de Punho
+Machado
+Machado de Batalha
+Machado Grande
+Machado de Carrasco
+Maça
+Maça Pesada
+Maça de Guardião
+Martelo
+Martelo Polido
+Martelo de Guerra Grande
+Lança
+Lança de Pike
+Lança Glaive
+Arco
+Arco Longo
+Arco Guerreiro
+Besta
+Besta Leve
+Besta Pesada
+Cajado Arcano
+Cajado de Fogo
+Cajado de Gelo
+Cajado Sagrado
+Cajado da Natureza
+Cajado Amaldiçoado

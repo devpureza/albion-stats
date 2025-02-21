@@ -4,7 +4,7 @@ from datetime import datetime
 from database import get_db_connection, init_db
 from config import get_personagens
 
-st.set_page_config(page_title="Hunts Solo", page_icon="🎯")
+st.set_page_config(page_title="Hunts Solo", page_icon="🎯", layout='wide')
 
 # Inicializar banco de dados
 init_db()

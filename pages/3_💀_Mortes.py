@@ -5,7 +5,7 @@ import os
 from database import get_db_connection, init_db
 from config import get_personagens
 
-st.set_page_config(page_title="Registro de Mortes!", page_icon="💀")
+st.set_page_config(page_title="Registro de Mortes!", page_icon="💀", layout='wide')
 
 # Inicializar banco de dados
 init_db()
