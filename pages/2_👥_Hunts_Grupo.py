@@ -4,7 +4,7 @@ from datetime import datetime
 from database import get_db_connection, init_db
 from config import get_personagens
 
-st.set_page_config(page_title="Hunts em Grupo", page_icon="👥")
+st.set_page_config(page_title="Hunts em Grupo", page_icon="👥", layout='wide')
 
 # Inicializar banco de dados
 init_db()
@@ -139,3 +139,71 @@ with col2:
     st.metric("Valor Total Acumulado", f"R$ {dados['valor_total'].sum():,.2f}")
 with col3:
     st.metric("Média por Pessoa", f"R$ {dados['valor_por_pessoa'].mean():,.2f}")
+
+# Após as métricas existentes, adicionar análise por personagem
+st.subheader("Análise por Personagem")
+
+# Calcular média por personagem
+medias_personagem = []
+for personagem in get_personagens():
+    # Filtrar hunts que incluem o personagem
+    hunts_personagem = dados[dados['personagens'].str.contains(personagem, case=False, na=False)]
+    if not hunts_personagem.empty:
+        media = hunts_personagem['valor_por_pessoa'].mean()
+        medias_personagem.append({
+            'personagem': personagem,
+            'media': media,
+            'participacoes': len(hunts_personagem)
+        })
+
+# Criar 6 colunas para os cards
+cols = st.columns(7)
+
+# Estilo CSS personalizado para os cards
+st.markdown("""
+<style>
+.char-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid #4e4e4e;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.char-card:hover {
+    transform: translateY(-5px);
+    border-color: #00ff88;
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.2);
+}
+.char-name {
+    color: #00ff88;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.char-stat {
+    color: #ffffff;
+    margin: 5px 0;
+}
+.char-value {
+    color: #00ff88;
+    font-weight: bold;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# Distribuir os cards pelas colunas
+for idx, dados_personagem in enumerate(medias_personagem):
+    with cols[idx % 7]:
+        st.markdown(f"""
+        <div class="char-card">
+            <div class="char-name">{dados_personagem['personagem']}</div>
+            <div class="char-stat">
+                Média: <span class="char-value">R$ {dados_personagem['media']:,.2f}</span>
+            </div>
+            <div class="char-stat">
+                Participações: <span class="char-value">{dados_personagem['participacoes']}</span>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
