@@ -1,33 +1,59 @@
-Espada Larga
+Espada de Duas Mãos
 Espada Claymore
-Espadas Duplas
-Espada Entalhada
-Par de Galatinas
-Adaga
-Adagas Sangrentas
-Adagas de Punho
-Machado
+Espada Clarent
+Espada Galatinas
+Espada Real
+Espada Avaloniana
 Machado de Batalha
-Machado Grande
 Machado de Carrasco
+Machado Infernal
+Machado Bear Paws
+Machado Real
+Machado Avaloniano
 Maça
-Maça Pesada
-Maça de Guardião
+Maça de Batalha
+Maça de Martelo
+Maça de Guarda
+Maça de Camlann
+Maça Real
+Maça Avaloniana
 Martelo
-Martelo Polido
-Martelo de Guerra Grande
+Martelo de Guerra
+Martelo de Batalha
+Martelo de Forge
+Martelo de Tombhammer
+Martelo Real
+Martelo Avaloniano
 Lança
-Lança de Pike
-Lança Glaive
+Lança de Pique
+Lança de Glaive
+Lança de Heron
+Lança de Spirithunter
+Lança Real
+Lança Avaloniana
 Arco
 Arco Longo
-Arco Guerreiro
-Besta
-Besta Leve
-Besta Pesada
-Cajado Arcano
-Cajado de Fogo
-Cajado de Gelo
-Cajado Sagrado
-Cajado da Natureza
-Cajado Amaldiçoado
+Arco de Guerra
+Arco de Wailing
+Arco de Whispering
+Arco Real
+Arco Avaloniano
+Bastão de Fogo
+Bastão de Gelo
+Bastão de Energia
+Bastão de Maldição
+Bastão de Natureza
+Bastão Sagrado
+Bastão de Arcano
+Adaga
+Adaga de Par
+Adaga de Sangue
+Adaga de Demônio
+Adaga de Mãos Negras
+Adaga Real
+Adaga Avaloniana
+Bastão de Guerra
+Bastão de Soulscythe
+Bastão de Black Monk
+Bastão de Iron-clad
+Bastão de Grailseeker

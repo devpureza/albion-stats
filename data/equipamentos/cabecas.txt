@@ -1,12 +1,24 @@
-Capuz de Estudioso
-Capuz de Clérigo
-Capuz de Mago
-Capuz Real
-Capuz de Mercenário
-Capuz de Assassino
-Capuz de Stalker
-Capuz de Especialista
 Capacete de Soldado
 Capacete de Cavaleiro
 Capacete de Guardião
-Capacete de Graveguard
+Elmo Real
+Elmo de Guarda-tumbas
+Elmo Demônio
+Elmo Judicante
+Elmo da Bravura
+Capuz de Mercenário
+Capuz de Caçador
+Capuz de Assassino
+Capuz de Espreitador
+Capuz Inferial
+Capuz Espectral
+Capuz de Andarilho da Névoa
+Capuz da Tenacidade
+Capote de Erudito
+Capote de Clérigo
+Capote de Mago
+Capote de Druida
+Capote Malévolo
+Capote Sectário
+Capote Feérico
+Capote da Pureza

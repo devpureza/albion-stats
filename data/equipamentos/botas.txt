@@ -1,12 +1,24 @@
-Sandálias de Estudioso
-Sandálias de Clérigo
-Sandálias de Mago
-Sandálias Real
-Botas de Mercenário
-Botas de Assassino
-Botas de Stalker
-Botas de Especialista
 Botas de Soldado
 Botas de Cavaleiro
 Botas de Guardião
-Botas de Graveguard
+Botas Reais
+Botas de Guarda-tumbas
+Botas Demônias
+Botas Judicantes
+Botas da Bravura
+Sapatos de Mercenário
+Sapatos de Caçador
+Sapatos de Assassino
+Sapatos de Espreitador
+Sapatos Inferiais
+Sapatos Espectrais
+Sapatos de Andarilho da Névoa
+Sapatos da Tenacidade
+Sandálias de Erudito
+Sandálias de Clérigo
+Sandálias de Mago
+Sandálias de Druida
+Sandálias Malévolas
+Sandálias Sectárias
+Sandálias Feéricas
+Sandálias da Pureza

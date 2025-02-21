@@ -1,9 +1,33 @@
-Sopa de Peixe
-Guisado de Cabra
-Bife de Avalônio
-Salada de Repolho
-Omelete
-Sanduíche
-Sopa de Cogumelos
+Torta de Porco
 Torta de Carne
-Pão de Alho
+Torta de Peixe
+Ensopado de Carne
+Ensopado de Peixe
+Ensopado de Frango
+Ensopado de Ovelha
+Ensopado de Urso
+Ensopado de Veado
+Sopa de Cenoura
+Sopa de Milho
+Sopa de Feijão
+Sopa de Tomate
+Sopa de Abóbora
+Sopa de Couve
+Sopa de Raiz Forte
+Sopa de Cogumelo
+Sanduíche de Carne
+Sanduíche de Frango
+Sanduíche de Ovelha
+Sanduíche de Peixe
+Sanduíche de Veado
+Sanduíche de Urso
+Sanduíche de Queijo
+Sanduíche de Vegetais
+Omelete de Ovo de Galinha
+Omelete de Ovo de Ganso
+Omelete de Ovo de Avestruz
+Omelete de Ovo de Dragão
+Omelete de Queijo
+Omelete de Cogumelo
+Porco Assado
+Peixe-gato Bocudo

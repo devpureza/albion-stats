@@ -1,7 +1,8 @@
 Poção de Cura
 Poção de Energia
-Poção de Gigante
 Poção de Veneno
 Poção de Invisibilidade
 Poção de Resistência
-Poção de Velocidade
+Poção de Regeneração
+Poção de Gigante
+Poção de Purificação

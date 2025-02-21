@@ -1,12 +1,24 @@
-Túnica de Estudioso
-Túnica de Clérigo
-Túnica de Mago
-Túnica Real
-Jaqueta de Mercenário
-Jaqueta de Assassino
-Jaqueta de Stalker
-Jaqueta de Especialista
 Armadura de Soldado
 Armadura de Cavaleiro
 Armadura de Guardião
-Armadura de Graveguard
+Armadura Real
+Armadura de Guarda-tumbas
+Armadura Demônia
+Armadura Judicante
+Armadura da Bravura
+Jaqueta de Mercenário
+Jaqueta de Caçador
+Jaqueta de Assassino
+Jaqueta de Espreitador
+Jaqueta Inferial
+Jaqueta Espectral
+Jaqueta de Andarilho da Névoa
+Jaqueta da Tenacidade
+Robe de Erudito
+Robe de Clérigo
+Robe de Mago
+Robe de Druida
+Robe Malévolo
+Robe Sectário
+Robe Feérico
+Robe da Pureza

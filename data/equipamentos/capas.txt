@@ -1,9 +1,11 @@
-Capa de Bridgewatch
+Capa de Thetford
 Capa de Fort Sterling
 Capa de Lymhurst
 Capa de Martlock
-Capa de Thetford
-Capa Demoníaca
-Capa Heroica
-Capa Morgana
-Capa Undead
+Capa de Bridgewatch
+Capa de Caerleon
+Capa de Morgana
+Capa de Demônio
+Capa de Undead
+Capa Avaloniana
+Capa Real
