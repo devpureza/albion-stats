@@ -134,7 +134,7 @@ with st.expander("Adicionar Nova Build", expanded=False):
         )
         secundaria = st.selectbox(
             "Mão Secundária",
-            options=[""] + get_equipamentos("secundarias"),
+            options=[""] + get_equipamentos("secundaria"),
             format_func=lambda x: "Selecione item secundário" if x == "" else x
         )
         cabeca = st.selectbox(
@@ -217,8 +217,8 @@ if 'editing_build' in st.session_state:
             index=get_equipamentos("armas").index(build['arma']) + 1,
             key="edit_arma")
         secundaria = st.selectbox("Mão Secundária",
-            options=[""] + get_equipamentos("secundarias"),
-            index=(get_equipamentos("secundarias").index(build['secundaria']) + 1) if build['secundaria'] else 0,
+            options=[""] + get_equipamentos("secundaria"),
+            index=(get_equipamentos("secundaria").index(build['secundaria']) + 1) if build['secundaria'] else 0,
             key="edit_secundaria")
         cabeca = st.selectbox("Cabeça",
             options=[""] + get_equipamentos("cabecas"),
