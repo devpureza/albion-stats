@@ -1,2574 +1,2151 @@
 {
-    "cabecas": [
-        {
-            "id": "T4_HEAD_PLATE_SET1",
-            "name": "Capacete de Soldado"
-        },
-        {
-            "id": "T4_HEAD_PLATE_SET2",
-            "name": "Capacete de Cavaleiro"
-        },
-        {
-            "id": "T4_HEAD_PLATE_SET3",
-            "name": "Capacete de Guardião"
-        },
-        {
-            "id": "T4_HEAD_PLATE_ROYAL",
-            "name": "Elmo Real"
-        },
-        {
-            "id": "T4_HEAD_PLATE_UNDEAD",
-            "name": "Elmo de Guarda-tumbas"
-        },
-        {
-            "id": "T4_HEAD_PLATE_HELL",
-            "name": "Elmo Demônio"
-        },
-        {
-            "id": "T4_HEAD_PLATE_KEEPER",
-            "name": "Elmo Judicante"
-        },
-        {
-            "id": "T4_HEAD_PLATE_AVALON",
-            "name": "Elmo da Bravura"
-        },
-        {
-            "id": "T4_HEAD_LEATHER_SET1",
-            "name": "Capuz de Mercenário"
-        },
-        {
-            "id": "T4_HEAD_LEATHER_SET2",
-            "name": "Capuz de Caçador"
-        },
-        {
-            "id": "T4_HEAD_LEATHER_SET3",
-            "name": "Capuz de Assassino"
-        },
-        {
-            "id": "T4_HEAD_LEATHER_UNDEAD",
-            "name": "Capuz de Espreitador"
-        },
-        {
-            "id": "T4_HEAD_LEATHER_HELL",
-            "name": "Capuz Inferial"
-        },
-        {
-            "id": "T4_HEAD_LEATHER_MORGANA",
-            "name": "Capuz Espectral"
-        },
-        {
-            "id": "T4_HEAD_LEATHER_AVALON",
-            "name": "Capuz de Andarilho da Névoa"
-        },
-        {
-            "id": "T4_HEAD_CLOTH_SET1",
-            "name": "Capote de Erudito"
-        },
-        {
-            "id": "T4_HEAD_CLOTH_SET2",
-            "name": "Capote de Clérigo"
-        },
-        {
-            "id": "T4_HEAD_CLOTH_SET3",
-            "name": "Capote de Mago"
-        },
-        {
-            "id": "T4_HEAD_CLOTH_KEEPER",
-            "name": "Capote de Druida"
-        },
-        {
-            "id": "T4_HEAD_CLOTH_HELL",
-            "name": "Capote Malévolo"
-        },
-        {
-            "id": "T4_HEAD_CLOTH_MORGANA",
-            "name": "Capote Sectário"
-        },
-        {
-            "id": "T4_HEAD_CLOTH_AVALON",
-            "name": "Capote Feérico"
-        }
-    ],
-    "armaduras": [
-        {
-            "id": "T4_ARMOR_PLATE_SET1",
-            "name": "Armadura de Soldado"
-        },
-        {
-            "id": "T4_ARMOR_PLATE_SET2",
-            "name": "Armadura de Cavaleiro"
-        },
-        {
-            "id": "T4_ARMOR_PLATE_SET3",
-            "name": "Armadura de Guardião"
-        },
-        {
-            "id": "T4_ARMOR_PLATE_ROYAL",
-            "name": "Armadura Real"
-        },
-        {
-            "id": "T4_ARMOR_PLATE_UNDEAD",
-            "name": "Armadura de Guarda-tumbas"
-        },
-        {
-            "id": "T4_ARMOR_PLATE_HELL",
-            "name": "Armadura Demônia"
-        },
-        {
-            "id": "T4_ARMOR_PLATE_KEEPER",
-            "name": "Armadura Judicante"
-        },
-        {
-            "id": "T4_ARMOR_PLATE_AVALON",
-            "name": "Armadura da Bravura"
-        },
-        {
-            "id": "T4_ARMOR_LEATHER_SET1",
-            "name": "Jaqueta de Mercenário"
-        },
-        {
-            "id": "T4_ARMOR_LEATHER_SET2",
-            "name": "Jaqueta de Caçador"
-        },
-        {
-            "id": "T4_ARMOR_LEATHER_SET3",
-            "name": "Jaqueta de Assassino"
-        },
-        {
-            "id": "T4_ARMOR_LEATHER_UNDEAD",
-            "name": "Jaqueta de Espreitador"
-        },
-        {
-            "id": "T4_ARMOR_LEATHER_HELL",
-            "name": "Jaqueta Inferial"
-        },
-        {
-            "id": "T4_ARMOR_LEATHER_MORGANA",
-            "name": "Jaqueta Espectral"
-        },
-        {
-            "id": "T4_ARMOR_LEATHER_AVALON",
-            "name": "Jaqueta de Andarilho da Névoa"
-        },
-        {
-            "id": "T4_ARMOR_CLOTH_SET1",
-            "name": "Robe de Erudito"
-        },
-        {
-            "id": "T4_ARMOR_CLOTH_SET2",
-            "name": "Robe de Clérigo"
-        },
-        {
-            "id": "T4_ARMOR_CLOTH_SET3",
-            "name": "Robe de Mago"
-        },
-        {
-            "id": "T4_ARMOR_CLOTH_KEEPER",
-            "name": "Robe de Druida"
-        },
-        {
-            "id": "T4_ARMOR_CLOTH_HELL",
-            "name": "Robe Malévolo"
-        },
-        {
-            "id": "T4_ARMOR_CLOTH_MORGANA",
-            "name": "Robe Sectário"
-        },
-        {
-            "id": "T4_ARMOR_CLOTH_AVALON",
-            "name": "Robe Feérico"
-        }
-    ],
-    "botas": [
-        {
-            "id": "T4_SHOES_PLATE_SET1",
-            "name": "Botas de Soldado"
-        },
-        {
-            "id": "T4_SHOES_PLATE_SET2",
-            "name": "Botas de Cavaleiro"
-        },
-        {
-            "id": "T4_SHOES_PLATE_SET3",
-            "name": "Botas de Guardião"
-        },
-        {
-            "id": "T4_SHOES_PLATE_ROYAL",
-            "name": "Botas Reais"
-        },
-        {
-            "id": "T4_SHOES_PLATE_UNDEAD",
-            "name": "Botas de Guarda-tumbas"
-        },
-        {
-            "id": "T4_SHOES_PLATE_HELL",
-            "name": "Botas Demônias"
-        },
-        {
-            "id": "T4_SHOES_PLATE_KEEPER",
-            "name": "Botas Judicantes"
-        },
-        {
-            "id": "T4_SHOES_PLATE_AVALON",
-            "name": "Botas da Bravura"
-        },
-        {
-            "id": "T4_SHOES_LEATHER_SET1",
-            "name": "Sapatos de Mercenário"
-        },
-        {
-            "id": "T4_SHOES_LEATHER_SET2",
-            "name": "Sapatos de Caçador"
-        },
-        {
-            "id": "T4_SHOES_LEATHER_SET3",
-            "name": "Sapatos de Assassino"
-        },
-        {
-            "id": "T4_SHOES_LEATHER_UNDEAD",
-            "name": "Sapatos de Espreitador"
-        },
-        {
-            "id": "T4_SHOES_LEATHER_HELL",
-            "name": "Sapatos Inferiais"
-        },
-        {
-            "id": "T4_SHOES_LEATHER_MORGANA",
-            "name": "Sapatos Espectrais"
-        },
-        {
-            "id": "T4_SHOES_LEATHER_AVALON",
-            "name": "Sapatos de Andarilho da Névoa"
-        },
-        {
-            "id": "T4_SHOES_CLOTH_SET1",
-            "name": "Sandálias de Erudito"
-        },
-        {
-            "id": "T4_SHOES_CLOTH_SET2",
-            "name": "Sandálias de Clérigo"
-        },
-        {
-            "id": "T4_SHOES_CLOTH_SET3",
-            "name": "Sandálias de Mago"
-        },
-        {
-            "id": "T4_SHOES_CLOTH_KEEPER",
-            "name": "Sandálias de Druida"
-        },
-        {
-            "id": "T4_SHOES_CLOTH_HELL",
-            "name": "Sandálias Malévolas"
-        },
-        {
-            "id": "T4_SHOES_CLOTH_MORGANA",
-            "name": "Sandálias Sectárias"
-        },
-        {
-            "id": "T4_SHOES_CLOTH_AVALON",
-            "name": "Sandálias Feéricas"
-        }
-    ],
-    "armas": [
-        {
-            "id": "T4_2H_CLAYMORE",
-            "name": "Espada de Duas Mãos"
-        },
-        {
-            "id": "T4_2H_DUALSWORD",
-            "name": "Espada Claymore"
-        },
-        {
-            "id": "T4_2H_CLAYMORE_MORGANA",
-            "name": "Espada Clarent"
-        },
-        {
-            "id": "T4_2H_DUALSWORD_UNDEAD",
-            "name": "Espada Galatinas"
-        },
-        {
-            "id": "T4_2H_CLAYMORE_ROYAL",
-            "name": "Espada Real"
-        },
-        {
-            "id": "T4_2H_DUALSWORD_AVALON",
-            "name": "Espada Avaloniana"
-        },
-        {
-            "id": "T4_2H_AXE",
-            "name": "Machado de Batalha"
-        },
-        {
-            "id": "T4_2H_HALBERD",
-            "name": "Machado de Carrasco"
-        },
-        {
-            "id": "T4_2H_HALBERD_HELL",
-            "name": "Machado Infernal"
-        },
-        {
-            "id": "T4_2H_DUALAXE_KEEPER",
-            "name": "Machado Bear Paws"
-        },
-        {
-            "id": "T4_2H_AXE_ROYAL",
-            "name": "Machado Real"
-        },
-        {
-            "id": "T4_2H_DUALAXE_AVALON",
-            "name": "Machado Avaloniano"
-        },
-        {
-            "id": "T4_MAIN_MACE",
-            "name": "Maça"
-        },
-        {
-            "id": "T4_2H_MACE",
-            "name": "Maça de Batalha"
-        },
-        {
-            "id": "T4_2H_FLAIL",
-            "name": "Maça de Martelo"
-        },
-        {
-            "id": "T4_2H_MACE_MORGANA",
-            "name": "Maça de Camlann"
-        },
-        {
-            "id": "T4_2H_MACE_ROYAL",
-            "name": "Maça Real"
-        },
-        {
-            "id": "T4_2H_MACE_AVALON",
-            "name": "Maça Avaloniana"
-        },
-        {
-            "id": "T4_2H_HAMMER",
-            "name": "Martelo"
-        },
-        {
-            "id": "T4_2H_POLEHAMMER",
-            "name": "Martelo de Guerra"
-        },
-        {
-            "id": "T4_2H_HAMMER_UNDEAD",
-            "name": "Martelo de Forge"
-        },
-        {
-            "id": "T4_2H_DUALHAMMER_HELL",
-            "name": "Martelo de Tombhammer"
-        },
-        {
-            "id": "T4_2H_HAMMER_ROYAL",
-            "name": "Martelo Real"
-        },
-        {
-            "id": "T4_2H_DUALHAMMER_AVALON",
-            "name": "Martelo Avaloniano"
-        },
-        {
-            "id": "T4_MAIN_SPEAR",
-            "name": "Lança"
-        },
-        {
-            "id": "T4_2H_SPEAR",
-            "name": "Lança de Pique"
-        },
-        {
-            "id": "T4_2H_GLAIVE",
-            "name": "Lança de Glaive"
-        },
-        {
-            "id": "T4_2H_SPEAR_KEEPER",
-            "name": "Lança de Heron"
-        },
-        {
-            "id": "T4_2H_SPEAR_ROYAL",
-            "name": "Lança Real"
-        },
-        {
-            "id": "T4_2H_SPEAR_AVALON",
-            "name": "Lança Avaloniana"
-        },
-        {
-            "id": "T4_2H_BOW",
-            "name": "Arco"
-        },
-        {
-            "id": "T4_2H_LONGBOW",
-            "name": "Arco Longo"
-        },
-        {
-            "id": "T4_2H_WARBOW",
-            "name": "Arco de Guerra"
-        },
-        {
-            "id": "T4_2H_BOW_HELL",
-            "name": "Arco de Wailing"
-        },
-        {
-            "id": "T4_2H_BOW_KEEPER",
-            "name": "Arco de Whispering"
-        },
-        {
-            "id": "T4_2H_BOW_ROYAL",
-            "name": "Arco Real"
-        },
-        {
-            "id": "T4_2H_BOW_AVALON",
-            "name": "Arco Avaloniano"
-        },
-        {
-            "id": "T4_MAIN_FIRESTAFF",
-            "name": "Cajado de Fogo"
-        },
-        {
-            "id": "T4_MAIN_FROSTSTAFF",
-            "name": "Cajado de Gelo"
-        },
-        {
-            "id": "T4_MAIN_ARCANESTAFF",
-            "name": "Cajado de Energia"
-        },
-        {
-            "id": "T4_MAIN_CURSEDSTAFF",
-            "name": "Cajado de Maldição"
-        },
-        {
-            "id": "T4_MAIN_NATURESTAFF",
-            "name": "Cajado de Natureza"
-        },
-        {
-            "id": "T4_MAIN_HOLYSTAFF",
-            "name": "Cajado Sagrado"
-        },
-        {
-            "id": "T4_MAIN_ENIGMATICSTAFF",
-            "name": "Cajado de Arcano"
-        },
-        {
-            "id": "T4_MAIN_NATURESTAFF_KEEPER",
-            "name": "Cajado Druídico"
-        },
-        {
-            "id": "T3_MAIN_DAGGER",
-            "name": "Adaga do Iniciante"
-        },
-        {
-            "id": "T4_MAIN_DAGGER",
-            "name": "Adaga do Adepto"
-        },
-        {
-            "id": "T4_MAIN_DAGGER@1",
-            "name": "Adaga do Adepto"
-        },
-        {
-            "id": "T4_MAIN_DAGGER@2",
-            "name": "Adaga do Adepto"
-        },
-        {
-            "id": "T4_MAIN_DAGGER@3",
-            "name": "Adaga do Adepto"
-        },
-        {
-            "id": "T4_MAIN_DAGGER@4",
-            "name": "Adaga do Adepto"
-        },
-        {
-            "id": "T5_MAIN_DAGGER",
-            "name": "Adaga do Perito"
-        },
-        {
-            "id": "T5_MAIN_DAGGER@1",
-            "name": "Adaga do Perito"
-        },
-        {
-            "id": "T5_MAIN_DAGGER@2",
-            "name": "Adaga do Perito"
-        },
-        {
-            "id": "T5_MAIN_DAGGER@3",
-            "name": "Adaga do Perito"
-        },
-        {
-            "id": "T5_MAIN_DAGGER@4",
-            "name": "Adaga do Perito"
-        },
-        {
-            "id": "T6_MAIN_DAGGER",
-            "name": "Adaga do Mestre"
-        },
-        {
-            "id": "T6_MAIN_DAGGER@1",
-            "name": "Adaga do Mestre"
-        },
-        {
-            "id": "T6_MAIN_DAGGER@2",
-            "name": "Adaga do Mestre"
-        },
-        {
-            "id": "T6_MAIN_DAGGER@3",
-            "name": "Adaga do Mestre"
-        },
-        {
-            "id": "T6_MAIN_DAGGER@4",
-            "name": "Adaga do Mestre"
-        },
-        {
-            "id": "T4_MAIN_DAGGER",
-            "name": "Adaga do Grão-mestre"
-        },
-        {
-            "id": "T4_MAIN_DAGGER@1",
-            "name": "Adaga do Grão-mestre"
-        },
-        {
-            "id": "T4_MAIN_DAGGER@2",
-            "name": "Adaga do Grão-mestre"
-        },
-        {
-            "id": "T4_MAIN_DAGGER@3",
-            "name": "Adaga do Grão-mestre"
-        },
-        {
-            "id": "T4_MAIN_DAGGER@4",
-            "name": "Adaga do Grão-mestre"
-        },
-        {
-            "id": "T8_MAIN_DAGGER",
-            "name": "Adaga do Ancião"
-        },
-        {
-            "id": "T8_MAIN_DAGGER@1",
-            "name": "Adaga do Ancião"
-        },
-        {
-            "id": "T8_MAIN_DAGGER@2",
-            "name": "Adaga do Ancião"
-        },
-        {
-            "id": "T8_MAIN_DAGGER@3",
-            "name": "Adaga do Ancião"
-        },
-        {
-            "id": "T8_MAIN_DAGGER@4",
-            "name": "Adaga do Ancião"
-        },
-        {
-            "id": "T4_2H_DAGGERPAIR",
-            "name": "Par de Adagas do Adepto"
-        },
-        {
-            "id": "T4_2H_DAGGERPAIR@1",
-            "name": "Par de Adagas do Adepto"
-        },
-        {
-            "id": "T4_2H_DAGGERPAIR@2",
-            "name": "Par de Adagas do Adepto"
-        },
-        {
-            "id": "T4_2H_DAGGERPAIR@3",
-            "name": "Par de Adagas do Adepto"
-        },
-        {
-            "id": "T4_2H_DAGGERPAIR@4",
-            "name": "Par de Adagas do Adepto"
-        },
-        {
-            "id": "T5_2H_DAGGERPAIR",
-            "name": "Par de Adagas do Perito"
-        },
-        {
-            "id": "T5_2H_DAGGERPAIR@1",
-            "name": "Par de Adagas do Perito"
-        },
-        {
-            "id": "T5_2H_DAGGERPAIR@2",
-            "name": "Par de Adagas do Perito"
-        },
-        {
-            "id": "T5_2H_DAGGERPAIR@3",
-            "name": "Par de Adagas do Perito"
-        },
-        {
-            "id": "T5_2H_DAGGERPAIR@4",
-            "name": "Par de Adagas do Perito"
-        },
-        {
-            "id": "T6_2H_DAGGERPAIR",
-            "name": "Par de Adagas do Mestre"
-        },
-        {
-            "id": "T6_2H_DAGGERPAIR@1",
-            "name": "Par de Adagas do Mestre"
-        },
-        {
-            "id": "T6_2H_DAGGERPAIR@2",
-            "name": "Par de Adagas do Mestre"
-        },
-        {
-            "id": "T6_2H_DAGGERPAIR@3",
-            "name": "Par de Adagas do Mestre"
-        },
-        {
-            "id": "T6_2H_DAGGERPAIR@4",
-            "name": "Par de Adagas do Mestre"
-        },
-        {
-            "id": "T4_2H_DAGGERPAIR",
-            "name": "Par de Adagas do Grão-mestre"
-        },
-        {
-            "id": "T4_2H_DAGGERPAIR@1",
-            "name": "Par de Adagas do Grão-mestre"
-        },
-        {
-            "id": "T4_2H_DAGGERPAIR@2",
-            "name": "Par de Adagas do Grão-mestre"
-        },
-        {
-            "id": "T4_2H_DAGGERPAIR@3",
-            "name": "Par de Adagas do Grão-mestre"
-        },
-        {
-            "id": "T4_2H_DAGGERPAIR@4",
-            "name": "Par de Adagas do Grão-mestre"
-        },
-        {
-            "id": "T8_2H_DAGGERPAIR",
-            "name": "Par de Adagas do Ancião"
-        },
-        {
-            "id": "T8_2H_DAGGERPAIR@1",
-            "name": "Par de Adagas do Ancião"
-        },
-        {
-            "id": "T8_2H_DAGGERPAIR@2",
-            "name": "Par de Adagas do Ancião"
-        },
-        {
-            "id": "T8_2H_DAGGERPAIR@3",
-            "name": "Par de Adagas do Ancião"
-        },
-        {
-            "id": "T8_2H_DAGGERPAIR@4",
-            "name": "Par de Adagas do Ancião"
-        },
-        {
-            "id": "T4_2H_CLAWPAIR",
-            "name": "Garras do Adepto"
-        },
-        {
-            "id": "T4_2H_CLAWPAIR@1",
-            "name": "Garras do Adepto"
-        },
-        {
-            "id": "T4_2H_CLAWPAIR@2",
-            "name": "Garras do Adepto"
-        },
-        {
-            "id": "T4_2H_CLAWPAIR@3",
-            "name": "Garras do Adepto"
-        },
-        {
-            "id": "T4_2H_CLAWPAIR@4",
-            "name": "Garras do Adepto"
-        },
-        {
-            "id": "T5_2H_CLAWPAIR",
-            "name": "Garras do Perito"
-        },
-        {
-            "id": "T5_2H_CLAWPAIR@1",
-            "name": "Garras do Perito"
-        },
-        {
-            "id": "T5_2H_CLAWPAIR@2",
-            "name": "Garras do Perito"
-        },
-        {
-            "id": "T5_2H_CLAWPAIR@3",
-            "name": "Garras do Perito"
-        },
-        {
-            "id": "T5_2H_CLAWPAIR@4",
-            "name": "Garras do Perito"
-        },
-        {
-            "id": "T6_2H_CLAWPAIR",
-            "name": "Garras do Mestre"
-        },
-        {
-            "id": "T6_2H_CLAWPAIR@1",
-            "name": "Garras do Mestre"
-        },
-        {
-            "id": "T6_2H_CLAWPAIR@2",
-            "name": "Garras do Mestre"
-        },
-        {
-            "id": "T6_2H_CLAWPAIR@3",
-            "name": "Garras do Mestre"
-        },
-        {
-            "id": "T6_2H_CLAWPAIR@4",
-            "name": "Garras do Mestre"
-        },
-        {
-            "id": "T4_2H_CLAWPAIR",
-            "name": "Garras do Grão-mestre"
-        },
-        {
-            "id": "T4_2H_CLAWPAIR@1",
-            "name": "Garras do Grão-mestre"
-        },
-        {
-            "id": "T4_2H_CLAWPAIR@2",
-            "name": "Garras do Grão-mestre"
-        },
-        {
-            "id": "T4_2H_CLAWPAIR@3",
-            "name": "Garras do Grão-mestre"
-        },
-        {
-            "id": "T4_2H_CLAWPAIR@4",
-            "name": "Garras do Grão-mestre"
-        },
-        {
-            "id": "T8_2H_CLAWPAIR",
-            "name": "Garras do Ancião"
-        },
-        {
-            "id": "T8_2H_CLAWPAIR@1",
-            "name": "Garras do Ancião"
-        },
-        {
-            "id": "T8_2H_CLAWPAIR@2",
-            "name": "Garras do Ancião"
-        },
-        {
-            "id": "T8_2H_CLAWPAIR@3",
-            "name": "Garras do Ancião"
-        },
-        {
-            "id": "T8_2H_CLAWPAIR@4",
-            "name": "Garras do Ancião"
-        },
-        {
-            "id": "T4_MAIN_RAPIER_MORGANA",
-            "name": "Dessangrador do Adepto"
-        },
-        {
-            "id": "T4_MAIN_RAPIER_MORGANA@1",
-            "name": "Dessangrador do Adepto"
-        },
-        {
-            "id": "T4_MAIN_RAPIER_MORGANA@2",
-            "name": "Dessangrador do Adepto"
-        },
-        {
-            "id": "T4_MAIN_RAPIER_MORGANA@3",
-            "name": "Dessangrador do Adepto"
-        },
-        {
-            "id": "T4_MAIN_RAPIER_MORGANA@4",
-            "name": "Dessangrador do Adepto"
-        },
-        {
-            "id": "T5_MAIN_RAPIER_MORGANA",
-            "name": "Dessangrador do Perito"
-        },
-        {
-            "id": "T5_MAIN_RAPIER_MORGANA@1",
-            "name": "Dessangrador do Perito"
-        },
-        {
-            "id": "T5_MAIN_RAPIER_MORGANA@2",
-            "name": "Dessangrador do Perito"
-        },
-        {
-            "id": "T5_MAIN_RAPIER_MORGANA@3",
-            "name": "Dessangrador do Perito"
-        },
-        {
-            "id": "T5_MAIN_RAPIER_MORGANA@4",
-            "name": "Dessangrador do Perito"
-        },
-        {
-            "id": "T6_MAIN_RAPIER_MORGANA",
-            "name": "Dessangrador do Mestre"
-        },
-        {
-            "id": "T6_MAIN_RAPIER_MORGANA@1",
-            "name": "Dessangrador do Mestre"
-        },
-        {
-            "id": "T6_MAIN_RAPIER_MORGANA@2",
-            "name": "Dessangrador do Mestre"
-        },
-        {
-            "id": "T6_MAIN_RAPIER_MORGANA@3",
-            "name": "Dessangrador do Mestre"
-        },
-        {
-            "id": "T6_MAIN_RAPIER_MORGANA@4",
-            "name": "Dessangrador do Mestre"
-        },
-        {
-            "id": "T4_MAIN_RAPIER_MORGANA",
-            "name": "Dessangrador do Grão-mestre"
-        },
-        {
-            "id": "T4_MAIN_RAPIER_MORGANA@1",
-            "name": "Dessangrador do Grão-mestre"
-        },
-        {
-            "id": "T4_MAIN_RAPIER_MORGANA@2",
-            "name": "Dessangrador do Grão-mestre"
-        },
-        {
-            "id": "T4_MAIN_RAPIER_MORGANA@3",
-            "name": "Dessangrador do Grão-mestre"
-        },
-        {
-            "id": "T4_MAIN_RAPIER_MORGANA@4",
-            "name": "Dessangrador do Grão-mestre"
-        },
-        {
-            "id": "T8_MAIN_RAPIER_MORGANA",
-            "name": "Dessangrador do Ancião"
-        },
-        {
-            "id": "T8_MAIN_RAPIER_MORGANA@1",
-            "name": "Dessangrador do Ancião"
-        },
-        {
-            "id": "T8_MAIN_RAPIER_MORGANA@2",
-            "name": "Dessangrador do Ancião"
-        },
-        {
-            "id": "T8_MAIN_RAPIER_MORGANA@3",
-            "name": "Dessangrador do Ancião"
-        },
-        {
-            "id": "T8_MAIN_RAPIER_MORGANA@4",
-            "name": "Dessangrador do Ancião"
-        },
-        {
-            "id": "T4_MAIN_DAGGER_HELL",
-            "name": "Presa Demoníaca do Adepto"
-        },
-        {
-            "id": "T4_MAIN_DAGGER_HELL@1",
-            "name": "Presa Demoníaca do Adepto"
-        },
-        {
-            "id": "T4_MAIN_DAGGER_HELL@2",
-            "name": "Presa Demoníaca do Adepto"
-        },
-        {
-            "id": "T4_MAIN_DAGGER_HELL@3",
-            "name": "Presa Demoníaca do Adepto"
-        },
-        {
-            "id": "T4_MAIN_DAGGER_HELL@4",
-            "name": "Presa Demoníaca do Adepto"
-        },
-        {
-            "id": "T5_MAIN_DAGGER_HELL",
-            "name": "Presa Demoníaca do Perito"
-        },
-        {
-            "id": "T5_MAIN_DAGGER_HELL@1",
-            "name": "Presa Demoníaca do Perito"
-        },
-        {
-            "id": "T5_MAIN_DAGGER_HELL@2",
-            "name": "Presa Demoníaca do Perito"
-        },
-        {
-            "id": "T5_MAIN_DAGGER_HELL@3",
-            "name": "Presa Demoníaca do Perito"
-        },
-        {
-            "id": "T5_MAIN_DAGGER_HELL@4",
-            "name": "Presa Demoníaca do Perito"
-        },
-        {
-            "id": "T6_MAIN_DAGGER_HELL",
-            "name": "Presa Demoníaca do Mestre"
-        },
-        {
-            "id": "T6_MAIN_DAGGER_HELL@1",
-            "name": "Presa Demoníaca do Mestre"
-        },
-        {
-            "id": "T6_MAIN_DAGGER_HELL@2",
-            "name": "Presa Demoníaca do Mestre"
-        },
-        {
-            "id": "T6_MAIN_DAGGER_HELL@3",
-            "name": "Presa Demoníaca do Mestre"
-        },
-        {
-            "id": "T6_MAIN_DAGGER_HELL@4",
-            "name": "Presa Demoníaca do Mestre"
-        },
-        {
-            "id": "T4_MAIN_DAGGER_HELL",
-            "name": "Presa Demoníaca do Grão-mestre"
-        },
-        {
-            "id": "T4_MAIN_DAGGER_HELL@1",
-            "name": "Presa Demoníaca do Grão-mestre"
-        },
-        {
-            "id": "T4_MAIN_DAGGER_HELL@2",
-            "name": "Presa Demoníaca do Grão-mestre"
-        },
-        {
-            "id": "T4_MAIN_DAGGER_HELL@3",
-            "name": "Presa Demoníaca do Grão-mestre"
-        },
-        {
-            "id": "T4_2H_QUARTERSTAFF",
-            "name": "Bastão de Guerra"
-        },
-        {
-            "id": "T4_2H_IRONCLADEDSTAFF",
-            "name": "Bastão de Iron-clad"
-        },
-        {
-            "id": "T4_2H_QUARTERSTAFF_MORGANA",
-            "name": "Bastão de Black Monk"
-        },
-        {
-            "id": "T4_2H_QUARTERSTAFF_AVALON",
-            "name": "Bastão de Grailseeker"
-        },
-        {
-            "id": "T4_MAIN_CURSEDSTAFF",
-            "name": "Cajado Amaldiçoado"
-        },
-        {
-            "id": "T4_2H_CURSEDSTAFF",
-            "name": "Cajado Amaldiçoado Elevado"
-        },
-        {
-            "id": "T4_2H_DEMONICSTAFF",
-            "name": "Cajado Demoníaco"
-        },
-        {
-            "id": "T4_MAIN_CURSEDSTAFF_UNDEAD",
-            "name": "Cajado Execrado"
-        },
-        {
-            "id": "T4_2H_SKULLORB_HELL",
-            "name": "Caveira Amaldiçoada"
-        },
-        {
-            "id": "T4_2H_CURSEDSTAFF_MORGANA",
-            "name": "Cajado da Danação"
-        },
-        {
-            "id": "T4_2H_SKULLORB_HELL",
-            "name": "Crânio Amaldiçoado"
-        },
-        {
-            "id": "T4_2H_SHADOWCALLER",
-            "name": "Chama-sombra"
-        },
-        {
-            "id": "T4_MAIN_CURSEDSTAFF_CRYSTAL",
-            "name": "Cajado pútrido"
-        }
-    ],
-    "secundaria": [
-        {
-            "id": "T4_OFF_BOOK",
-            "name": "Tomo de Feitiços"
-        },
-        {
-            "id": "T4_OFF_DEMONSKULL",
-            "name": "Tomo de Conhecimento"
-        },
-        {
-            "id": "T4_OFF_SHIELD",
-            "name": "Escudo"
-        },
-        {
-            "id": "T4_OFF_SHIELD_HELL",
-            "name": "Escudo de Caitiff"
-        },
-        {
-            "id": "T4_OFF_SHIELD_UNDEAD",
-            "name": "Escudo Sarcófago"
-        },
-        {
-            "id": "T4_OFF_SHIELD_AVALON",
-            "name": "Escudo de Tormenta"
-        },
-        {
-            "id": "T4_OFF_SHIELD_ROYAL",
-            "name": "Escudo de Leão"
-        },
-        {
-            "id": "T4_OFF_TORCH",
-            "name": "Tocha"
-        },
-        {
-            "id": "T4_OFF_TORCH_KEEPER",
-            "name": "Tocha do Farol"
-        },
-        {
-            "id": "T4_OFF_DEMONSKULL_HELL",
-            "name": "Crânio Amaldiçoado"
-        },
-        {
-            "id": "T4_OFF_TOTEM_KEEPER",
-            "name": "Totem Druídico"
-        },
-        {
-            "id": "T4_OFF_DEMONSKULL_HELL",
-            "name": "Muisec"
-        },
-        {
-            "id": "T4_OFF_ORB_MORGANA",
-            "name": "Cetro de Miséria"
-        },
-        {
-            "id": "T4_OFF_CENSER_AVALON",
-            "name": "Cetro Avalonian"
-        }
-    ],
-    "capas": [
-        {
-            "id": "T4_CAPEITEM_FW_THETFORD",
-            "name": "Capa de Thetford"
-        },
-        {
-            "id": "T4_CAPEITEM_FW_FORTSTERLING",
-            "name": "Capa de Fort Sterling"
-        },
-        {
-            "id": "T4_CAPEITEM_FW_LYMHURST",
-            "name": "Capa de Lymhurst"
-        },
-        {
-            "id": "T4_CAPEITEM_FW_MARTLOCK",
-            "name": "Capa de Martlock"
-        },
-        {
-            "id": "T4_CAPEITEM_FW_BRIDGEWATCH",
-            "name": "Capa de Bridgewatch"
-        },
-        {
-            "id": "T4_CAPEITEM_FW_CAERLEON",
-            "name": "Capa de Caerleon"
-        },
-        {
-            "id": "T4_CAPEITEM_MORGANA",
-            "name": "Capa de Morgana"
-        },
-        {
-            "id": "T4_CAPEITEM_DEMON",
-            "name": "Capa de Demônio"
-        },
-        {
-            "id": "T4_CAPEITEM_UNDEAD",
-            "name": "Capa de Undead"
-        },
-        {
-            "id": "T4_CAPEITEM_AVALON",
-            "name": "Capa Avaloniana"
-        }
-    ],
-    "pocoes": [
-        {
-            "id": "T2_POTION_ENERGY",
-            "name": "Poção de Energia Menor"
-        },
-        {
-            "id": "T2_POTION_ENERGY@1",
-            "name": "Poção de Energia Menor"
-        },
-        {
-            "id": "T2_POTION_ENERGY@2",
-            "name": "Poção de Energia Menor"
-        },
-        {
-            "id": "T2_POTION_ENERGY@3",
-            "name": "Poção de Energia Menor"
-        },
-        {
-            "id": "T2_POTION_HEAL",
-            "name": "Poção de Cura Menor"
-        },
-        {
-            "id": "T2_POTION_HEAL@1",
-            "name": "Poção de Cura Menor"
-        },
-        {
-            "id": "T2_POTION_HEAL@2",
-            "name": "Poção de Cura Menor"
-        },
-        {
-            "id": "T2_POTION_HEAL@3",
-            "name": "Poção de Cura Menor"
-        },
-        {
-            "id": "UNIQUE_FOCUSPOTION_TUTORIAL_01",
-            "name": "@ITEMS_UNIQUE_FOCUSPOTION_TUTORIAL_01"
-        },
-        {
-            "id": "T3_FOCUSPOTION_NONTRADABLE",
-            "name": "Poção de Restauração de Foco do Iniciante"
-        },
-        {
-            "id": "T3_POTION_ACID",
-            "name": "Poção Ácida Menor"
-        },
-        {
-            "id": "T3_POTION_ACID@1",
-            "name": "Poção Ácida Menor"
-        },
-        {
-            "id": "T3_POTION_ACID@2",
-            "name": "Poção Ácida Menor"
-        },
-        {
-            "id": "T3_POTION_ACID@3",
-            "name": "Poção Ácida Menor"
-        },
-        {
-            "id": "T3_POTION_CLEANSE2",
-            "name": "Poção Purificadora Menor"
-        },
-        {
-            "id": "T3_POTION_CLEANSE2@1",
-            "name": "Poção Purificadora Menor"
-        },
-        {
-            "id": "T3_POTION_CLEANSE2@2",
-            "name": "Poção Purificadora Menor"
-        },
-        {
-            "id": "T3_POTION_CLEANSE2@3",
-            "name": "Poção Purificadora Menor"
-        },
-        {
-            "id": "T3_POTION_MOB_RESET",
-            "name": "Poção Calmante Menor"
-        },
-        {
-            "id": "T3_POTION_MOB_RESET@1",
-            "name": "Poção Calmante Menor"
-        },
-        {
-            "id": "T3_POTION_MOB_RESET@2",
-            "name": "Poção Calmante Menor"
-        },
-        {
-            "id": "T3_POTION_MOB_RESET@3",
-            "name": "Poção Calmante Menor"
-        },
-        {
-            "id": "T3_POTION_REVIVE",
-            "name": "Poção de Crescimento Menor"
-        },
-        {
-            "id": "T3_POTION_REVIVE@1",
-            "name": "Poção de Crescimento Menor"
-        },
-        {
-            "id": "T3_POTION_REVIVE@2",
-            "name": "Poção de Crescimento Menor"
-        },
-        {
-            "id": "T3_POTION_REVIVE@3",
-            "name": "Poção de Crescimento Menor"
-        },
-        {
-            "id": "T3_POTION_SLOWFIELD",
-            "name": "Poção Pegajosa Menor"
-        },
-        {
-            "id": "T3_POTION_SLOWFIELD@1",
-            "name": "Poção Pegajosa Menor"
-        },
-        {
-            "id": "T3_POTION_SLOWFIELD@2",
-            "name": "Poção Pegajosa Menor"
-        },
-        {
-            "id": "T3_POTION_SLOWFIELD@3",
-            "name": "Poção Pegajosa Menor"
-        },
-        {
-            "id": "T3_POTION_STONESKIN",
-            "name": "Poção de Resistência Menor"
-        },
-        {
-            "id": "T3_POTION_STONESKIN@1",
-            "name": "Poção de Resistência Menor"
-        },
-        {
-            "id": "T3_POTION_STONESKIN@2",
-            "name": "Poção de Resistência Menor"
-        },
-        {
-            "id": "T3_POTION_STONESKIN@3",
-            "name": "Poção de Resistência Menor"
-        },
-        {
-            "id": "T4_FOCUSPOTION_NONTRADABLE",
-            "name": "Poção de Restauração de Foco do Adepto"
-        },
-        {
-            "id": "T4_POTION_BERSERK",
-            "name": "Poção de Fúria Menor"
-        },
-        {
-            "id": "T4_POTION_BERSERK@1",
-            "name": "Poção de Fúria Menor"
-        },
-        {
-            "id": "T4_POTION_BERSERK@2",
-            "name": "Poção de Fúria Menor"
-        },
-        {
-            "id": "T4_POTION_BERSERK@3",
-            "name": "Poção de Fúria Menor"
-        },
-        {
-            "id": "T4_POTION_COOLDOWN",
-            "name": "Poção Venenosa Menor"
-        },
-        {
-            "id": "T4_POTION_COOLDOWN@1",
-            "name": "Poção Venenosa Menor"
-        },
-        {
-            "id": "T4_POTION_COOLDOWN@2",
-            "name": "Poção Venenosa Menor"
-        },
-        {
-            "id": "T4_POTION_COOLDOWN@3",
-            "name": "Poção Venenosa Menor"
-        },
-        {
-            "id": "T4_POTION_ENERGY",
-            "name": "Poção de Energia"
-        },
-        {
-            "id": "T4_POTION_ENERGY@1",
-            "name": "Poção de Energia"
-        },
-        {
-            "id": "T4_POTION_ENERGY@2",
-            "name": "Poção de Energia"
-        },
-        {
-            "id": "T4_POTION_ENERGY@3",
-            "name": "Poção de Energia"
-        },
-        {
-            "id": "T4_POTION_GATHER",
-            "name": "Poção de Coleta Menor"
-        },
-        {
-            "id": "T4_POTION_GATHER@1",
-            "name": "Poção de Coleta Menor"
-        },
-        {
-            "id": "T4_POTION_GATHER@2",
-            "name": "Poção de Coleta Menor"
-        },
-        {
-            "id": "T4_POTION_GATHER@3",
-            "name": "Poção de Coleta Menor"
-        },
-        {
-            "id": "T4_POTION_HEAL",
-            "name": "Poção de Cura"
-        },
-        {
-            "id": "T4_POTION_HEAL@1",
-            "name": "Poção de Cura"
-        },
-        {
-            "id": "T4_POTION_HEAL@2",
-            "name": "Poção de Cura"
-        },
-        {
-            "id": "T4_POTION_HEAL@3",
-            "name": "Poção de Cura"
-        },
-        {
-            "id": "T4_POTION_LAVA",
-            "name": "Poção Infernal Menor"
-        },
-        {
-            "id": "T4_POTION_LAVA@1",
-            "name": "Poção Infernal Menor"
-        },
-        {
-            "id": "T4_POTION_LAVA@2",
-            "name": "Poção Infernal Menor"
-        },
-        {
-            "id": "T4_POTION_LAVA@3",
-            "name": "Poção Infernal Menor"
-        },
-        {
-            "id": "T4_POTION_TORNADO",
-            "name": "Tornado Engarrafado Menor"
-        },
-        {
-            "id": "T4_POTION_TORNADO@1",
-            "name": "Tornado Engarrafado Menor"
-        },
-        {
-            "id": "T4_POTION_TORNADO@2",
-            "name": "Tornado Engarrafado Menor"
-        },
-        {
-            "id": "T4_POTION_TORNADO@3",
-            "name": "Tornado Engarrafado Menor"
-        },
-        {
-            "id": "T5_FOCUSPOTION_NONTRADABLE",
-            "name": "Poção de Restauração de Foco do Perito"
-        },
-        {
-            "id": "T5_POTION_ACID",
-            "name": "Poção Ácida"
-        },
-        {
-            "id": "T5_POTION_ACID@1",
-            "name": "Poção Ácida"
-        },
-        {
-            "id": "T5_POTION_ACID@2",
-            "name": "Poção Ácida"
-        },
-        {
-            "id": "T5_POTION_ACID@3",
-            "name": "Poção Ácida"
-        },
-        {
-            "id": "T5_POTION_CLEANSE2",
-            "name": "Poção Purificadora"
-        },
-        {
-            "id": "T5_POTION_CLEANSE2@1",
-            "name": "Poção Purificadora"
-        },
-        {
-            "id": "T5_POTION_CLEANSE2@2",
-            "name": "Poção Purificadora"
-        },
-        {
-            "id": "T5_POTION_CLEANSE2@3",
-            "name": "Poção Purificadora"
-        },
-        {
-            "id": "T5_POTION_MOB_RESET",
-            "name": "Poção Calmante"
-        },
-        {
-            "id": "T5_POTION_MOB_RESET@1",
-            "name": "Poção Calmante"
-        },
-        {
-            "id": "T5_POTION_MOB_RESET@2",
-            "name": "Poção Calmante"
-        },
-        {
-            "id": "T5_POTION_MOB_RESET@3",
-            "name": "Poção Calmante"
-        },
-        {
-            "id": "T5_POTION_REVIVE",
-            "name": "Poção de Crescimento"
-        },
-        {
-            "id": "T5_POTION_REVIVE@1",
-            "name": "Poção de Crescimento"
-        },
-        {
-            "id": "T5_POTION_REVIVE@2",
-            "name": "Poção de Crescimento"
-        },
-        {
-            "id": "T5_POTION_REVIVE@3",
-            "name": "Poção de Crescimento"
-        },
-        {
-            "id": "T5_POTION_SLOWFIELD",
-            "name": "Poção Pegajosa"
-        },
-        {
-            "id": "T5_POTION_SLOWFIELD@1",
-            "name": "Poção Pegajosa"
-        },
-        {
-            "id": "T5_POTION_SLOWFIELD@2",
-            "name": "Poção Pegajosa"
-        },
-        {
-            "id": "T5_POTION_SLOWFIELD@3",
-            "name": "Poção Pegajosa"
-        },
-        {
-            "id": "T5_POTION_STONESKIN",
-            "name": "Poção de Resistência"
-        },
-        {
-            "id": "T5_POTION_STONESKIN@1",
-            "name": "Poção de Resistência"
-        },
-        {
-            "id": "T5_POTION_STONESKIN@2",
-            "name": "Poção de Resistência"
-        },
-        {
-            "id": "T5_POTION_STONESKIN@3",
-            "name": "Poção de Resistência"
-        },
-        {
-            "id": "T6_FOCUSPOTION_NONTRADABLE",
-            "name": "Poção de Restauração de Foco do Mestre"
-        },
-        {
-            "id": "T6_POTION_BERSERK",
-            "name": "Poção de Fúria"
-        },
-        {
-            "id": "T6_POTION_BERSERK@1",
-            "name": "Poção de Fúria"
-        },
-        {
-            "id": "T6_POTION_BERSERK@2",
-            "name": "Poção de Fúria"
-        },
-        {
-            "id": "T6_POTION_BERSERK@3",
-            "name": "Poção de Fúria"
-        },
-        {
-            "id": "T6_POTION_COOLDOWN",
-            "name": "Poção Venenosa"
-        },
-        {
-            "id": "T6_POTION_COOLDOWN@1",
-            "name": "Poção Venenosa"
-        },
-        {
-            "id": "T6_POTION_COOLDOWN@2",
-            "name": "Poção Venenosa"
-        },
-        {
-            "id": "T6_POTION_COOLDOWN@3",
-            "name": "Poção Venenosa"
-        },
-        {
-            "id": "T6_POTION_ENERGY",
-            "name": "Poção de Energia Maior"
-        },
-        {
-            "id": "T6_POTION_ENERGY@1",
-            "name": "Poção de Energia Maior"
-        },
-        {
-            "id": "T6_POTION_ENERGY@2",
-            "name": "Poção de Energia Maior"
-        },
-        {
-            "id": "T6_POTION_ENERGY@3",
-            "name": "Poção de Energia Maior"
-        },
-        {
-            "id": "T6_POTION_GATHER",
-            "name": "Poção de Coleta"
-        },
-        {
-            "id": "T6_POTION_GATHER@1",
-            "name": "Poção de Coleta"
-        },
-        {
-            "id": "T6_POTION_GATHER@2",
-            "name": "Poção de Coleta"
-        },
-        {
-            "id": "T6_POTION_GATHER@3",
-            "name": "Poção de Coleta"
-        },
-        {
-            "id": "T6_POTION_HEAL",
-            "name": "Poção de Cura Maior"
-        },
-        {
-            "id": "T6_POTION_HEAL@1",
-            "name": "Poção de Cura Maior"
-        },
-        {
-            "id": "T6_POTION_HEAL@2",
-            "name": "Poção de Cura Maior"
-        },
-        {
-            "id": "T6_POTION_HEAL@3",
-            "name": "Poção de Cura Maior"
-        },
-        {
-            "id": "T6_POTION_LAVA",
-            "name": "Poção Infernal"
-        },
-        {
-            "id": "T6_POTION_LAVA@1",
-            "name": "Poção Infernal"
-        },
-        {
-            "id": "T6_POTION_LAVA@2",
-            "name": "Poção Infernal"
-        },
-        {
-            "id": "T6_POTION_LAVA@3",
-            "name": "Poção Infernal"
-        },
-        {
-            "id": "T6_POTION_TORNADO",
-            "name": "Tornado Engarrafado"
-        },
-        {
-            "id": "T6_POTION_TORNADO@1",
-            "name": "Tornado Engarrafado"
-        },
-        {
-            "id": "T6_POTION_TORNADO@2",
-            "name": "Tornado Engarrafado"
-        },
-        {
-            "id": "T6_POTION_TORNADO@3",
-            "name": "Tornado Engarrafado"
-        },
-        {
-            "id": "T4_POTION_ACID",
-            "name": "Poção Ácida Maior"
-        },
-        {
-            "id": "T4_POTION_ACID@1",
-            "name": "Poção Ácida Maior"
-        },
-        {
-            "id": "T4_POTION_ACID@2",
-            "name": "Poção Ácida Maior"
-        },
-        {
-            "id": "T4_POTION_ACID@3",
-            "name": "Poção Ácida Maior"
-        },
-        {
-            "id": "T4_POTION_CLEANSE2",
-            "name": "Poção Purificadora Maior"
-        },
-        {
-            "id": "T4_POTION_CLEANSE2@1",
-            "name": "Poção Purificadora Maior"
-        },
-        {
-            "id": "T4_POTION_CLEANSE2@2",
-            "name": "Poção Purificadora Maior"
-        },
-        {
-            "id": "T4_POTION_CLEANSE2@3",
-            "name": "Poção Purificadora Maior"
-        },
-        {
-            "id": "T4_POTION_MOB_RESET",
-            "name": "Poção Calmante Maior"
-        },
-        {
-            "id": "T4_POTION_MOB_RESET@1",
-            "name": "Poção Calmante Maior"
-        },
-        {
-            "id": "T4_POTION_MOB_RESET@2",
-            "name": "Poção Calmante Maior"
-        },
-        {
-            "id": "T4_POTION_MOB_RESET@3",
-            "name": "Poção Calmante Maior"
-        },
-        {
-            "id": "T4_POTION_REVIVE",
-            "name": "Poção de Crescimento Maior"
-        },
-        {
-            "id": "T4_POTION_REVIVE@1",
-            "name": "Poção de Crescimento Maior"
-        },
-        {
-            "id": "T4_POTION_REVIVE@2",
-            "name": "Poção de Crescimento Maior"
-        },
-        {
-            "id": "T4_POTION_REVIVE@3",
-            "name": "Poção de Crescimento Maior"
-        },
-        {
-            "id": "T4_POTION_SLOWFIELD",
-            "name": "Poção Pegajosa Maior"
-        },
-        {
-            "id": "T4_POTION_SLOWFIELD@1",
-            "name": "Poção Pegajosa Maior"
-        },
-        {
-            "id": "T4_POTION_SLOWFIELD@2",
-            "name": "Poção Pegajosa Maior"
-        },
-        {
-            "id": "T4_POTION_SLOWFIELD@3",
-            "name": "Poção Pegajosa Maior"
-        },
-        {
-            "id": "T4_POTION_STONESKIN",
-            "name": "Poção de Resistência Maior"
-        },
-        {
-            "id": "T4_POTION_STONESKIN@1",
-            "name": "Poção de Resistência Maior"
-        },
-        {
-            "id": "T4_POTION_STONESKIN@2",
-            "name": "Poção de Resistência Maior"
-        },
-        {
-            "id": "T4_POTION_STONESKIN@3",
-            "name": "Poção de Resistência Maior"
-        },
-        {
-            "id": "UNIQUE_FOCUSPOTION_ADC_GENERAL_01",
-            "name": "@ITEMS_UNIQUE_FOCUSPOTION_ADC_GENERAL_01"
-        },
-        {
-            "id": "UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01",
-            "name": "Poção de Restauração de Foco"
-        },
-        {
-            "id": "T8_FOCUSPOTION_NONTRADABLE",
-            "name": "Poção de Restauração de Foco do Ancião"
-        },
-        {
-            "id": "T8_POTION_BERSERK",
-            "name": "Poção de Fúria Maior"
-        },
-        {
-            "id": "T8_POTION_BERSERK@1",
-            "name": "Poção de Fúria Maior"
-        },
-        {
-            "id": "T8_POTION_BERSERK@2",
-            "name": "Poção de Fúria Maior"
-        },
-        {
-            "id": "T8_POTION_BERSERK@3",
-            "name": "Poção de Fúria Maior"
-        },
-        {
-            "id": "T8_POTION_CLEANSE",
-            "name": "Poção de Invisibilidade"
-        },
-        {
-            "id": "T8_POTION_CLEANSE@1",
-            "name": "Poção de Invisibilidade"
-        },
-        {
-            "id": "T8_POTION_CLEANSE@2",
-            "name": "Poção de Invisibilidade"
-        },
-        {
-            "id": "T8_POTION_CLEANSE@3",
-            "name": "Poção de Invisibilidade"
-        },
-        {
-            "id": "T8_POTION_COOLDOWN",
-            "name": "Poção Venenosa Maior"
-        },
-        {
-            "id": "T8_POTION_COOLDOWN@1",
-            "name": "Poção Venenosa Maior"
-        },
-        {
-            "id": "T8_POTION_COOLDOWN@2",
-            "name": "Poção Venenosa Maior"
-        },
-        {
-            "id": "T8_POTION_COOLDOWN@3",
-            "name": "Poção Venenosa Maior"
-        },
-        {
-            "id": "T8_POTION_GATHER",
-            "name": "Poção de Coleta Maior"
-        },
-        {
-            "id": "T8_POTION_GATHER@1",
-            "name": "Poção de Coleta Maior"
-        },
-        {
-            "id": "T8_POTION_GATHER@2",
-            "name": "Poção de Coleta Maior"
-        },
-        {
-            "id": "T8_POTION_GATHER@3",
-            "name": "Poção de Coleta Maior"
-        },
-        {
-            "id": "T8_POTION_LAVA",
-            "name": "Poção Infernal Maior"
-        },
-        {
-            "id": "T8_POTION_LAVA@1",
-            "name": "Poção Infernal Maior"
-        },
-        {
-            "id": "T8_POTION_LAVA@2",
-            "name": "Poção Infernal Maior"
-        },
-        {
-            "id": "T8_POTION_LAVA@3",
-            "name": "Poção Infernal Maior"
-        },
-        {
-            "id": "T8_POTION_TORNADO",
-            "name": "Tornado Engarrafado Maior"
-        },
-        {
-            "id": "T8_POTION_TORNADO@1",
-            "name": "Tornado Engarrafado Maior"
-        },
-        {
-            "id": "T8_POTION_TORNADO@2",
-            "name": "Tornado Engarrafado Maior"
-        },
-        {
-            "id": "T8_POTION_TORNADO@3",
-            "name": "Tornado Engarrafado Maior"
-        }
-    ],
-    "comidas": [
-        {
-            "id": "T1_MEAL_GRILLEDFISH",
-            "name": "Peixe Grelhado"
-        },
-        {
-            "id": "T1_MEAL_SEAWEEDSALAD",
-            "name": "Salada de Algas"
-        },
-        {
-            "id": "T1_MEAL_SOUP",
-            "name": "Sopa de Cenoura"
-        },
-        {
-            "id": "T1_MEAL_SOUP@1",
-            "name": "Sopa de Cenoura"
-        },
-        {
-            "id": "T1_MEAL_SOUP@2",
-            "name": "Sopa de Cenoura"
-        },
-        {
-            "id": "T1_MEAL_SOUP@3",
-            "name": "Sopa de Cenoura"
-        },
-        {
-            "id": "T1_MEAL_SOUP_FISH",
-            "name": "Sopa de Mexilhão Esverdeado"
-        },
-        {
-            "id": "T1_MEAL_SOUP_FISH@1",
-            "name": "Sopa de Mexilhão Esverdeado"
-        },
-        {
-            "id": "T1_MEAL_SOUP_FISH@2",
-            "name": "Sopa de Mexilhão Esverdeado"
-        },
-        {
-            "id": "T1_MEAL_SOUP_FISH@3",
-            "name": "Sopa de Mexilhão Esverdeado"
-        },
-        {
-            "id": "T2_MEAL_SALAD",
-            "name": "Salada de Feijão"
-        },
-        {
-            "id": "T2_MEAL_SALAD@1",
-            "name": "Salada de Feijão"
-        },
-        {
-            "id": "T2_MEAL_SALAD@2",
-            "name": "Salada de Feijão"
-        },
-        {
-            "id": "T2_MEAL_SALAD@3",
-            "name": "Salada de Feijão"
-        },
-        {
-            "id": "T2_MEAL_SALAD_FISH",
-            "name": "Salada de Lula das Águas rasas"
-        },
-        {
-            "id": "T2_MEAL_SALAD_FISH@1",
-            "name": "Salada de Lula das Águas rasas"
-        },
-        {
-            "id": "T2_MEAL_SALAD_FISH@2",
-            "name": "Salada de Lula das Águas rasas"
-        },
-        {
-            "id": "T2_MEAL_SALAD_FISH@3",
-            "name": "Salada de Lula das Águas rasas"
-        },
-        {
-            "id": "T3_MEAL_SOUP",
-            "name": "Sopa de Trigo"
-        },
-        {
-            "id": "T3_MEAL_SOUP@1",
-            "name": "Sopa de Trigo"
-        },
-        {
-            "id": "T3_MEAL_SOUP@2",
-            "name": "Sopa de Trigo"
-        },
-        {
-            "id": "T3_MEAL_SOUP@3",
-            "name": "Sopa de Trigo"
-        },
-        {
-            "id": "T3_MEAL_SOUP_FISH",
-            "name": "Sopa de Mexilhão de Águas turvas"
-        },
-        {
-            "id": "T3_MEAL_SOUP_FISH@1",
-            "name": "Sopa de Mexilhão de Águas turvas"
-        },
-        {
-            "id": "T3_MEAL_SOUP_FISH@2",
-            "name": "Sopa de Mexilhão de Águas turvas"
-        },
-        {
-            "id": "T3_MEAL_SOUP_FISH@3",
-            "name": "Sopa de Mexilhão de Águas turvas"
-        },
-        {
-            "id": "T3_MEAL_PIE",
-            "name": "Torta de Galinha"
-        },
-        {
-            "id": "T3_MEAL_PIE@1",
-            "name": "Torta de Galinha"
-        },
-        {
-            "id": "T3_MEAL_PIE@2",
-            "name": "Torta de Galinha"
-        },
-        {
-            "id": "T3_MEAL_PIE@3",
-            "name": "Torta de Galinha"
-        },
-        {
-            "id": "T3_MEAL_PIE_FISH",
-            "name": "Torta de Olhofrio das Serras"
-        },
-        {
-            "id": "T3_MEAL_PIE_FISH@1",
-            "name": "Torta de Olhofrio das Serras"
-        },
-        {
-            "id": "T3_MEAL_PIE_FISH@2",
-            "name": "Torta de Olhofrio das Serras"
-        },
-        {
-            "id": "T3_MEAL_PIE_FISH@3",
-            "name": "Torta de Olhofrio das Serras"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE",
-            "name": "Omelete de Galinha"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE@1",
-            "name": "Omelete de Galinha"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE@2",
-            "name": "Omelete de Galinha"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE@3",
-            "name": "Omelete de Galinha"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE_FISH",
-            "name": "Omelete de Caranguejo do Rio-baixo"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE_FISH@1",
-            "name": "Omelete de Caranguejo do Rio-baixo"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE_FISH@2",
-            "name": "Omelete de Caranguejo do Rio-baixo"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE_FISH@3",
-            "name": "Omelete de Caranguejo do Rio-baixo"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE_AVALON",
-            "name": "Omelete de Galinha Avaloniano"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE_AVALON@1",
-            "name": "Omelete de Galinha Avaloniano"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE_AVALON@2",
-            "name": "Omelete de Galinha Avaloniano"
-        },
-        {
-            "id": "T3_MEAL_OMELETTE_AVALON@3",
-            "name": "Omelete de Galinha Avaloniano"
-        },
-        {
-            "id": "T3_MEAL_ROAST",
-            "name": "Frango Assado"
-        },
-        {
-            "id": "T3_MEAL_ROAST@1",
-            "name": "Frango Assado"
-        },
-        {
-            "id": "T3_MEAL_ROAST@2",
-            "name": "Frango Assado"
-        },
-        {
-            "id": "T3_MEAL_ROAST@3",
-            "name": "Frango Assado"
-        },
-        {
-            "id": "T3_MEAL_ROAST_FISH",
-            "name": "Pargo Bruma-branca Assado"
-        },
-        {
-            "id": "T3_MEAL_ROAST_FISH@1",
-            "name": "Pargo Bruma-branca Assado"
-        },
-        {
-            "id": "T3_MEAL_ROAST_FISH@2",
-            "name": "Pargo Bruma-branca Assado"
-        },
-        {
-            "id": "T3_MEAL_ROAST_FISH@3",
-            "name": "Pargo Bruma-branca Assado"
-        },
-        {
-            "id": "T4_MEAL_SALAD",
-            "name": "Salada de Nabo"
-        },
-        {
-            "id": "T4_MEAL_SALAD@1",
-            "name": "Salada de Nabo"
-        },
-        {
-            "id": "T4_MEAL_SALAD@2",
-            "name": "Salada de Nabo"
-        },
-        {
-            "id": "T4_MEAL_SALAD@3",
-            "name": "Salada de Nabo"
-        },
-        {
-            "id": "T4_MEAL_SALAD_FISH",
-            "name": "Salada de Polvo das Águas médias"
-        },
-        {
-            "id": "T4_MEAL_SALAD_FISH@1",
-            "name": "Salada de Polvo das Águas médias"
-        },
-        {
-            "id": "T4_MEAL_SALAD_FISH@2",
-            "name": "Salada de Polvo das Águas médias"
-        },
-        {
-            "id": "T4_MEAL_SALAD_FISH@3",
-            "name": "Salada de Polvo das Águas médias"
-        },
-        {
-            "id": "T4_MEAL_STEW",
-            "name": "Guisado de Cabra"
-        },
-        {
-            "id": "T4_MEAL_STEW@1",
-            "name": "Guisado de Cabra"
-        },
-        {
-            "id": "T4_MEAL_STEW@2",
-            "name": "Guisado de Cabra"
-        },
-        {
-            "id": "T4_MEAL_STEW@3",
-            "name": "Guisado de Cabra"
-        },
-        {
-            "id": "T4_MEAL_STEW_FISH",
-            "name": "Guisado de Enguia Esverdeada"
-        },
-        {
-            "id": "T4_MEAL_STEW_FISH@1",
-            "name": "Guisado de Enguia Esverdeada"
-        },
-        {
-            "id": "T4_MEAL_STEW_FISH@2",
-            "name": "Guisado de Enguia Esverdeada"
-        },
-        {
-            "id": "T4_MEAL_STEW_FISH@3",
-            "name": "Guisado de Enguia Esverdeada"
-        },
-        {
-            "id": "T4_MEAL_STEW_AVALON",
-            "name": "Guisado de Cabra Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_STEW_AVALON@1",
-            "name": "Guisado de Cabra Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_STEW_AVALON@2",
-            "name": "Guisado de Cabra Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_STEW_AVALON@3",
-            "name": "Guisado de Cabra Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH",
-            "name": "Sanduíche de Cabra"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH@1",
-            "name": "Sanduíche de Cabra"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH@2",
-            "name": "Sanduíche de Cabra"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH@3",
-            "name": "Sanduíche de Cabra"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH_FISH",
-            "name": "Sanduíche de Larápio de Pedregulho"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH_FISH@1",
-            "name": "Sanduíche de Larápio de Pedregulho"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH_FISH@2",
-            "name": "Sanduíche de Larápio de Pedregulho"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH_FISH@3",
-            "name": "Sanduíche de Larápio de Pedregulho"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH_AVALON",
-            "name": "Sanduíche de Cabra Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH_AVALON@1",
-            "name": "Sanduíche de Cabra Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH_AVALON@2",
-            "name": "Sanduíche de Cabra Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_SANDWICH_AVALON@3",
-            "name": "Sanduíche de Cabra Avaloniano"
-        },
-        {
-            "id": "T5_MEAL_SOUP",
-            "name": "Sopa de Repolho"
-        },
-        {
-            "id": "T5_MEAL_SOUP@1",
-            "name": "Sopa de Repolho"
-        },
-        {
-            "id": "T5_MEAL_SOUP@2",
-            "name": "Sopa de Repolho"
-        },
-        {
-            "id": "T5_MEAL_SOUP@3",
-            "name": "Sopa de Repolho"
-        },
-        {
-            "id": "T5_MEAL_SOUP_FISH",
-            "name": "Sopa de Mexilhão do Brejo"
-        },
-        {
-            "id": "T5_MEAL_SOUP_FISH@1",
-            "name": "Sopa de Mexilhão do Brejo"
-        },
-        {
-            "id": "T5_MEAL_SOUP_FISH@2",
-            "name": "Sopa de Mexilhão do Brejo"
-        },
-        {
-            "id": "T5_MEAL_SOUP_FISH@3",
-            "name": "Sopa de Mexilhão do Brejo"
-        },
-        {
-            "id": "T5_MEAL_PIE",
-            "name": "Torta de Ganso"
-        },
-        {
-            "id": "T5_MEAL_PIE@1",
-            "name": "Torta de Ganso"
-        },
-        {
-            "id": "T5_MEAL_PIE@2",
-            "name": "Torta de Ganso"
-        },
-        {
-            "id": "T5_MEAL_PIE@3",
-            "name": "Torta de Ganso"
-        },
-        {
-            "id": "T5_MEAL_PIE_FISH",
-            "name": "Torta de Olhocego das Montanhas"
-        },
-        {
-            "id": "T5_MEAL_PIE_FISH@1",
-            "name": "Torta de Olhocego das Montanhas"
-        },
-        {
-            "id": "T5_MEAL_PIE_FISH@2",
-            "name": "Torta de Olhocego das Montanhas"
-        },
-        {
-            "id": "T5_MEAL_PIE_FISH@3",
-            "name": "Torta de Olhocego das Montanhas"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE",
-            "name": "Omelete de Ganso"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE@1",
-            "name": "Omelete de Ganso"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE@2",
-            "name": "Omelete de Ganso"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE@3",
-            "name": "Omelete de Ganso"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE_FISH",
-            "name": "Omelete de Caranguejo de Riacho"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE_FISH@1",
-            "name": "Omelete de Caranguejo de Riacho"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE_FISH@2",
-            "name": "Omelete de Caranguejo de Riacho"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE_FISH@3",
-            "name": "Omelete de Caranguejo de Riacho"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE_AVALON",
-            "name": "Omelete de Ganso Avaloniano"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE_AVALON@1",
-            "name": "Omelete de Ganso Avaloniano"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE_AVALON@2",
-            "name": "Omelete de Ganso Avaloniano"
-        },
-        {
-            "id": "T5_MEAL_OMELETTE_AVALON@3",
-            "name": "Omelete de Ganso Avaloniano"
-        },
-        {
-            "id": "T5_MEAL_ROAST",
-            "name": "Ganso Assado"
-        },
-        {
-            "id": "T5_MEAL_ROAST@1",
-            "name": "Ganso Assado"
-        },
-        {
-            "id": "T5_MEAL_ROAST@2",
-            "name": "Ganso Assado"
-        },
-        {
-            "id": "T5_MEAL_ROAST@3",
-            "name": "Ganso Assado"
-        },
-        {
-            "id": "T5_MEAL_ROAST_FISH",
-            "name": "Pargo Névoa-clara Assado"
-        },
-        {
-            "id": "T5_MEAL_ROAST_FISH@1",
-            "name": "Pargo Névoa-clara Assado"
-        },
-        {
-            "id": "T5_MEAL_ROAST_FISH@2",
-            "name": "Pargo Névoa-clara Assado"
-        },
-        {
-            "id": "T5_MEAL_ROAST_FISH@3",
-            "name": "Pargo Névoa-clara Assado"
-        },
-        {
-            "id": "T6_MEAL_SALAD",
-            "name": "Salada de Batata"
-        },
-        {
-            "id": "T6_MEAL_SALAD@1",
-            "name": "Salada de Batata"
-        },
-        {
-            "id": "T6_MEAL_SALAD@2",
-            "name": "Salada de Batata"
-        },
-        {
-            "id": "T6_MEAL_SALAD@3",
-            "name": "Salada de Batata"
-        },
-        {
-            "id": "T6_MEAL_SALAD_FISH",
-            "name": "Salada de Kraken das Águas profundas"
-        },
-        {
-            "id": "T6_MEAL_SALAD_FISH@1",
-            "name": "Salada de Kraken das Águas profundas"
-        },
-        {
-            "id": "T6_MEAL_SALAD_FISH@2",
-            "name": "Salada de Kraken das Águas profundas"
-        },
-        {
-            "id": "T6_MEAL_SALAD_FISH@3",
-            "name": "Salada de Kraken das Águas profundas"
-        },
-        {
-            "id": "T6_MEAL_STEW",
-            "name": "Guisado de Carneiro"
-        },
-        {
-            "id": "T6_MEAL_STEW@1",
-            "name": "Guisado de Carneiro"
-        },
-        {
-            "id": "T6_MEAL_STEW@2",
-            "name": "Guisado de Carneiro"
-        },
-        {
-            "id": "T6_MEAL_STEW@3",
-            "name": "Guisado de Carneiro"
-        },
-        {
-            "id": "T6_MEAL_STEW_FISH",
-            "name": "Guisado de Enguia Avermelhada"
-        },
-        {
-            "id": "T6_MEAL_STEW_FISH@1",
-            "name": "Guisado de Enguia Avermelhada"
-        },
-        {
-            "id": "T6_MEAL_STEW_FISH@2",
-            "name": "Guisado de Enguia Avermelhada"
-        },
-        {
-            "id": "T6_MEAL_STEW_FISH@3",
-            "name": "Guisado de Enguia Avermelhada"
-        },
-        {
-            "id": "T6_MEAL_STEW_AVALON",
-            "name": "Guisado de Carneiro Avaloniano"
-        },
-        {
-            "id": "T6_MEAL_STEW_AVALON@1",
-            "name": "Guisado de Carneiro Avaloniano"
-        },
-        {
-            "id": "T6_MEAL_STEW_AVALON@2",
-            "name": "Guisado de Carneiro Avaloniano"
-        },
-        {
-            "id": "T6_MEAL_STEW_AVALON@3",
-            "name": "Guisado de Carneiro Avaloniano"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH",
-            "name": "Sanduíche de Carneiro"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH@1",
-            "name": "Sanduíche de Carneiro"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH@2",
-            "name": "Sanduíche de Carneiro"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH@3",
-            "name": "Sanduíche de Carneiro"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH_FISH",
-            "name": "Sanduíche de Larápio de Água corrente"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH_FISH@1",
-            "name": "Sanduíche de Larápio de Água corrente"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH_FISH@2",
-            "name": "Sanduíche de Larápio de Água corrente"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH_FISH@3",
-            "name": "Sanduíche de Larápio de Água corrente"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH_AVALON",
-            "name": "Sanduíche de Carneiro Avaloniano"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH_AVALON@1",
-            "name": "Sanduíche de Carneiro Avaloniano"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH_AVALON@2",
-            "name": "Sanduíche de Carneiro Avaloniano"
-        },
-        {
-            "id": "T6_MEAL_SANDWICH_AVALON@3",
-            "name": "Sanduíche de Carneiro Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_PIE",
-            "name": "Torta de Porco"
-        },
-        {
-            "id": "T4_MEAL_PIE@1",
-            "name": "Torta de Porco"
-        },
-        {
-            "id": "T4_MEAL_PIE@2",
-            "name": "Torta de Porco"
-        },
-        {
-            "id": "T4_MEAL_PIE@3",
-            "name": "Torta de Porco"
-        },
-        {
-            "id": "T4_MEAL_PIE_FISH",
-            "name": "Torta de Olhomorto dos Picos"
-        },
-        {
-            "id": "T4_MEAL_PIE_FISH@1",
-            "name": "Torta de Olhomorto dos Picos"
-        },
-        {
-            "id": "T4_MEAL_PIE_FISH@2",
-            "name": "Torta de Olhomorto dos Picos"
-        },
-        {
-            "id": "T4_MEAL_PIE_FISH@3",
-            "name": "Torta de Olhomorto dos Picos"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE",
-            "name": "Omelete de Porco"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE@1",
-            "name": "Omelete de Porco"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE@2",
-            "name": "Omelete de Porco"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE@3",
-            "name": "Omelete de Porco"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE_FISH",
-            "name": "Omelete de Caranguejo de Poço"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE_FISH@1",
-            "name": "Omelete de Caranguejo de Poço"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE_FISH@2",
-            "name": "Omelete de Caranguejo de Poço"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE_FISH@3",
-            "name": "Omelete de Caranguejo de Poço"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE_AVALON",
-            "name": "Omelete de Porco Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE_AVALON@1",
-            "name": "Omelete de Porco Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE_AVALON@2",
-            "name": "Omelete de Porco Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_OMELETTE_AVALON@3",
-            "name": "Omelete de Porco Avaloniano"
-        },
-        {
-            "id": "T4_MEAL_ROAST",
-            "name": "Porco Assado"
-        },
-        {
-            "id": "T4_MEAL_ROAST_FISH",
-            "name": "Pargo Neblina-pura Assado"
-        },
-        {
-            "id": "T4_MEAL_ROAST_FISH@1",
-            "name": "Pargo Neblina-pura Assado"
-        },
-        {
-            "id": "T4_MEAL_ROAST_FISH@2",
-            "name": "Pargo Neblina-pura Assado"
-        },
-        {
-            "id": "T4_MEAL_ROAST_FISH@3",
-            "name": "Pargo Neblina-pura Assado"
-        },
-        {
-            "id": "T8_MEAL_STEW",
-            "name": "Guisado de Carne"
-        },
-        {
-            "id": "T8_MEAL_STEW@1",
-            "name": "Guisado de Carne"
-        },
-        {
-            "id": "T8_MEAL_STEW@2",
-            "name": "Guisado de Carne"
-        },
-        {
-            "id": "T8_MEAL_STEW@3",
-            "name": "Guisado de Carne"
-        },
-        {
-            "id": "T8_MEAL_STEW_FISH",
-            "name": "Guisado de Enguia de Água-podre"
-        },
-        {
-            "id": "T8_MEAL_STEW_FISH@1",
-            "name": "Guisado de Enguia de Água-podre"
-        },
-        {
-            "id": "T8_MEAL_STEW_FISH@2",
-            "name": "Guisado de Enguia de Água-podre"
-        },
-        {
-            "id": "T8_MEAL_STEW_FISH@3",
-            "name": "Guisado de Enguia de Água-podre"
-        },
-        {
-            "id": "T8_MEAL_STEW_AVALON",
-            "name": "Guisado de Carne Avaloniano"
-        },
-        {
-            "id": "T8_MEAL_STEW_AVALON@1",
-            "name": "Guisado de Carne Avaloniano"
-        },
-        {
-            "id": "T8_MEAL_STEW_AVALON@2",
-            "name": "Guisado de Carne Avaloniano"
-        },
-        {
-            "id": "T8_MEAL_STEW_AVALON@3",
-            "name": "Guisado de Carne Avaloniano"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH",
-            "name": "Sanduíche de Carne"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH@1",
-            "name": "Sanduíche de Carne"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH@2",
-            "name": "Sanduíche de Carne"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH@3",
-            "name": "Sanduíche de Carne"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH_FISH",
-            "name": "Sanduíche de Larápio do Trovão"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH_FISH@1",
-            "name": "Sanduíche de Larápio do Trovão"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH_FISH@2",
-            "name": "Sanduíche de Larápio do Trovão"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH_FISH@3",
-            "name": "Sanduíche de Larápio do Trovão"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH_AVALON",
-            "name": "Sanduíche de Carne Avaloniano"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH_AVALON@1",
-            "name": "Sanduíche de Carne Avaloniano"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH_AVALON@2",
-            "name": "Sanduíche de Carne Avaloniano"
-        },
-        {
-            "id": "T8_MEAL_SANDWICH_AVALON@3",
-            "name": "Sanduíche de Carne Avaloniano"
-        }
-    ]
-}
+  "cabecas": [
+    {"id": "T4_HEAD_PLATE_SET1", "name": "Capacete de Soldado"},
+    {"id": "T4_HEAD_PLATE_SET2", "name": "Capacete de Cavaleiro"},
+    {"id": "T4_HEAD_PLATE_SET3", "name": "Capacete de Guardião"},
+    {"id": "T4_HEAD_PLATE_ROYAL", "name": "Elmo Real"},
+    {"id": "T4_HEAD_PLATE_UNDEAD", "name": "Elmo de Guarda-tumbas"},
+    {"id": "T4_HEAD_PLATE_HELL", "name": "Elmo Demônio"},
+    {"id": "T4_HEAD_PLATE_KEEPER", "name": "Elmo Judicante"},
+    {"id": "T4_HEAD_PLATE_AVALON", "name": "Elmo da Bravura"},
+    {"id": "T4_HEAD_LEATHER_SET1", "name": "Capuz de Mercenário"},
+    {"id": "T4_HEAD_LEATHER_SET2", "name": "Capuz de Caçador"},
+    {"id": "T4_HEAD_LEATHER_SET3", "name": "Capuz de Assassino"},
+    {"id": "T4_HEAD_LEATHER_UNDEAD", "name": "Capuz de Espreitador"},
+    {"id": "T4_HEAD_LEATHER_HELL", "name": "Capuz Inferial"},
+    {"id": "T4_HEAD_LEATHER_MORGANA", "name": "Capuz Espectral"},
+    {"id": "T4_HEAD_LEATHER_AVALON", "name": "Capuz de Andarilho da Névoa"},
+    {"id": "T4_HEAD_CLOTH_SET1", "name": "Capote de Erudito"},
+    {"id": "T4_HEAD_CLOTH_SET2", "name": "Capote de Clérigo"},
+    {"id": "T4_HEAD_CLOTH_SET3", "name": "Capote de Mago"},
+    {"id": "T4_HEAD_CLOTH_KEEPER", "name": "Capote de Druida"},
+    {"id": "T4_HEAD_CLOTH_HELL", "name": "Capote Malévolo"},
+    {"id": "T4_HEAD_CLOTH_MORGANA", "name": "Capote Sectário"},
+    {"id": "T4_HEAD_CLOTH_AVALON", "name": "Capote Feérico"}
+  ],
+  "armaduras": [
+    {"id": "T4_ARMOR_PLATE_SET1", "name": "Armadura de Soldado"},
+    {"id": "T4_ARMOR_PLATE_SET2", "name": "Armadura de Cavaleiro"},
+    {"id": "T4_ARMOR_PLATE_SET3", "name": "Armadura de Guardião"},
+    {"id": "T4_ARMOR_PLATE_ROYAL", "name": "Armadura Real"},
+    {"id": "T4_ARMOR_PLATE_UNDEAD", "name": "Armadura de Guarda-tumbas"},
+    {"id": "T4_ARMOR_PLATE_HELL", "name": "Armadura Demônia"},
+    {"id": "T4_ARMOR_PLATE_KEEPER", "name": "Armadura Judicante"},
+    {"id": "T4_ARMOR_PLATE_AVALON", "name": "Armadura da Bravura"},
+    {"id": "T4_ARMOR_LEATHER_SET1", "name": "Jaqueta de Mercenário"},
+    {"id": "T4_ARMOR_LEATHER_SET2", "name": "Jaqueta de Caçador"},
+    {"id": "T4_ARMOR_LEATHER_SET3", "name": "Jaqueta de Assassino"},
+    {"id": "T4_ARMOR_LEATHER_UNDEAD", "name": "Jaqueta de Espreitador"},
+    {"id": "T4_ARMOR_LEATHER_HELL", "name": "Jaqueta Inferial"},
+    {"id": "T4_ARMOR_LEATHER_MORGANA", "name": "Jaqueta Espectral"},
+    {"id": "T4_ARMOR_LEATHER_AVALON", "name": "Jaqueta de Andarilho da Névoa"},
+    {"id": "T4_ARMOR_CLOTH_SET1", "name": "Robe de Erudito"},
+    {"id": "T4_ARMOR_CLOTH_SET2", "name": "Robe de Clérigo"},
+    {"id": "T4_ARMOR_CLOTH_SET3", "name": "Robe de Mago"},
+    {"id": "T4_ARMOR_CLOTH_KEEPER", "name": "Robe de Druida"},
+    {"id": "T4_ARMOR_CLOTH_HELL", "name": "Robe Malévolo"},
+    {"id": "T4_ARMOR_CLOTH_MORGANA", "name": "Robe Sectário"},
+    {"id": "T4_ARMOR_CLOTH_AVALON", "name": "Robe Feérico"}
+  ],
+  "botas": [
+    {"id": "T4_SHOES_PLATE_SET1", "name": "Botas de Soldado"},
+    {"id": "T4_SHOES_PLATE_SET2", "name": "Botas de Cavaleiro"},
+    {"id": "T4_SHOES_PLATE_SET3", "name": "Botas de Guardião"},
+    {"id": "T4_SHOES_PLATE_ROYAL", "name": "Botas Reais"},
+    {"id": "T4_SHOES_PLATE_UNDEAD", "name": "Botas de Guarda-tumbas"},
+    {"id": "T4_SHOES_PLATE_HELL", "name": "Botas Demônias"},
+    {"id": "T4_SHOES_PLATE_KEEPER", "name": "Botas Judicantes"},
+    {"id": "T4_SHOES_PLATE_AVALON", "name": "Botas da Bravura"},
+    {"id": "T4_SHOES_LEATHER_SET1", "name": "Sapatos de Mercenário"},
+    {"id": "T4_SHOES_LEATHER_SET2", "name": "Sapatos de Caçador"},
+    {"id": "T4_SHOES_LEATHER_SET3", "name": "Sapatos de Assassino"},
+    {"id": "T4_SHOES_LEATHER_UNDEAD", "name": "Sapatos de Espreitador"},
+    {"id": "T4_SHOES_LEATHER_HELL", "name": "Sapatos Inferiais"},
+    {"id": "T4_SHOES_LEATHER_MORGANA", "name": "Sapatos Espectrais"},
+    {"id": "T4_SHOES_LEATHER_AVALON", "name": "Sapatos de Andarilho da Névoa"},
+    {"id": "T4_SHOES_CLOTH_SET1", "name": "Sandálias de Erudito"},
+    {"id": "T4_SHOES_CLOTH_SET2", "name": "Sandálias de Clérigo"},
+    {"id": "T4_SHOES_CLOTH_SET3", "name": "Sandálias de Mago"},
+    {"id": "T4_SHOES_CLOTH_KEEPER", "name": "Sandálias de Druida"},
+    {"id": "T4_SHOES_CLOTH_HELL", "name": "Sandálias Malévolas"},
+    {"id": "T4_SHOES_CLOTH_MORGANA", "name": "Sandálias Sectárias"},
+    {"id": "T4_SHOES_CLOTH_AVALON", "name": "Sandálias Feéricas"}
+  ],
+  "armas": [
+    {"id": "T4_2H_CLAYMORE", "name": "Espada de Duas Mãos"},
+    {"id": "T4_2H_DUALSWORD", "name": "Espada Claymore"},
+    {"id": "T4_2H_CLAYMORE_MORGANA", "name": "Espada Clarent"},
+    {"id": "T4_2H_DUALSWORD_UNDEAD", "name": "Espada Galatinas"},
+    {"id": "T4_2H_CLAYMORE_ROYAL", "name": "Espada Real"},
+    {"id": "T4_2H_DUALSWORD_AVALON", "name": "Espada Avaloniana"},
+    
+    {"id": "T4_2H_AXE", "name": "Machado de Batalha"},
+    {"id": "T4_2H_HALBERD", "name": "Machado de Carrasco"},
+    {"id": "T4_2H_HALBERD_HELL", "name": "Machado Infernal"},
+    {"id": "T4_2H_DUALAXE_KEEPER", "name": "Machado Bear Paws"},
+    {"id": "T4_2H_AXE_ROYAL", "name": "Machado Real"},
+    {"id": "T4_2H_DUALAXE_AVALON", "name": "Machado Avaloniano"},
+    
+    {"id": "T4_MAIN_MACE", "name": "Maça"},
+    {"id": "T4_2H_MACE", "name": "Maça de Batalha"},
+    {"id": "T4_2H_FLAIL", "name": "Maça de Martelo"},
+    {"id": "T4_2H_MACE_MORGANA", "name": "Maça de Camlann"},
+    {"id": "T4_2H_MACE_ROYAL", "name": "Maça Real"},
+    {"id": "T4_2H_MACE_AVALON", "name": "Maça Avaloniana"},
+    
+    {"id": "T4_2H_HAMMER", "name": "Martelo"},
+    {"id": "T4_2H_POLEHAMMER", "name": "Martelo de Guerra"},
+    {"id": "T4_2H_HAMMER_UNDEAD", "name": "Martelo de Forge"},
+    {"id": "T4_2H_DUALHAMMER_HELL", "name": "Martelo de Tombhammer"},
+    {"id": "T4_2H_HAMMER_ROYAL", "name": "Martelo Real"},
+    {"id": "T4_2H_DUALHAMMER_AVALON", "name": "Martelo Avaloniano"},
+    
+    {"id": "T4_MAIN_SPEAR", "name": "Lança"},
+    {"id": "T4_2H_SPEAR", "name": "Lança de Pique"},
+    {"id": "T4_2H_GLAIVE", "name": "Lança de Glaive"},
+    {"id": "T4_2H_SPEAR_KEEPER", "name": "Lança de Heron"},
+    {"id": "T4_2H_SPEAR_ROYAL", "name": "Lança Real"},
+    {"id": "T4_2H_SPEAR_AVALON", "name": "Lança Avaloniana"},
+    
+    {"id": "T4_2H_BOW", "name": "Arco"},
+    {"id": "T4_2H_LONGBOW", "name": "Arco Longo"},
+    {"id": "T4_2H_WARBOW", "name": "Arco de Guerra"},
+    {"id": "T4_2H_BOW_HELL", "name": "Arco de Wailing"},
+    {"id": "T4_2H_BOW_KEEPER", "name": "Arco de Whispering"},
+    {"id": "T4_2H_BOW_ROYAL", "name": "Arco Real"},
+    {"id": "T4_2H_BOW_AVALON", "name": "Arco Avaloniano"},
+    
+    {"id": "T4_MAIN_FIRESTAFF", "name": "Cajado de Fogo"},
+    {"id": "T4_MAIN_FROSTSTAFF", "name": "Cajado de Gelo"},
+    {"id": "T4_MAIN_ARCANESTAFF", "name": "Cajado de Energia"},
+    {"id": "T4_MAIN_CURSEDSTAFF", "name": "Cajado de Maldição"},
+    {"id": "T4_MAIN_NATURESTAFF", "name": "Cajado de Natureza"},
+    {"id": "T4_MAIN_HOLYSTAFF", "name": "Cajado Sagrado"},
+    {"id": "T4_MAIN_ENIGMATICSTAFF", "name": "Cajado de Arcano"},
+    {"id": "T4_MAIN_NATURESTAFF_KEEPER", "name": "Cajado Druídico"},
+    
+    {
+        "id": "T3_MAIN_DAGGER",
+        "name": "Adaga do Iniciante"
+    },
+    {
+        "id": "T4_MAIN_DAGGER",
+        "name": "Adaga do Adepto"
+    },
+    {
+        "id": "T4_MAIN_DAGGER@1",
+        "name": "Adaga do Adepto"
+    },
+    {
+        "id": "T4_MAIN_DAGGER@2",
+        "name": "Adaga do Adepto"
+    },
+    {
+        "id": "T4_MAIN_DAGGER@3",
+        "name": "Adaga do Adepto"
+    },
+    {
+        "id": "T4_MAIN_DAGGER@4",
+        "name": "Adaga do Adepto"
+    },
+    {
+        "id": "T5_MAIN_DAGGER",
+        "name": "Adaga do Perito"
+    },
+    {
+        "id": "T5_MAIN_DAGGER@1",
+        "name": "Adaga do Perito"
+    },
+    {
+        "id": "T5_MAIN_DAGGER@2",
+        "name": "Adaga do Perito"
+    },
+    {
+        "id": "T5_MAIN_DAGGER@3",
+        "name": "Adaga do Perito"
+    },
+    {
+        "id": "T5_MAIN_DAGGER@4",
+        "name": "Adaga do Perito"
+    },
+    {
+        "id": "T6_MAIN_DAGGER",
+        "name": "Adaga do Mestre"
+    },
+    {
+        "id": "T6_MAIN_DAGGER@1",
+        "name": "Adaga do Mestre"
+    },
+    {
+        "id": "T6_MAIN_DAGGER@2",
+        "name": "Adaga do Mestre"
+    },
+    {
+        "id": "T6_MAIN_DAGGER@3",
+        "name": "Adaga do Mestre"
+    },
+    {
+        "id": "T6_MAIN_DAGGER@4",
+        "name": "Adaga do Mestre"
+    },
+    {
+        "id": "T7_MAIN_DAGGER",
+        "name": "Adaga do Grão-mestre"
+    },
+    {
+        "id": "T7_MAIN_DAGGER@1",
+        "name": "Adaga do Grão-mestre"
+    },
+    {
+        "id": "T7_MAIN_DAGGER@2",
+        "name": "Adaga do Grão-mestre"
+    },
+    {
+        "id": "T7_MAIN_DAGGER@3",
+        "name": "Adaga do Grão-mestre"
+    },
+    {
+        "id": "T7_MAIN_DAGGER@4",
+        "name": "Adaga do Grão-mestre"
+    },
+    {
+        "id": "T8_MAIN_DAGGER",
+        "name": "Adaga do Ancião"
+    },
+    {
+        "id": "T8_MAIN_DAGGER@1",
+        "name": "Adaga do Ancião"
+    },
+    {
+        "id": "T8_MAIN_DAGGER@2",
+        "name": "Adaga do Ancião"
+    },
+    {
+        "id": "T8_MAIN_DAGGER@3",
+        "name": "Adaga do Ancião"
+    },
+    {
+        "id": "T8_MAIN_DAGGER@4",
+        "name": "Adaga do Ancião"
+    },
+    {
+        "id": "T4_2H_DAGGERPAIR",
+        "name": "Par de Adagas do Adepto"
+    },
+    {
+        "id": "T4_2H_DAGGERPAIR@1",
+        "name": "Par de Adagas do Adepto"
+    },
+    {
+        "id": "T4_2H_DAGGERPAIR@2",
+        "name": "Par de Adagas do Adepto"
+    },
+    {
+        "id": "T4_2H_DAGGERPAIR@3",
+        "name": "Par de Adagas do Adepto"
+    },
+    {
+        "id": "T4_2H_DAGGERPAIR@4",
+        "name": "Par de Adagas do Adepto"
+    },
+    {
+        "id": "T5_2H_DAGGERPAIR",
+        "name": "Par de Adagas do Perito"
+    },
+    {
+        "id": "T5_2H_DAGGERPAIR@1",
+        "name": "Par de Adagas do Perito"
+    },
+    {
+        "id": "T5_2H_DAGGERPAIR@2",
+        "name": "Par de Adagas do Perito"
+    },
+    {
+        "id": "T5_2H_DAGGERPAIR@3",
+        "name": "Par de Adagas do Perito"
+    },
+    {
+        "id": "T5_2H_DAGGERPAIR@4",
+        "name": "Par de Adagas do Perito"
+    },
+    {
+        "id": "T6_2H_DAGGERPAIR",
+        "name": "Par de Adagas do Mestre"
+    },
+    {
+        "id": "T6_2H_DAGGERPAIR@1",
+        "name": "Par de Adagas do Mestre"
+    },
+    {
+        "id": "T6_2H_DAGGERPAIR@2",
+        "name": "Par de Adagas do Mestre"
+    },
+    {
+        "id": "T6_2H_DAGGERPAIR@3",
+        "name": "Par de Adagas do Mestre"
+    },
+    {
+        "id": "T6_2H_DAGGERPAIR@4",
+        "name": "Par de Adagas do Mestre"
+    },
+    {
+        "id": "T7_2H_DAGGERPAIR",
+        "name": "Par de Adagas do Grão-mestre"
+    },
+    {
+        "id": "T7_2H_DAGGERPAIR@1",
+        "name": "Par de Adagas do Grão-mestre"
+    },
+    {
+        "id": "T7_2H_DAGGERPAIR@2",
+        "name": "Par de Adagas do Grão-mestre"
+    },
+    {
+        "id": "T7_2H_DAGGERPAIR@3",
+        "name": "Par de Adagas do Grão-mestre"
+    },
+    {
+        "id": "T7_2H_DAGGERPAIR@4",
+        "name": "Par de Adagas do Grão-mestre"
+    },
+    {
+        "id": "T8_2H_DAGGERPAIR",
+        "name": "Par de Adagas do Ancião"
+    },
+    {
+        "id": "T8_2H_DAGGERPAIR@1",
+        "name": "Par de Adagas do Ancião"
+    },
+    {
+        "id": "T8_2H_DAGGERPAIR@2",
+        "name": "Par de Adagas do Ancião"
+    },
+    {
+        "id": "T8_2H_DAGGERPAIR@3",
+        "name": "Par de Adagas do Ancião"
+    },
+    {
+        "id": "T8_2H_DAGGERPAIR@4",
+        "name": "Par de Adagas do Ancião"
+    },
+    {
+        "id": "T4_2H_CLAWPAIR",
+        "name": "Garras do Adepto"
+    },
+    {
+        "id": "T4_2H_CLAWPAIR@1",
+        "name": "Garras do Adepto"
+    },
+    {
+        "id": "T4_2H_CLAWPAIR@2",
+        "name": "Garras do Adepto"
+    },
+    {
+        "id": "T4_2H_CLAWPAIR@3",
+        "name": "Garras do Adepto"
+    },
+    {
+        "id": "T4_2H_CLAWPAIR@4",
+        "name": "Garras do Adepto"
+    },
+    {
+        "id": "T5_2H_CLAWPAIR",
+        "name": "Garras do Perito"
+    },
+    {
+        "id": "T5_2H_CLAWPAIR@1",
+        "name": "Garras do Perito"
+    },
+    {
+        "id": "T5_2H_CLAWPAIR@2",
+        "name": "Garras do Perito"
+    },
+    {
+        "id": "T5_2H_CLAWPAIR@3",
+        "name": "Garras do Perito"
+    },
+    {
+        "id": "T5_2H_CLAWPAIR@4",
+        "name": "Garras do Perito"
+    },
+    {
+        "id": "T6_2H_CLAWPAIR",
+        "name": "Garras do Mestre"
+    },
+    {
+        "id": "T6_2H_CLAWPAIR@1",
+        "name": "Garras do Mestre"
+    },
+    {
+        "id": "T6_2H_CLAWPAIR@2",
+        "name": "Garras do Mestre"
+    },
+    {
+        "id": "T6_2H_CLAWPAIR@3",
+        "name": "Garras do Mestre"
+    },
+    {
+        "id": "T6_2H_CLAWPAIR@4",
+        "name": "Garras do Mestre"
+    },
+    {
+        "id": "T7_2H_CLAWPAIR",
+        "name": "Garras do Grão-mestre"
+    },
+    {
+        "id": "T7_2H_CLAWPAIR@1",
+        "name": "Garras do Grão-mestre"
+    },
+    {
+        "id": "T7_2H_CLAWPAIR@2",
+        "name": "Garras do Grão-mestre"
+    },
+    {
+        "id": "T7_2H_CLAWPAIR@3",
+        "name": "Garras do Grão-mestre"
+    },
+    {
+        "id": "T7_2H_CLAWPAIR@4",
+        "name": "Garras do Grão-mestre"
+    },
+    {
+        "id": "T8_2H_CLAWPAIR",
+        "name": "Garras do Ancião"
+    },
+    {
+        "id": "T8_2H_CLAWPAIR@1",
+        "name": "Garras do Ancião"
+    },
+    {
+        "id": "T8_2H_CLAWPAIR@2",
+        "name": "Garras do Ancião"
+    },
+    {
+        "id": "T8_2H_CLAWPAIR@3",
+        "name": "Garras do Ancião"
+    },
+    {
+        "id": "T8_2H_CLAWPAIR@4",
+        "name": "Garras do Ancião"
+    },
+    {
+        "id": "T4_MAIN_RAPIER_MORGANA",
+        "name": "Dessangrador do Adepto"
+    },
+    {
+        "id": "T4_MAIN_RAPIER_MORGANA@1",
+        "name": "Dessangrador do Adepto"
+    },
+    {
+        "id": "T4_MAIN_RAPIER_MORGANA@2",
+        "name": "Dessangrador do Adepto"
+    },
+    {
+        "id": "T4_MAIN_RAPIER_MORGANA@3",
+        "name": "Dessangrador do Adepto"
+    },
+    {
+        "id": "T4_MAIN_RAPIER_MORGANA@4",
+        "name": "Dessangrador do Adepto"
+    },
+    {
+        "id": "T5_MAIN_RAPIER_MORGANA",
+        "name": "Dessangrador do Perito"
+    },
+    {
+        "id": "T5_MAIN_RAPIER_MORGANA@1",
+        "name": "Dessangrador do Perito"
+    },
+    {
+        "id": "T5_MAIN_RAPIER_MORGANA@2",
+        "name": "Dessangrador do Perito"
+    },
+    {
+        "id": "T5_MAIN_RAPIER_MORGANA@3",
+        "name": "Dessangrador do Perito"
+    },
+    {
+        "id": "T5_MAIN_RAPIER_MORGANA@4",
+        "name": "Dessangrador do Perito"
+    },
+    {
+        "id": "T6_MAIN_RAPIER_MORGANA",
+        "name": "Dessangrador do Mestre"
+    },
+    {
+        "id": "T6_MAIN_RAPIER_MORGANA@1",
+        "name": "Dessangrador do Mestre"
+    },
+    {
+        "id": "T6_MAIN_RAPIER_MORGANA@2",
+        "name": "Dessangrador do Mestre"
+    },
+    {
+        "id": "T6_MAIN_RAPIER_MORGANA@3",
+        "name": "Dessangrador do Mestre"
+    },
+    {
+        "id": "T6_MAIN_RAPIER_MORGANA@4",
+        "name": "Dessangrador do Mestre"
+    },
+    {
+        "id": "T7_MAIN_RAPIER_MORGANA",
+        "name": "Dessangrador do Grão-mestre"
+    },
+    {
+        "id": "T7_MAIN_RAPIER_MORGANA@1",
+        "name": "Dessangrador do Grão-mestre"
+    },
+    {
+        "id": "T7_MAIN_RAPIER_MORGANA@2",
+        "name": "Dessangrador do Grão-mestre"
+    },
+    {
+        "id": "T7_MAIN_RAPIER_MORGANA@3",
+        "name": "Dessangrador do Grão-mestre"
+    },
+    {
+        "id": "T7_MAIN_RAPIER_MORGANA@4",
+        "name": "Dessangrador do Grão-mestre"
+    },
+    {
+        "id": "T8_MAIN_RAPIER_MORGANA",
+        "name": "Dessangrador do Ancião"
+    },
+    {
+        "id": "T8_MAIN_RAPIER_MORGANA@1",
+        "name": "Dessangrador do Ancião"
+    },
+    {
+        "id": "T8_MAIN_RAPIER_MORGANA@2",
+        "name": "Dessangrador do Ancião"
+    },
+    {
+        "id": "T8_MAIN_RAPIER_MORGANA@3",
+        "name": "Dessangrador do Ancião"
+    },
+    {
+        "id": "T8_MAIN_RAPIER_MORGANA@4",
+        "name": "Dessangrador do Ancião"
+    },
+    {
+        "id": "T4_MAIN_DAGGER_HELL",
+        "name": "Presa Demoníaca do Adepto"
+    },
+    {
+        "id": "T4_MAIN_DAGGER_HELL@1",
+        "name": "Presa Demoníaca do Adepto"
+    },
+    {
+        "id": "T4_MAIN_DAGGER_HELL@2",
+        "name": "Presa Demoníaca do Adepto"
+    },
+    {
+        "id": "T4_MAIN_DAGGER_HELL@3",
+        "name": "Presa Demoníaca do Adepto"
+    },
+    {
+        "id": "T4_MAIN_DAGGER_HELL@4",
+        "name": "Presa Demoníaca do Adepto"
+    },
+    {
+        "id": "T5_MAIN_DAGGER_HELL",
+        "name": "Presa Demoníaca do Perito"
+    },
+    {
+        "id": "T5_MAIN_DAGGER_HELL@1",
+        "name": "Presa Demoníaca do Perito"
+    },
+    {
+        "id": "T5_MAIN_DAGGER_HELL@2",
+        "name": "Presa Demoníaca do Perito"
+    },
+    {
+        "id": "T5_MAIN_DAGGER_HELL@3",
+        "name": "Presa Demoníaca do Perito"
+    },
+    {
+        "id": "T5_MAIN_DAGGER_HELL@4",
+        "name": "Presa Demoníaca do Perito"
+    },
+    {
+        "id": "T6_MAIN_DAGGER_HELL",
+        "name": "Presa Demoníaca do Mestre"
+    },
+    {
+        "id": "T6_MAIN_DAGGER_HELL@1",
+        "name": "Presa Demoníaca do Mestre"
+    },
+    {
+        "id": "T6_MAIN_DAGGER_HELL@2",
+        "name": "Presa Demoníaca do Mestre"
+    },
+    {
+        "id": "T6_MAIN_DAGGER_HELL@3",
+        "name": "Presa Demoníaca do Mestre"
+    },
+    {
+        "id": "T6_MAIN_DAGGER_HELL@4",
+        "name": "Presa Demoníaca do Mestre"
+    },
+    {
+        "id": "T7_MAIN_DAGGER_HELL",
+        "name": "Presa Demoníaca do Grão-mestre"
+    },
+    {
+        "id": "T7_MAIN_DAGGER_HELL@1",
+        "name": "Presa Demoníaca do Grão-mestre"
+    },
+    {
+        "id": "T7_MAIN_DAGGER_HELL@2",
+        "name": "Presa Demoníaca do Grão-mestre"
+    },
+    {
+        "id": "T7_MAIN_DAGGER_HELL@3",
+        "name": "Presa Demoníaca do Grão-mestre"
+    },
+    
+    {"id": "T4_2H_QUARTERSTAFF", "name": "Bastão de Guerra"},
+    {"id": "T4_2H_IRONCLADEDSTAFF", "name": "Bastão de Iron-clad"},
+    {"id": "T4_2H_QUARTERSTAFF_MORGANA", "name": "Bastão de Black Monk"},
+    {"id": "T4_2H_QUARTERSTAFF_AVALON", "name": "Bastão de Grailseeker"},
+    
+    {"id": "T4_MAIN_CURSEDSTAFF", "name": "Cajado Amaldiçoado"},
+    {"id": "T4_2H_CURSEDSTAFF", "name": "Cajado Amaldiçoado Elevado"},
+    {"id": "T4_2H_DEMONICSTAFF", "name": "Cajado Demoníaco"},
+    {"id": "T4_MAIN_CURSEDSTAFF_UNDEAD", "name": "Cajado Execrado"},
+    {"id": "T4_2H_SKULLORB_HELL", "name": "Caveira Amaldiçoada"},
+    {"id": "T4_2H_CURSEDSTAFF_MORGANA", "name": "Cajado da Danação"},
+    {"id": "T4_2H_SKULLORB_HELL", "name": "Crânio Amaldiçoado"},
+    {"id": "T4_2H_SHADOWCALLER", "name": "Chama-sombra"},
+    {"id": "T4_MAIN_CURSEDSTAFF_CRYSTAL", "name": "Cajado pútrido"}
+  ],
+  "secundaria": [
+    {"id": "T4_OFF_BOOK", "name": "Tomo de Feitiços"},
+    {"id": "T4_OFF_DEMONSKULL", "name": "Tomo de Conhecimento"},
+    {"id": "T4_OFF_SHIELD", "name": "Escudo"},
+    {"id": "T4_OFF_SHIELD_HELL", "name": "Escudo de Caitiff"},
+    {"id": "T4_OFF_SHIELD_UNDEAD", "name": "Escudo Sarcófago"},
+    {"id": "T4_OFF_SHIELD_AVALON", "name": "Escudo de Tormenta"},
+    {"id": "T4_OFF_SHIELD_ROYAL", "name": "Escudo de Leão"},
+    {"id": "T4_OFF_TORCH", "name": "Tocha"},
+    {"id": "T4_OFF_TORCH_KEEPER", "name": "Tocha do Farol"},
+    {"id": "T4_OFF_DEMONSKULL_HELL", "name": "Crânio Amaldiçoado"},
+    {"id": "T4_OFF_TOTEM_KEEPER", "name": "Totem Druídico"},
+    {"id":"T4_OFF_DEMONSKULL_HELL", "name": "Muisec"},
+    {"id": "T4_OFF_ORB_MORGANA", "name": "Cetro de Miséria"},
+    {"id": "T4_OFF_CENSER_AVALON", "name": "Cetro Avalonian"}
+  ],
+  "capas": [
+    {"id": "T4_CAPEITEM_FW_THETFORD", "name": "Capa de Thetford"},
+    {"id": "T4_CAPEITEM_FW_FORTSTERLING", "name": "Capa de Fort Sterling"}, 
+    {"id": "T4_CAPEITEM_FW_LYMHURST", "name": "Capa de Lymhurst"},
+    {"id": "T4_CAPEITEM_FW_MARTLOCK", "name": "Capa de Martlock"},
+    {"id": "T4_CAPEITEM_FW_BRIDGEWATCH", "name": "Capa de Bridgewatch"},
+    {"id": "T4_CAPEITEM_FW_CAERLEON", "name": "Capa de Caerleon"},
+    {"id": "T4_CAPEITEM_MORGANA", "name": "Capa de Morgana"},
+    {"id": "T4_CAPEITEM_DEMON", "name": "Capa de Demônio"},
+    {"id": "T4_CAPEITEM_UNDEAD", "name": "Capa de Undead"},
+    {"id": "T4_CAPEITEM_AVALON", "name": "Capa Avaloniana"}
+  ],
+  "pocoes": [
+    {
+      "id": "T2_POTION_ENERGY",
+      "name": "Poção de Energia Menor"
+  },
+  {
+      "id": "T2_POTION_ENERGY@1",
+      "name": "Poção de Energia Menor"
+  },
+  {
+      "id": "T2_POTION_ENERGY@2",
+      "name": "Poção de Energia Menor"
+  },
+  {
+      "id": "T2_POTION_ENERGY@3",
+      "name": "Poção de Energia Menor"
+  },
+  {
+      "id": "T2_POTION_HEAL",
+      "name": "Poção de Cura Menor"
+  },
+  {
+      "id": "T2_POTION_HEAL@1",
+      "name": "Poção de Cura Menor"
+  },
+  {
+      "id": "T2_POTION_HEAL@2",
+      "name": "Poção de Cura Menor"
+  },
+  {
+      "id": "T2_POTION_HEAL@3",
+      "name": "Poção de Cura Menor"
+  },
+  {
+      "id": "UNIQUE_FOCUSPOTION_TUTORIAL_01",
+      "name": "@ITEMS_UNIQUE_FOCUSPOTION_TUTORIAL_01"
+  },
+  {
+      "id": "T3_FOCUSPOTION_NONTRADABLE",
+      "name": "Poção de Restauração de Foco do Iniciante"
+  },
+  {
+      "id": "T3_POTION_ACID",
+      "name": "Poção Ácida Menor"
+  },
+  {
+      "id": "T3_POTION_ACID@1",
+      "name": "Poção Ácida Menor"
+  },
+  {
+      "id": "T3_POTION_ACID@2",
+      "name": "Poção Ácida Menor"
+  },
+  {
+      "id": "T3_POTION_ACID@3",
+      "name": "Poção Ácida Menor"
+  },
+  {
+      "id": "T3_POTION_CLEANSE2",
+      "name": "Poção Purificadora Menor"
+  },
+  {
+      "id": "T3_POTION_CLEANSE2@1",
+      "name": "Poção Purificadora Menor"
+  },
+  {
+      "id": "T3_POTION_CLEANSE2@2",
+      "name": "Poção Purificadora Menor"
+  },
+  {
+      "id": "T3_POTION_CLEANSE2@3",
+      "name": "Poção Purificadora Menor"
+  },
+  {
+      "id": "T3_POTION_MOB_RESET",
+      "name": "Poção Calmante Menor"
+  },
+  {
+      "id": "T3_POTION_MOB_RESET@1",
+      "name": "Poção Calmante Menor"
+  },
+  {
+      "id": "T3_POTION_MOB_RESET@2",
+      "name": "Poção Calmante Menor"
+  },
+  {
+      "id": "T3_POTION_MOB_RESET@3",
+      "name": "Poção Calmante Menor"
+  },
+  {
+      "id": "T3_POTION_REVIVE",
+      "name": "Poção de Crescimento Menor"
+  },
+  {
+      "id": "T3_POTION_REVIVE@1",
+      "name": "Poção de Crescimento Menor"
+  },
+  {
+      "id": "T3_POTION_REVIVE@2",
+      "name": "Poção de Crescimento Menor"
+  },
+  {
+      "id": "T3_POTION_REVIVE@3",
+      "name": "Poção de Crescimento Menor"
+  },
+  {
+      "id": "T3_POTION_SLOWFIELD",
+      "name": "Poção Pegajosa Menor"
+  },
+  {
+      "id": "T3_POTION_SLOWFIELD@1",
+      "name": "Poção Pegajosa Menor"
+  },
+  {
+      "id": "T3_POTION_SLOWFIELD@2",
+      "name": "Poção Pegajosa Menor"
+  },
+  {
+      "id": "T3_POTION_SLOWFIELD@3",
+      "name": "Poção Pegajosa Menor"
+  },
+  {
+      "id": "T3_POTION_STONESKIN",
+      "name": "Poção de Resistência Menor"
+  },
+  {
+      "id": "T3_POTION_STONESKIN@1",
+      "name": "Poção de Resistência Menor"
+  },
+  {
+      "id": "T3_POTION_STONESKIN@2",
+      "name": "Poção de Resistência Menor"
+  },
+  {
+      "id": "T3_POTION_STONESKIN@3",
+      "name": "Poção de Resistência Menor"
+  },
+  {
+      "id": "T4_FOCUSPOTION_NONTRADABLE",
+      "name": "Poção de Restauração de Foco do Adepto"
+  },
+  {
+      "id": "T4_POTION_BERSERK",
+      "name": "Poção de Fúria Menor"
+  },
+  {
+      "id": "T4_POTION_BERSERK@1",
+      "name": "Poção de Fúria Menor"
+  },
+  {
+      "id": "T4_POTION_BERSERK@2",
+      "name": "Poção de Fúria Menor"
+  },
+  {
+      "id": "T4_POTION_BERSERK@3",
+      "name": "Poção de Fúria Menor"
+  },
+  {
+      "id": "T4_POTION_COOLDOWN",
+      "name": "Poção Venenosa Menor"
+  },
+  {
+      "id": "T4_POTION_COOLDOWN@1",
+      "name": "Poção Venenosa Menor"
+  },
+  {
+      "id": "T4_POTION_COOLDOWN@2",
+      "name": "Poção Venenosa Menor"
+  },
+  {
+      "id": "T4_POTION_COOLDOWN@3",
+      "name": "Poção Venenosa Menor"
+  },
+  {
+      "id": "T4_POTION_ENERGY",
+      "name": "Poção de Energia"
+  },
+  {
+      "id": "T4_POTION_ENERGY@1",
+      "name": "Poção de Energia"
+  },
+  {
+      "id": "T4_POTION_ENERGY@2",
+      "name": "Poção de Energia"
+  },
+  {
+      "id": "T4_POTION_ENERGY@3",
+      "name": "Poção de Energia"
+  },
+  {
+      "id": "T4_POTION_GATHER",
+      "name": "Poção de Coleta Menor"
+  },
+  {
+      "id": "T4_POTION_GATHER@1",
+      "name": "Poção de Coleta Menor"
+  },
+  {
+      "id": "T4_POTION_GATHER@2",
+      "name": "Poção de Coleta Menor"
+  },
+  {
+      "id": "T4_POTION_GATHER@3",
+      "name": "Poção de Coleta Menor"
+  },
+  {
+      "id": "T4_POTION_HEAL",
+      "name": "Poção de Cura"
+  },
+  {
+      "id": "T4_POTION_HEAL@1",
+      "name": "Poção de Cura"
+  },
+  {
+      "id": "T4_POTION_HEAL@2",
+      "name": "Poção de Cura"
+  },
+  {
+      "id": "T4_POTION_HEAL@3",
+      "name": "Poção de Cura"
+  },
+  {
+      "id": "T4_POTION_LAVA",
+      "name": "Poção Infernal Menor"
+  },
+  {
+      "id": "T4_POTION_LAVA@1",
+      "name": "Poção Infernal Menor"
+  },
+  {
+      "id": "T4_POTION_LAVA@2",
+      "name": "Poção Infernal Menor"
+  },
+  {
+      "id": "T4_POTION_LAVA@3",
+      "name": "Poção Infernal Menor"
+  },
+  {
+      "id": "T4_POTION_TORNADO",
+      "name": "Tornado Engarrafado Menor"
+  },
+  {
+      "id": "T4_POTION_TORNADO@1",
+      "name": "Tornado Engarrafado Menor"
+  },
+  {
+      "id": "T4_POTION_TORNADO@2",
+      "name": "Tornado Engarrafado Menor"
+  },
+  {
+      "id": "T4_POTION_TORNADO@3",
+      "name": "Tornado Engarrafado Menor"
+  },
+  {
+      "id": "T5_FOCUSPOTION_NONTRADABLE",
+      "name": "Poção de Restauração de Foco do Perito"
+  },
+  {
+      "id": "T5_POTION_ACID",
+      "name": "Poção Ácida"
+  },
+  {
+      "id": "T5_POTION_ACID@1",
+      "name": "Poção Ácida"
+  },
+  {
+      "id": "T5_POTION_ACID@2",
+      "name": "Poção Ácida"
+  },
+  {
+      "id": "T5_POTION_ACID@3",
+      "name": "Poção Ácida"
+  },
+  {
+      "id": "T5_POTION_CLEANSE2",
+      "name": "Poção Purificadora"
+  },
+  {
+      "id": "T5_POTION_CLEANSE2@1",
+      "name": "Poção Purificadora"
+  },
+  {
+      "id": "T5_POTION_CLEANSE2@2",
+      "name": "Poção Purificadora"
+  },
+  {
+      "id": "T5_POTION_CLEANSE2@3",
+      "name": "Poção Purificadora"
+  },
+  {
+      "id": "T5_POTION_MOB_RESET",
+      "name": "Poção Calmante"
+  },
+  {
+      "id": "T5_POTION_MOB_RESET@1",
+      "name": "Poção Calmante"
+  },
+  {
+      "id": "T5_POTION_MOB_RESET@2",
+      "name": "Poção Calmante"
+  },
+  {
+      "id": "T5_POTION_MOB_RESET@3",
+      "name": "Poção Calmante"
+  },
+  {
+      "id": "T5_POTION_REVIVE",
+      "name": "Poção de Crescimento"
+  },
+  {
+      "id": "T5_POTION_REVIVE@1",
+      "name": "Poção de Crescimento"
+  },
+  {
+      "id": "T5_POTION_REVIVE@2",
+      "name": "Poção de Crescimento"
+  },
+  {
+      "id": "T5_POTION_REVIVE@3",
+      "name": "Poção de Crescimento"
+  },
+  {
+      "id": "T5_POTION_SLOWFIELD",
+      "name": "Poção Pegajosa"
+  },
+  {
+      "id": "T5_POTION_SLOWFIELD@1",
+      "name": "Poção Pegajosa"
+  },
+  {
+      "id": "T5_POTION_SLOWFIELD@2",
+      "name": "Poção Pegajosa"
+  },
+  {
+      "id": "T5_POTION_SLOWFIELD@3",
+      "name": "Poção Pegajosa"
+  },
+  {
+      "id": "T5_POTION_STONESKIN",
+      "name": "Poção de Resistência"
+  },
+  {
+      "id": "T5_POTION_STONESKIN@1",
+      "name": "Poção de Resistência"
+  },
+  {
+      "id": "T5_POTION_STONESKIN@2",
+      "name": "Poção de Resistência"
+  },
+  {
+      "id": "T5_POTION_STONESKIN@3",
+      "name": "Poção de Resistência"
+  },
+  {
+      "id": "T6_FOCUSPOTION_NONTRADABLE",
+      "name": "Poção de Restauração de Foco do Mestre"
+  },
+  {
+      "id": "T6_POTION_BERSERK",
+      "name": "Poção de Fúria"
+  },
+  {
+      "id": "T6_POTION_BERSERK@1",
+      "name": "Poção de Fúria"
+  },
+  {
+      "id": "T6_POTION_BERSERK@2",
+      "name": "Poção de Fúria"
+  },
+  {
+      "id": "T6_POTION_BERSERK@3",
+      "name": "Poção de Fúria"
+  },
+  {
+      "id": "T6_POTION_COOLDOWN",
+      "name": "Poção Venenosa"
+  },
+  {
+      "id": "T6_POTION_COOLDOWN@1",
+      "name": "Poção Venenosa"
+  },
+  {
+      "id": "T6_POTION_COOLDOWN@2",
+      "name": "Poção Venenosa"
+  },
+  {
+      "id": "T6_POTION_COOLDOWN@3",
+      "name": "Poção Venenosa"
+  },
+  {
+      "id": "T6_POTION_ENERGY",
+      "name": "Poção de Energia Maior"
+  },
+  {
+      "id": "T6_POTION_ENERGY@1",
+      "name": "Poção de Energia Maior"
+  },
+  {
+      "id": "T6_POTION_ENERGY@2",
+      "name": "Poção de Energia Maior"
+  },
+  {
+      "id": "T6_POTION_ENERGY@3",
+      "name": "Poção de Energia Maior"
+  },
+  {
+      "id": "T6_POTION_GATHER",
+      "name": "Poção de Coleta"
+  },
+  {
+      "id": "T6_POTION_GATHER@1",
+      "name": "Poção de Coleta"
+  },
+  {
+      "id": "T6_POTION_GATHER@2",
+      "name": "Poção de Coleta"
+  },
+  {
+      "id": "T6_POTION_GATHER@3",
+      "name": "Poção de Coleta"
+  },
+  {
+      "id": "T6_POTION_HEAL",
+      "name": "Poção de Cura Maior"
+  },
+  {
+      "id": "T6_POTION_HEAL@1",
+      "name": "Poção de Cura Maior"
+  },
+  {
+      "id": "T6_POTION_HEAL@2",
+      "name": "Poção de Cura Maior"
+  },
+  {
+      "id": "T6_POTION_HEAL@3",
+      "name": "Poção de Cura Maior"
+  },
+  {
+      "id": "T6_POTION_LAVA",
+      "name": "Poção Infernal"
+  },
+  {
+      "id": "T6_POTION_LAVA@1",
+      "name": "Poção Infernal"
+  },
+  {
+      "id": "T6_POTION_LAVA@2",
+      "name": "Poção Infernal"
+  },
+  {
+      "id": "T6_POTION_LAVA@3",
+      "name": "Poção Infernal"
+  },
+  {
+      "id": "T6_POTION_TORNADO",
+      "name": "Tornado Engarrafado"
+  },
+  {
+      "id": "T6_POTION_TORNADO@1",
+      "name": "Tornado Engarrafado"
+  },
+  {
+      "id": "T6_POTION_TORNADO@2",
+      "name": "Tornado Engarrafado"
+  },
+  {
+      "id": "T6_POTION_TORNADO@3",
+      "name": "Tornado Engarrafado"
+  },
+  {
+      "id": "T7_POTION_ACID",
+      "name": "Poção Ácida Maior"
+  },
+  {
+      "id": "T7_POTION_ACID@1",
+      "name": "Poção Ácida Maior"
+  },
+  {
+      "id": "T7_POTION_ACID@2",
+      "name": "Poção Ácida Maior"
+  },
+  {
+      "id": "T7_POTION_ACID@3",
+      "name": "Poção Ácida Maior"
+  },
+  {
+      "id": "T7_POTION_CLEANSE2",
+      "name": "Poção Purificadora Maior"
+  },
+  {
+      "id": "T7_POTION_CLEANSE2@1",
+      "name": "Poção Purificadora Maior"
+  },
+  {
+      "id": "T7_POTION_CLEANSE2@2",
+      "name": "Poção Purificadora Maior"
+  },
+  {
+      "id": "T7_POTION_CLEANSE2@3",
+      "name": "Poção Purificadora Maior"
+  },
+  {
+      "id": "T7_POTION_MOB_RESET",
+      "name": "Poção Calmante Maior"
+  },
+  {
+      "id": "T7_POTION_MOB_RESET@1",
+      "name": "Poção Calmante Maior"
+  },
+  {
+      "id": "T7_POTION_MOB_RESET@2",
+      "name": "Poção Calmante Maior"
+  },
+  {
+      "id": "T7_POTION_MOB_RESET@3",
+      "name": "Poção Calmante Maior"
+  },
+  {
+      "id": "T7_POTION_REVIVE",
+      "name": "Poção de Crescimento Maior"
+  },
+  {
+      "id": "T7_POTION_REVIVE@1",
+      "name": "Poção de Crescimento Maior"
+  },
+  {
+      "id": "T7_POTION_REVIVE@2",
+      "name": "Poção de Crescimento Maior"
+  },
+  {
+      "id": "T7_POTION_REVIVE@3",
+      "name": "Poção de Crescimento Maior"
+  },
+  {
+      "id": "T7_POTION_SLOWFIELD",
+      "name": "Poção Pegajosa Maior"
+  },
+  {
+      "id": "T7_POTION_SLOWFIELD@1",
+      "name": "Poção Pegajosa Maior"
+  },
+  {
+      "id": "T7_POTION_SLOWFIELD@2",
+      "name": "Poção Pegajosa Maior"
+  },
+  {
+      "id": "T7_POTION_SLOWFIELD@3",
+      "name": "Poção Pegajosa Maior"
+  },
+  {
+      "id": "T7_POTION_STONESKIN",
+      "name": "Poção de Resistência Maior"
+  },
+  {
+      "id": "T7_POTION_STONESKIN@1",
+      "name": "Poção de Resistência Maior"
+  },
+  {
+      "id": "T7_POTION_STONESKIN@2",
+      "name": "Poção de Resistência Maior"
+  },
+  {
+      "id": "T7_POTION_STONESKIN@3",
+      "name": "Poção de Resistência Maior"
+  },
+  {
+      "id": "UNIQUE_FOCUSPOTION_ADC_GENERAL_01",
+      "name": "@ITEMS_UNIQUE_FOCUSPOTION_ADC_GENERAL_01"
+  },
+  {
+      "id": "UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01",
+      "name": "Poção de Restauração de Foco"
+  },
+  {
+      "id": "T8_FOCUSPOTION_NONTRADABLE",
+      "name": "Poção de Restauração de Foco do Ancião"
+  },
+  {
+      "id": "T8_POTION_BERSERK",
+      "name": "Poção de Fúria Maior"
+  },
+  {
+      "id": "T8_POTION_BERSERK@1",
+      "name": "Poção de Fúria Maior"
+  },
+  {
+      "id": "T8_POTION_BERSERK@2",
+      "name": "Poção de Fúria Maior"
+  },
+  {
+      "id": "T8_POTION_BERSERK@3",
+      "name": "Poção de Fúria Maior"
+  },
+  {
+      "id": "T8_POTION_CLEANSE",
+      "name": "Poção de Invisibilidade"
+  },
+  {
+      "id": "T8_POTION_CLEANSE@1",
+      "name": "Poção de Invisibilidade"
+  },
+  {
+      "id": "T8_POTION_CLEANSE@2",
+      "name": "Poção de Invisibilidade"
+  },
+  {
+      "id": "T8_POTION_CLEANSE@3",
+      "name": "Poção de Invisibilidade"
+  },
+  {
+      "id": "T8_POTION_COOLDOWN",
+      "name": "Poção Venenosa Maior"
+  },
+  {
+      "id": "T8_POTION_COOLDOWN@1",
+      "name": "Poção Venenosa Maior"
+  },
+  {
+      "id": "T8_POTION_COOLDOWN@2",
+      "name": "Poção Venenosa Maior"
+  },
+  {
+      "id": "T8_POTION_COOLDOWN@3",
+      "name": "Poção Venenosa Maior"
+  },
+  {
+      "id": "T8_POTION_GATHER",
+      "name": "Poção de Coleta Maior"
+  },
+  {
+      "id": "T8_POTION_GATHER@1",
+      "name": "Poção de Coleta Maior"
+  },
+  {
+      "id": "T8_POTION_GATHER@2",
+      "name": "Poção de Coleta Maior"
+  },
+  {
+      "id": "T8_POTION_GATHER@3",
+      "name": "Poção de Coleta Maior"
+  },
+  {
+      "id": "T8_POTION_LAVA",
+      "name": "Poção Infernal Maior"
+  },
+  {
+      "id": "T8_POTION_LAVA@1",
+      "name": "Poção Infernal Maior"
+  },
+  {
+      "id": "T8_POTION_LAVA@2",
+      "name": "Poção Infernal Maior"
+  },
+  {
+      "id": "T8_POTION_LAVA@3",
+      "name": "Poção Infernal Maior"
+  },
+  {
+      "id": "T8_POTION_TORNADO",
+      "name": "Tornado Engarrafado Maior"
+  },
+  {
+      "id": "T8_POTION_TORNADO@1",
+      "name": "Tornado Engarrafado Maior"
+  },
+  {
+      "id": "T8_POTION_TORNADO@2",
+      "name": "Tornado Engarrafado Maior"
+  },
+  {
+      "id": "T8_POTION_TORNADO@3",
+      "name": "Tornado Engarrafado Maior"
+  }
+  ],
+  "comidas": [
+    {
+      "id": "T1_MEAL_GRILLEDFISH",
+      "name": "Peixe Grelhado"
+  },
+  {
+      "id": "T1_MEAL_SEAWEEDSALAD",
+      "name": "Salada de Algas"
+  },
+  {
+      "id": "T1_MEAL_SOUP",
+      "name": "Sopa de Cenoura"
+  },
+  {
+      "id": "T1_MEAL_SOUP@1",
+      "name": "Sopa de Cenoura"
+  },
+  {
+      "id": "T1_MEAL_SOUP@2",
+      "name": "Sopa de Cenoura"
+  },
+  {
+      "id": "T1_MEAL_SOUP@3",
+      "name": "Sopa de Cenoura"
+  },
+  {
+      "id": "T1_MEAL_SOUP_FISH",
+      "name": "Sopa de Mexilhão Esverdeado"
+  },
+  {
+      "id": "T1_MEAL_SOUP_FISH@1",
+      "name": "Sopa de Mexilhão Esverdeado"
+  },
+  {
+      "id": "T1_MEAL_SOUP_FISH@2",
+      "name": "Sopa de Mexilhão Esverdeado"
+  },
+  {
+      "id": "T1_MEAL_SOUP_FISH@3",
+      "name": "Sopa de Mexilhão Esverdeado"
+  },
+  {
+      "id": "T2_MEAL_SALAD",
+      "name": "Salada de Feijão"
+  },
+  {
+      "id": "T2_MEAL_SALAD@1",
+      "name": "Salada de Feijão"
+  },
+  {
+      "id": "T2_MEAL_SALAD@2",
+      "name": "Salada de Feijão"
+  },
+  {
+      "id": "T2_MEAL_SALAD@3",
+      "name": "Salada de Feijão"
+  },
+  {
+      "id": "T2_MEAL_SALAD_FISH",
+      "name": "Salada de Lula das Águas rasas"
+  },
+  {
+      "id": "T2_MEAL_SALAD_FISH@1",
+      "name": "Salada de Lula das Águas rasas"
+  },
+  {
+      "id": "T2_MEAL_SALAD_FISH@2",
+      "name": "Salada de Lula das Águas rasas"
+  },
+  {
+      "id": "T2_MEAL_SALAD_FISH@3",
+      "name": "Salada de Lula das Águas rasas"
+  },
+  {
+      "id": "T3_MEAL_SOUP",
+      "name": "Sopa de Trigo"
+  },
+  {
+      "id": "T3_MEAL_SOUP@1",
+      "name": "Sopa de Trigo"
+  },
+  {
+      "id": "T3_MEAL_SOUP@2",
+      "name": "Sopa de Trigo"
+  },
+  {
+      "id": "T3_MEAL_SOUP@3",
+      "name": "Sopa de Trigo"
+  },
+  {
+      "id": "T3_MEAL_SOUP_FISH",
+      "name": "Sopa de Mexilhão de Águas turvas"
+  },
+  {
+      "id": "T3_MEAL_SOUP_FISH@1",
+      "name": "Sopa de Mexilhão de Águas turvas"
+  },
+  {
+      "id": "T3_MEAL_SOUP_FISH@2",
+      "name": "Sopa de Mexilhão de Águas turvas"
+  },
+  {
+      "id": "T3_MEAL_SOUP_FISH@3",
+      "name": "Sopa de Mexilhão de Águas turvas"
+  },
+  {
+      "id": "T3_MEAL_PIE",
+      "name": "Torta de Galinha"
+  },
+  {
+      "id": "T3_MEAL_PIE@1",
+      "name": "Torta de Galinha"
+  },
+  {
+      "id": "T3_MEAL_PIE@2",
+      "name": "Torta de Galinha"
+  },
+  {
+      "id": "T3_MEAL_PIE@3",
+      "name": "Torta de Galinha"
+  },
+  {
+      "id": "T3_MEAL_PIE_FISH",
+      "name": "Torta de Olhofrio das Serras"
+  },
+  {
+      "id": "T3_MEAL_PIE_FISH@1",
+      "name": "Torta de Olhofrio das Serras"
+  },
+  {
+      "id": "T3_MEAL_PIE_FISH@2",
+      "name": "Torta de Olhofrio das Serras"
+  },
+  {
+      "id": "T3_MEAL_PIE_FISH@3",
+      "name": "Torta de Olhofrio das Serras"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE",
+      "name": "Omelete de Galinha"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE@1",
+      "name": "Omelete de Galinha"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE@2",
+      "name": "Omelete de Galinha"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE@3",
+      "name": "Omelete de Galinha"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE_FISH",
+      "name": "Omelete de Caranguejo do Rio-baixo"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE_FISH@1",
+      "name": "Omelete de Caranguejo do Rio-baixo"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE_FISH@2",
+      "name": "Omelete de Caranguejo do Rio-baixo"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE_FISH@3",
+      "name": "Omelete de Caranguejo do Rio-baixo"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE_AVALON",
+      "name": "Omelete de Galinha Avaloniano"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE_AVALON@1",
+      "name": "Omelete de Galinha Avaloniano"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE_AVALON@2",
+      "name": "Omelete de Galinha Avaloniano"
+  },
+  {
+      "id": "T3_MEAL_OMELETTE_AVALON@3",
+      "name": "Omelete de Galinha Avaloniano"
+  },
+  {
+      "id": "T3_MEAL_ROAST",
+      "name": "Frango Assado"
+  },
+  {
+      "id": "T3_MEAL_ROAST@1",
+      "name": "Frango Assado"
+  },
+  {
+      "id": "T3_MEAL_ROAST@2",
+      "name": "Frango Assado"
+  },
+  {
+      "id": "T3_MEAL_ROAST@3",
+      "name": "Frango Assado"
+  },
+  {
+      "id": "T3_MEAL_ROAST_FISH",
+      "name": "Pargo Bruma-branca Assado"
+  },
+  {
+      "id": "T3_MEAL_ROAST_FISH@1",
+      "name": "Pargo Bruma-branca Assado"
+  },
+  {
+      "id": "T3_MEAL_ROAST_FISH@2",
+      "name": "Pargo Bruma-branca Assado"
+  },
+  {
+      "id": "T3_MEAL_ROAST_FISH@3",
+      "name": "Pargo Bruma-branca Assado"
+  },
+  {
+      "id": "T4_MEAL_SALAD",
+      "name": "Salada de Nabo"
+  },
+  {
+      "id": "T4_MEAL_SALAD@1",
+      "name": "Salada de Nabo"
+  },
+  {
+      "id": "T4_MEAL_SALAD@2",
+      "name": "Salada de Nabo"
+  },
+  {
+      "id": "T4_MEAL_SALAD@3",
+      "name": "Salada de Nabo"
+  },
+  {
+      "id": "T4_MEAL_SALAD_FISH",
+      "name": "Salada de Polvo das Águas médias"
+  },
+  {
+      "id": "T4_MEAL_SALAD_FISH@1",
+      "name": "Salada de Polvo das Águas médias"
+  },
+  {
+      "id": "T4_MEAL_SALAD_FISH@2",
+      "name": "Salada de Polvo das Águas médias"
+  },
+  {
+      "id": "T4_MEAL_SALAD_FISH@3",
+      "name": "Salada de Polvo das Águas médias"
+  },
+  {
+      "id": "T4_MEAL_STEW",
+      "name": "Guisado de Cabra"
+  },
+  {
+      "id": "T4_MEAL_STEW@1",
+      "name": "Guisado de Cabra"
+  },
+  {
+      "id": "T4_MEAL_STEW@2",
+      "name": "Guisado de Cabra"
+  },
+  {
+      "id": "T4_MEAL_STEW@3",
+      "name": "Guisado de Cabra"
+  },
+  {
+      "id": "T4_MEAL_STEW_FISH",
+      "name": "Guisado de Enguia Esverdeada"
+  },
+  {
+      "id": "T4_MEAL_STEW_FISH@1",
+      "name": "Guisado de Enguia Esverdeada"
+  },
+  {
+      "id": "T4_MEAL_STEW_FISH@2",
+      "name": "Guisado de Enguia Esverdeada"
+  },
+  {
+      "id": "T4_MEAL_STEW_FISH@3",
+      "name": "Guisado de Enguia Esverdeada"
+  },
+  {
+      "id": "T4_MEAL_STEW_AVALON",
+      "name": "Guisado de Cabra Avaloniano"
+  },
+  {
+      "id": "T4_MEAL_STEW_AVALON@1",
+      "name": "Guisado de Cabra Avaloniano"
+  },
+  {
+      "id": "T4_MEAL_STEW_AVALON@2",
+      "name": "Guisado de Cabra Avaloniano"
+  },
+  {
+      "id": "T4_MEAL_STEW_AVALON@3",
+      "name": "Guisado de Cabra Avaloniano"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH",
+      "name": "Sanduíche de Cabra"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH@1",
+      "name": "Sanduíche de Cabra"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH@2",
+      "name": "Sanduíche de Cabra"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH@3",
+      "name": "Sanduíche de Cabra"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH_FISH",
+      "name": "Sanduíche de Larápio de Pedregulho"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH_FISH@1",
+      "name": "Sanduíche de Larápio de Pedregulho"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH_FISH@2",
+      "name": "Sanduíche de Larápio de Pedregulho"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH_FISH@3",
+      "name": "Sanduíche de Larápio de Pedregulho"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH_AVALON",
+      "name": "Sanduíche de Cabra Avaloniano"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH_AVALON@1",
+      "name": "Sanduíche de Cabra Avaloniano"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH_AVALON@2",
+      "name": "Sanduíche de Cabra Avaloniano"
+  },
+  {
+      "id": "T4_MEAL_SANDWICH_AVALON@3",
+      "name": "Sanduíche de Cabra Avaloniano"
+  },
+  {
+      "id": "T5_MEAL_SOUP",
+      "name": "Sopa de Repolho"
+  },
+  {
+      "id": "T5_MEAL_SOUP@1",
+      "name": "Sopa de Repolho"
+  },
+  {
+      "id": "T5_MEAL_SOUP@2",
+      "name": "Sopa de Repolho"
+  },
+  {
+      "id": "T5_MEAL_SOUP@3",
+      "name": "Sopa de Repolho"
+  },
+  {
+      "id": "T5_MEAL_SOUP_FISH",
+      "name": "Sopa de Mexilhão do Brejo"
+  },
+  {
+      "id": "T5_MEAL_SOUP_FISH@1",
+      "name": "Sopa de Mexilhão do Brejo"
+  },
+  {
+      "id": "T5_MEAL_SOUP_FISH@2",
+      "name": "Sopa de Mexilhão do Brejo"
+  },
+  {
+      "id": "T5_MEAL_SOUP_FISH@3",
+      "name": "Sopa de Mexilhão do Brejo"
+  },
+  {
+      "id": "T5_MEAL_PIE",
+      "name": "Torta de Ganso"
+  },
+  {
+      "id": "T5_MEAL_PIE@1",
+      "name": "Torta de Ganso"
+  },
+  {
+      "id": "T5_MEAL_PIE@2",
+      "name": "Torta de Ganso"
+  },
+  {
+      "id": "T5_MEAL_PIE@3",
+      "name": "Torta de Ganso"
+  },
+  {
+      "id": "T5_MEAL_PIE_FISH",
+      "name": "Torta de Olhocego das Montanhas"
+  },
+  {
+      "id": "T5_MEAL_PIE_FISH@1",
+      "name": "Torta de Olhocego das Montanhas"
+  },
+  {
+      "id": "T5_MEAL_PIE_FISH@2",
+      "name": "Torta de Olhocego das Montanhas"
+  },
+  {
+      "id": "T5_MEAL_PIE_FISH@3",
+      "name": "Torta de Olhocego das Montanhas"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE",
+      "name": "Omelete de Ganso"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE@1",
+      "name": "Omelete de Ganso"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE@2",
+      "name": "Omelete de Ganso"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE@3",
+      "name": "Omelete de Ganso"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE_FISH",
+      "name": "Omelete de Caranguejo de Riacho"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE_FISH@1",
+      "name": "Omelete de Caranguejo de Riacho"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE_FISH@2",
+      "name": "Omelete de Caranguejo de Riacho"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE_FISH@3",
+      "name": "Omelete de Caranguejo de Riacho"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE_AVALON",
+      "name": "Omelete de Ganso Avaloniano"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE_AVALON@1",
+      "name": "Omelete de Ganso Avaloniano"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE_AVALON@2",
+      "name": "Omelete de Ganso Avaloniano"
+  },
+  {
+      "id": "T5_MEAL_OMELETTE_AVALON@3",
+      "name": "Omelete de Ganso Avaloniano"
+  },
+  {
+      "id": "T5_MEAL_ROAST",
+      "name": "Ganso Assado"
+  },
+  {
+      "id": "T5_MEAL_ROAST@1",
+      "name": "Ganso Assado"
+  },
+  {
+      "id": "T5_MEAL_ROAST@2",
+      "name": "Ganso Assado"
+  },
+  {
+      "id": "T5_MEAL_ROAST@3",
+      "name": "Ganso Assado"
+  },
+  {
+      "id": "T5_MEAL_ROAST_FISH",
+      "name": "Pargo Névoa-clara Assado"
+  },
+  {
+      "id": "T5_MEAL_ROAST_FISH@1",
+      "name": "Pargo Névoa-clara Assado"
+  },
+  {
+      "id": "T5_MEAL_ROAST_FISH@2",
+      "name": "Pargo Névoa-clara Assado"
+  },
+  {
+      "id": "T5_MEAL_ROAST_FISH@3",
+      "name": "Pargo Névoa-clara Assado"
+  },
+  {
+      "id": "T6_MEAL_SALAD",
+      "name": "Salada de Batata"
+  },
+  {
+      "id": "T6_MEAL_SALAD@1",
+      "name": "Salada de Batata"
+  },
+  {
+      "id": "T6_MEAL_SALAD@2",
+      "name": "Salada de Batata"
+  },
+  {
+      "id": "T6_MEAL_SALAD@3",
+      "name": "Salada de Batata"
+  },
+  {
+      "id": "T6_MEAL_SALAD_FISH",
+      "name": "Salada de Kraken das Águas profundas"
+  },
+  {
+      "id": "T6_MEAL_SALAD_FISH@1",
+      "name": "Salada de Kraken das Águas profundas"
+  },
+  {
+      "id": "T6_MEAL_SALAD_FISH@2",
+      "name": "Salada de Kraken das Águas profundas"
+  },
+  {
+      "id": "T6_MEAL_SALAD_FISH@3",
+      "name": "Salada de Kraken das Águas profundas"
+  },
+  {
+      "id": "T6_MEAL_STEW",
+      "name": "Guisado de Carneiro"
+  },
+  {
+      "id": "T6_MEAL_STEW@1",
+      "name": "Guisado de Carneiro"
+  },
+  {
+      "id": "T6_MEAL_STEW@2",
+      "name": "Guisado de Carneiro"
+  },
+  {
+      "id": "T6_MEAL_STEW@3",
+      "name": "Guisado de Carneiro"
+  },
+  {
+      "id": "T6_MEAL_STEW_FISH",
+      "name": "Guisado de Enguia Avermelhada"
+  },
+  {
+      "id": "T6_MEAL_STEW_FISH@1",
+      "name": "Guisado de Enguia Avermelhada"
+  },
+  {
+      "id": "T6_MEAL_STEW_FISH@2",
+      "name": "Guisado de Enguia Avermelhada"
+  },
+  {
+      "id": "T6_MEAL_STEW_FISH@3",
+      "name": "Guisado de Enguia Avermelhada"
+  },
+  {
+      "id": "T6_MEAL_STEW_AVALON",
+      "name": "Guisado de Carneiro Avaloniano"
+  },
+  {
+      "id": "T6_MEAL_STEW_AVALON@1",
+      "name": "Guisado de Carneiro Avaloniano"
+  },
+  {
+      "id": "T6_MEAL_STEW_AVALON@2",
+      "name": "Guisado de Carneiro Avaloniano"
+  },
+  {
+      "id": "T6_MEAL_STEW_AVALON@3",
+      "name": "Guisado de Carneiro Avaloniano"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH",
+      "name": "Sanduíche de Carneiro"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH@1",
+      "name": "Sanduíche de Carneiro"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH@2",
+      "name": "Sanduíche de Carneiro"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH@3",
+      "name": "Sanduíche de Carneiro"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH_FISH",
+      "name": "Sanduíche de Larápio de Água corrente"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH_FISH@1",
+      "name": "Sanduíche de Larápio de Água corrente"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH_FISH@2",
+      "name": "Sanduíche de Larápio de Água corrente"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH_FISH@3",
+      "name": "Sanduíche de Larápio de Água corrente"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH_AVALON",
+      "name": "Sanduíche de Carneiro Avaloniano"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH_AVALON@1",
+      "name": "Sanduíche de Carneiro Avaloniano"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH_AVALON@2",
+      "name": "Sanduíche de Carneiro Avaloniano"
+  },
+  {
+      "id": "T6_MEAL_SANDWICH_AVALON@3",
+      "name": "Sanduíche de Carneiro Avaloniano"
+  },
+  {
+      "id": "T7_MEAL_PIE",
+      "name": "Torta de Porco"
+  },
+  {
+      "id": "T7_MEAL_PIE@1",
+      "name": "Torta de Porco"
+  },
+  {
+      "id": "T7_MEAL_PIE@2",
+      "name": "Torta de Porco"
+  },
+  {
+      "id": "T7_MEAL_PIE@3",
+      "name": "Torta de Porco"
+  },
+  {
+      "id": "T7_MEAL_PIE_FISH",
+      "name": "Torta de Olhomorto dos Picos"
+  },
+  {
+      "id": "T7_MEAL_PIE_FISH@1",
+      "name": "Torta de Olhomorto dos Picos"
+  },
+  {
+      "id": "T7_MEAL_PIE_FISH@2",
+      "name": "Torta de Olhomorto dos Picos"
+  },
+  {
+      "id": "T7_MEAL_PIE_FISH@3",
+      "name": "Torta de Olhomorto dos Picos"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE",
+      "name": "Omelete de Porco"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE@1",
+      "name": "Omelete de Porco"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE@2",
+      "name": "Omelete de Porco"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE@3",
+      "name": "Omelete de Porco"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE_FISH",
+      "name": "Omelete de Caranguejo de Poço"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE_FISH@1",
+      "name": "Omelete de Caranguejo de Poço"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE_FISH@2",
+      "name": "Omelete de Caranguejo de Poço"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE_FISH@3",
+      "name": "Omelete de Caranguejo de Poço"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE_AVALON",
+      "name": "Omelete de Porco Avaloniano"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE_AVALON@1",
+      "name": "Omelete de Porco Avaloniano"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE_AVALON@2",
+      "name": "Omelete de Porco Avaloniano"
+  },
+  {
+      "id": "T7_MEAL_OMELETTE_AVALON@3",
+      "name": "Omelete de Porco Avaloniano"
+  },
+  {
+      "id": "T7_MEAL_ROAST",
+      "name": "Porco Assado"
+  },
+  {
+      "id": "T7_MEAL_ROAST@1",
+      "name": "Porco Assado"
+  },
+  {
+      "id": "T7_MEAL_ROAST@2",
+      "name": "Porco Assado"
+  },
+  {
+      "id": "T7_MEAL_ROAST@3",
+      "name": "Porco Assado"
+  },
+  {
+      "id": "T7_MEAL_ROAST_FISH",
+      "name": "Pargo Neblina-pura Assado"
+  },
+  {
+      "id": "T7_MEAL_ROAST_FISH@1",
+      "name": "Pargo Neblina-pura Assado"
+  },
+  {
+      "id": "T7_MEAL_ROAST_FISH@2",
+      "name": "Pargo Neblina-pura Assado"
+  },
+  {
+      "id": "T7_MEAL_ROAST_FISH@3",
+      "name": "Pargo Neblina-pura Assado"
+  },
+  {
+      "id": "T8_MEAL_STEW",
+      "name": "Guisado de Carne"
+  },
+  {
+      "id": "T8_MEAL_STEW@1",
+      "name": "Guisado de Carne"
+  },
+  {
+      "id": "T8_MEAL_STEW@2",
+      "name": "Guisado de Carne"
+  },
+  {
+      "id": "T8_MEAL_STEW@3",
+      "name": "Guisado de Carne"
+  },
+  {
+      "id": "T8_MEAL_STEW_FISH",
+      "name": "Guisado de Enguia de Água-podre"
+  },
+  {
+      "id": "T8_MEAL_STEW_FISH@1",
+      "name": "Guisado de Enguia de Água-podre"
+  },
+  {
+      "id": "T8_MEAL_STEW_FISH@2",
+      "name": "Guisado de Enguia de Água-podre"
+  },
+  {
+      "id": "T8_MEAL_STEW_FISH@3",
+      "name": "Guisado de Enguia de Água-podre"
+  },
+  {
+      "id": "T8_MEAL_STEW_AVALON",
+      "name": "Guisado de Carne Avaloniano"
+  },
+  {
+      "id": "T8_MEAL_STEW_AVALON@1",
+      "name": "Guisado de Carne Avaloniano"
+  },
+  {
+      "id": "T8_MEAL_STEW_AVALON@2",
+      "name": "Guisado de Carne Avaloniano"
+  },
+  {
+      "id": "T8_MEAL_STEW_AVALON@3",
+      "name": "Guisado de Carne Avaloniano"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH",
+      "name": "Sanduíche de Carne"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH@1",
+      "name": "Sanduíche de Carne"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH@2",
+      "name": "Sanduíche de Carne"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH@3",
+      "name": "Sanduíche de Carne"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH_FISH",
+      "name": "Sanduíche de Larápio do Trovão"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH_FISH@1",
+      "name": "Sanduíche de Larápio do Trovão"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH_FISH@2",
+      "name": "Sanduíche de Larápio do Trovão"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH_FISH@3",
+      "name": "Sanduíche de Larápio do Trovão"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH_AVALON",
+      "name": "Sanduíche de Carne Avaloniano"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH_AVALON@1",
+      "name": "Sanduíche de Carne Avaloniano"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH_AVALON@2",
+      "name": "Sanduíche de Carne Avaloniano"
+  },
+  {
+      "id": "T8_MEAL_SANDWICH_AVALON@3",
+      "name": "Sanduíche de Carne Avaloniano"
+  }
+  ]
+} 
