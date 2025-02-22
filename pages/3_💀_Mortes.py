@@ -140,6 +140,16 @@ def get_medal(position):
         return "🥉"
     return "🏅"
 
+# Função para formatar valores
+def formatar_valor(valor):
+    if valor >= 1000000000:
+        return f"{valor/1000000000:.1f}B"
+    elif valor >= 1000000:
+        return f"{valor/1000000:.1f}M"
+    elif valor >= 1000:
+        return f"{valor/1000:.1f}K"
+    return f"{valor:.0f}"
+
 # Preparar dados para os rankings
 dados = carregar_dados()
 ranking_mortes = dados['personagem'].value_counts().reset_index()
@@ -171,7 +181,7 @@ with col1:
 with col2:
     st.subheader("Ranking de Valores Perdidos")
     for i, row in ranking_valores.iterrows():
-        valor_formatado = f"R$ {row['Valor Total Perdido']:,.2f}"
+        valor_formatado = formatar_valor(row['Valor Total Perdido'])
         st.markdown(f"""
         <div class="ranking-container">
             <div class="ranking-item">
@@ -199,4 +209,4 @@ st.bar_chart(
 
 # Mostrar total de perdas no período
 total_perdas = dados['valor_perdido'].sum()
-st.metric("Total de Perdas no Período", f"R$ {total_perdas:,.2f}") 
+st.metric("Total de Perdas no Período", formatar_valor(total_perdas)) 
