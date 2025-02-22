@@ -176,7 +176,7 @@ ranking_valores.columns = ['Personagem', 'Valor Total Perdido']
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("Ranking de Mortes")
+    st.subheader("Top 10 ranking de Mortes")
     for i, row in ranking_mortes.iterrows():
         st.markdown(f"""
         <div class="ranking-container">
@@ -190,7 +190,7 @@ with col1:
         """, unsafe_allow_html=True)
 
 with col2:
-    st.subheader("Ranking de Valores Perdidos")
+    st.subheader("Top 10 ranking de Valores Perdidos")
     for i, row in ranking_valores.iterrows():
         valor_formatado = formatar_valor(row['Valor Total Perdido'])
         st.markdown(f"""
