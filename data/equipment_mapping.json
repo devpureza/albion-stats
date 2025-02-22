@@ -188,23 +188,7 @@
     {"id": "T4_2H_CURSEDSTAFF_MORGANA", "name": "Cajado da Danação"},
     {"id": "T4_2H_SKULLORB_HELL", "name": "Crânio Amaldiçoado"},
     {"id": "T4_2H_SHADOWCALLER", "name": "Chama-sombra"},
-    {"id": "T4_MAIN_CURSEDSTAFF_CRYSTAL", "name": "Cajado pútrido"}
-  ],
-  "secundaria": [
-    {"id": "T4_OFF_BOOK", "name": "Tomo de Feitiços"},
-    {"id": "T4_OFF_DEMONSKULL", "name": "Tomo de Conhecimento"},
-    {"id": "T4_OFF_SHIELD", "name": "Escudo"},
-    {"id": "T4_OFF_SHIELD_HELL", "name": "Escudo de Caitiff"},
-    {"id": "T4_OFF_SHIELD_UNDEAD", "name": "Escudo Sarcófago"},
-    {"id": "T4_OFF_SHIELD_AVALON", "name": "Escudo de Tormenta"},
-    {"id": "T4_OFF_SHIELD_ROYAL", "name": "Escudo de Leão"},
-    {"id": "T4_OFF_TORCH", "name": "Tocha"},
-    {"id": "T4_OFF_TORCH_KEEPER", "name": "Tocha do Farol"},
-    {"id": "T4_OFF_DEMONSKULL_HELL", "name": "Crânio Amaldiçoado"},
-    {"id": "T4_OFF_TOTEM_KEEPER", "name": "Totem Druídico"},
-    {"id":"T4_OFF_DEMONSKULL_HELL", "name": "Muisec"},
-    {"id": "T4_OFF_ORB_MORGANA", "name": "Cetro de Miséria"},
-    {"id": "T4_OFF_CENSER_AVALON", "name": "Incensário Celeste do Adepto"},
+    {"id": "T4_MAIN_CURSEDSTAFF_CRYSTAL", "name": "Cajado pútrido"},
 
     {"id": "T4_2H_KNUCKLES_SET1@3", "name": "Luvas de Lutador do Adepto"},
     {"id": "T5_2H_KNUCKLES_SET1@3", "name": "Luvas de Lutador do Perito"},
@@ -246,7 +230,25 @@
     {"id": "T6_2H_KNUCKLES_CRYSTAL@3", "name": "Braçadeiras Pulsantes do Mestre"},
     {"id": "T7_2H_KNUCKLES_CRYSTAL@3", "name": "Braçadeiras Pulsantes do Grão-mestre"},
     {"id": "T8_2H_KNUCKLES_CRYSTAL@3", "name": "Braçadeiras Pulsantes do Ancião"}
+
   ],
+  "secundaria": [
+    {"id": "T4_OFF_BOOK", "name": "Tomo de Feitiços"},
+    {"id": "T4_OFF_DEMONSKULL", "name": "Tomo de Conhecimento"},
+    {"id": "T4_OFF_SHIELD", "name": "Escudo"},
+    {"id": "T4_OFF_SHIELD_HELL", "name": "Escudo de Caitiff"},
+    {"id": "T4_OFF_SHIELD_UNDEAD", "name": "Escudo Sarcófago"},
+    {"id": "T4_OFF_SHIELD_AVALON", "name": "Escudo de Tormenta"},
+    {"id": "T4_OFF_SHIELD_ROYAL", "name": "Escudo de Leão"},
+    {"id": "T4_OFF_TORCH", "name": "Tocha"},
+    {"id": "T4_OFF_TORCH_KEEPER", "name": "Tocha do Farol"},
+    {"id": "T4_OFF_DEMONSKULL_HELL", "name": "Crânio Amaldiçoado"},
+    {"id": "T4_OFF_TOTEM_KEEPER", "name": "Totem Druídico"},
+    {"id":"T4_OFF_DEMONSKULL_HELL", "name": "Muisec"},
+    {"id": "T4_OFF_ORB_MORGANA", "name": "Cetro de Miséria"},
+    {"id": "T4_OFF_CENSER_AVALON", "name": "Incensário Celeste do Adepto"}
+  ],
+
   "capas": [
     {"id": "T4_CAPEITEM_FW_THETFORD", "name": "Capa de Thetford"},
     {"id": "T4_CAPEITEM_FW_FORTSTERLING", "name": "Capa de Fort Sterling"}, 
