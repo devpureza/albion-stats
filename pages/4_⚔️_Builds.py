@@ -364,7 +364,7 @@ for _, build in builds.iterrows():
             <div class="build-card">
                 <div class="equipment-section">
                     <div class="equipment-item">
-                        <div class="equipment-img">🎒</div>
+                        <img class="equipment-img" src="{ALBION_RENDER_URL + 'T8_BAG@4' + '.png'}">
                         <div class="equipment-name">Mochila</div>
                     </div>
                     <div class="equipment-item">
