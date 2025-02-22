@@ -204,7 +204,7 @@
     {"id": "T4_OFF_TOTEM_KEEPER", "name": "Totem Druídico"},
     {"id":"T4_OFF_DEMONSKULL_HELL", "name": "Muisec"},
     {"id": "T4_OFF_ORB_MORGANA", "name": "Cetro de Miséria"},
-    {"id": "T4_OFF_CENSER_AVALON", "name": "Cetro Avalonian"}
+    {"id": "T4_OFF_CENSER_AVALON", "name": "Incensário Celeste do Adepto"}
   ],
   "capas": [
     {"id": "T4_CAPEITEM_FW_THETFORD", "name": "Capa de Thetford"},
