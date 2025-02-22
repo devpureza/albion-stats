@@ -453,8 +453,8 @@ for _, build in builds.iterrows():
             if build['arma']: st.markdown(f"🗡️ {build['arma']}")
             if build['secundaria']: 
                 st.markdown(f"🛡️ {build['secundaria']}")
-            elif build['arma']:  # Mostra a arma como secundária se não houver item secundário
-                st.markdown(f"🛡️ {build['arma']} (Duplicado)")
+            elif build['arma']:
+                st.markdown(f"🛡️ {build['arma']} (Duas mãos)")
             if build['cabeca']: st.markdown(f"⛑️ {build['cabeca']}")
             if build['peito']: st.markdown(f"👕 {build['peito']}")
             if build['botas']: st.markdown(f"👢 {build['botas']}")
