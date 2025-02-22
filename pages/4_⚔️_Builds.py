@@ -185,35 +185,35 @@ with st.expander("Adicionar Nova Build", expanded=False):
         arma = st.selectbox(
             "Arma Principal",
             options=[{"name": "", "id": ""}] + armas,
-            format_func=lambda x: "Selecione uma arma" if x["name"] == "" else x["name"],
+            format_func=lambda x: "Selecione uma arma" if not x or x.get("name") == "" else x.get("name"),
             key="arma"
         )
         secundarias = get_equipamentos("secundaria")
         secundaria = st.selectbox(
             "Mão Secundária",
             options=[{"name": "", "id": ""}] + secundarias,
-            format_func=lambda x: "Selecione item secundário" if x["name"] == "" else x["name"],
+            format_func=lambda x: "Selecione item secundário" if not x or x.get("name") == "" else x.get("name"),
             key="secundaria"
         )
         cabecas = get_equipamentos("cabecas")
         cabeca = st.selectbox(
             "Cabeça",
             options=[{"name": "", "id": ""}] + cabecas,
-            format_func=lambda x: "Selecione um capacete" if x["name"] == "" else x["name"],
+            format_func=lambda x: "Selecione um capacete" if not x or x.get("name") == "" else x.get("name"),
             key="cabeca"
         )
         armaduras = get_equipamentos("armaduras")
         peito = st.selectbox(
             "Armadura",
             options=[{"name": "", "id": ""}] + armaduras,
-            format_func=lambda x: "Selecione uma armadura" if x["name"] == "" else x["name"],
+            format_func=lambda x: "Selecione uma armadura" if not x or x.get("name") == "" else x.get("name"),
             key="peito"
         )
         botas_list = get_equipamentos("botas")
         botas = st.selectbox(
             "Botas",
             options=[{"name": "", "id": ""}] + botas_list,
-            format_func=lambda x: "Selecione uma bota" if x["name"] == "" else x["name"],
+            format_func=lambda x: "Selecione uma bota" if not x or x.get("name") == "" else x.get("name"),
             key="botas"
         )
     
