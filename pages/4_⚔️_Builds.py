@@ -425,8 +425,8 @@ for _, build in builds.iterrows():
                         <div class="tooltip-trigger" title="{build['peito'] or 'Nenhuma'}"></div>
                     </div>
                     <div class="equipment-item">
-                        <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['secundaria']) or '') + '.png'}" alt="{build['secundaria'] or 'Nenhuma'}">
-                        <div class="tooltip-trigger" title="{build['secundaria'] or 'Nenhuma'}"></div>
+                        <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['secundaria'] or build['arma']) or '') + '.png'}" alt="{build['secundaria'] or build['arma'] or 'Nenhuma'}">
+                        <div class="tooltip-trigger" title="{build['secundaria'] or build['arma'] or 'Nenhuma'}"></div>
                     </div>
                     <div class="equipment-item">
                         <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['potion']) or '') + '.png'}" alt="{build['potion'] or 'Nenhuma'}">
@@ -451,7 +451,10 @@ for _, build in builds.iterrows():
             # Lista de equipamentos
             st.markdown("**Equipamentos:**")
             if build['arma']: st.markdown(f"🗡️ {build['arma']}")
-            if build['secundaria']: st.markdown(f"🛡️ {build['secundaria']}")
+            if build['secundaria']: 
+                st.markdown(f"🛡️ {build['secundaria']}")
+            elif build['arma']:  # Mostra a arma como secundária se não houver item secundário
+                st.markdown(f"🛡️ {build['arma']} (Duplicado)")
             if build['cabeca']: st.markdown(f"⛑️ {build['cabeca']}")
             if build['peito']: st.markdown(f"👕 {build['peito']}")
             if build['botas']: st.markdown(f"👢 {build['botas']}")
