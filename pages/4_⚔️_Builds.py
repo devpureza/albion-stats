@@ -285,6 +285,15 @@ if tipo_filtro != "Todos":
 if personagem_filtro != "Todos":
     builds = builds[builds['personagem'] == personagem_filtro]
 
+# Mover a função para antes da seção de edição
+def encontrar_indice_item(items, nome_item):
+    if not nome_item:
+        return 0
+    for i, item in enumerate(items):
+        if item.get('name') == nome_item:
+            return i + 1  # +1 porque temos um item vazio no início
+    return 0
+
 # Adicionar lógica de edição no topo do arquivo, após as importações:
 if 'editing_build' in st.session_state:
     build = st.session_state.editing_build
@@ -307,26 +316,32 @@ if 'editing_build' in st.session_state:
         armas = get_equipamentos("armas")
         arma = st.selectbox("Arma Principal", 
             options=[{"name": "", "id": ""}] + armas,
-            index=get_equipamentos("armas").index(build['arma']) + 1,
+            index=encontrar_indice_item(armas, build['arma']),
+            format_func=lambda x: x.get("name"),
             key="edit_arma")
         secundarias = get_equipamentos("secundaria")
         secundaria = st.selectbox("Mão Secundária",
             options=[{"name": "", "id": ""}] + secundarias,
-            index=(get_equipamentos("secundaria").index(build['secundaria']) + 1) if build['secundaria'] else 0,
+            index=encontrar_indice_item(secundarias, build['secundaria']),
+            format_func=lambda x: x.get("name"),
             key="edit_secundaria")
         cabecas = get_equipamentos("cabecas")
         cabeca = st.selectbox("Cabeça",
             options=[{"name": "", "id": ""}] + cabecas,
-            index=(get_equipamentos("cabecas").index(build['cabeca']) + 1) if build['cabeca'] else 0,
+            index=encontrar_indice_item(cabecas, build['cabeca']),
+            format_func=lambda x: x.get("name"),
             key="edit_cabeca")
         armaduras = get_equipamentos("armaduras")
         peito = st.selectbox("Armadura",
             options=[{"name": "", "id": ""}] + armaduras,
-            index=(get_equipamentos("armaduras").index(build['peito']) + 1) if build['peito'] else 0,
+            index=encontrar_indice_item(armaduras, build['peito']),
+            format_func=lambda x: x.get("name"),
             key="edit_peito")
+        botas_list = get_equipamentos("botas")
         botas = st.selectbox("Botas",
-            options=[{"name": "", "id": ""}] + get_equipamentos("botas"),
-            index=(get_equipamentos("botas").index(build['botas']) + 1) if build['botas'] else 0,
+            options=[{"name": "", "id": ""}] + botas_list,
+            index=encontrar_indice_item(botas_list, build['botas']),
+            format_func=lambda x: x.get("name"),
             key="edit_botas")
     
     col3, col4 = st.columns(2)
@@ -334,18 +349,21 @@ if 'editing_build' in st.session_state:
         capas = get_equipamentos("capas")
         capa = st.selectbox("Capa",
             options=[{"name": "", "id": ""}] + capas,
-            index=(get_equipamentos("capas").index(build['capa']) + 1) if build['capa'] else 0,
+            index=encontrar_indice_item(capas, build['capa']),
+            format_func=lambda x: x.get("name"),
             key="edit_capa")
         pocoes = get_equipamentos("pocoes")
         potion = st.selectbox("Poção",
             options=[{"name": "", "id": ""}] + pocoes,
-            index=(get_equipamentos("pocoes").index(build['potion']) + 1) if build['potion'] else 0,
+            index=encontrar_indice_item(pocoes, build['potion']),
+            format_func=lambda x: x.get("name"),
             key="edit_potion")
     with col4:
         comidas = get_equipamentos("comidas")
         food = st.selectbox("Comida",
             options=[{"name": "", "id": ""}] + comidas,
-            index=(get_equipamentos("comidas").index(build['food']) + 1) if build['food'] else 0,
+            index=encontrar_indice_item(comidas, build['food']),
+            format_func=lambda x: x.get("name"),
             key="edit_food")
     
     notas = st.text_area("Notas/Observações", value=build['notas'], key="edit_notas")
@@ -353,8 +371,22 @@ if 'editing_build' in st.session_state:
     col5, col6 = st.columns(2)
     with col5:
         if st.button("Salvar Alterações"):
-            if nome and arma["name"]:
-                if atualizar_build(build['id'], nome, tipo, arma["name"], cabeca["name"], peito["name"], botas["name"], capa["name"], potion["name"], food["name"], notas, personagem, secundaria["name"]):
+            if nome and arma.get("name"):
+                if atualizar_build(
+                    build['id'], 
+                    nome, 
+                    tipo, 
+                    arma.get("name", ""),
+                    cabeca.get("name", ""),
+                    peito.get("name", ""),
+                    botas.get("name", ""),
+                    capa.get("name", ""),
+                    potion.get("name", ""),
+                    food.get("name", ""),
+                    notas,
+                    personagem,
+                    secundaria.get("name", "")
+                ):
                     st.success("Build atualizada com sucesso!")
                     del st.session_state.editing_build
                     st.rerun()
