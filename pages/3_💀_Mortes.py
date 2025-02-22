@@ -66,7 +66,7 @@ with st.sidebar:
 st.title("Registro de Mortes 💀")
 
 # Área para adicionar nova morte
-with st.expander("Registrar Nova Morte", expanded=True):
+with st.expander("Registrar Nova Morte", expanded=False):
     personagem = st.selectbox(
         "Personagem",
         options=get_personagens()
@@ -85,35 +85,103 @@ with st.expander("Registrar Nova Morte", expanded=True):
             st.success("Morte registrada com sucesso!")
             st.balloons()
 
-# Exibir dados
-st.subheader("Histórico de Mortes")
+# Adicionar CSS personalizado
+st.markdown("""
+<style>
+.ranking-container {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+}
+.ranking-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+.ranking-item:hover {
+    transform: translateX(5px);
+}
+.medal {
+    font-size: 24px;
+    margin-right: 15px;
+    min-width: 30px;
+}
+.position {
+    font-size: 18px;
+    margin-right: 15px;
+    color: #666;
+    min-width: 20px;
+}
+.player-name {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #ffffff;
+}
+.value {
+    font-size: 16px;
+    color: #00ff00;
+    margin-left: 10px;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# Função para obter emoji da medalha
+def get_medal(position):
+    if position == 0:
+        return "🥇"
+    elif position == 1:
+        return "🥈"
+    elif position == 2:
+        return "🥉"
+    return "🏅"
+
+# Preparar dados para os rankings
 dados = carregar_dados()
+ranking_mortes = dados['personagem'].value_counts().reset_index()
+ranking_mortes.columns = ['Personagem', 'Quantidade de Mortes']
+ranking_mortes = ranking_mortes.head(10)  # Limitar para top 10
 
-# Aplicar filtros
-if personagem_filtro != "Todos":
-    dados = dados[dados['personagem'] == personagem_filtro]
+ranking_valores = dados.groupby('personagem')['valor_perdido'].sum().reset_index()
+ranking_valores = ranking_valores.sort_values('valor_perdido', ascending=False)
+ranking_valores = ranking_valores.head(10)  # Limitar para top 10
+ranking_valores.columns = ['Personagem', 'Valor Total Perdido']
 
-# Aplicar filtro de data
-dados['data'] = pd.to_datetime(dados['data'], format='%d/%m/%Y')
-dados = dados[(dados['data'].dt.date >= data_inicio) & (dados['data'].dt.date <= data_fim)]
-dados['data'] = dados['data'].dt.strftime('%d/%m/%Y')
+# Criar duas colunas para os rankings
+col1, col2 = st.columns(2)
 
-# Exibir dataframe
-st.dataframe(
-    dados.drop('id', axis=1),  # Remove a coluna ID da visualização
-    use_container_width=True,
-    hide_index=True,
-    column_config={
-        "personagem": "Personagem",
-        "data": "Data",
-        "valor_perdido": st.column_config.NumberColumn(
-            "Valor Perdido",
-            format="R$ %.2f",
-            help="Valor perdido em Reais"
-        ),
-        "descricao": "Descrição"
-    }
-)
+with col1:
+    st.subheader("Ranking de Mortes")
+    for i, row in ranking_mortes.iterrows():
+        st.markdown(f"""
+        <div class="ranking-container">
+            <div class="ranking-item">
+                <div class="medal">{get_medal(i)}</div>
+                <div class="position">#{i+1}</div>
+                <div class="player-name">{row['Personagem']}</div>
+                <div class="value">{row['Quantidade de Mortes']} mortes</div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+with col2:
+    st.subheader("Ranking de Valores Perdidos")
+    for i, row in ranking_valores.iterrows():
+        valor_formatado = f"R$ {row['Valor Total Perdido']:,.2f}"
+        st.markdown(f"""
+        <div class="ranking-container">
+            <div class="ranking-item">
+                <div class="medal">{get_medal(i)}</div>
+                <div class="position">#{i+1}</div>
+                <div class="player-name">{row['Personagem']}</div>
+                <div class="value">{valor_formatado}</div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
 # Análise de Perdas por Personagem
 st.subheader("Análise de Perdas por Personagem")
