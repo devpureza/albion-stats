@@ -50,19 +50,6 @@ def deletar_morte(id):
         st.error(f"Erro ao deletar registro: {str(e)}")
         return False
 
-# Sidebar
-with st.sidebar:
-    st.title("Filtros")
-    personagem_filtro = st.selectbox(
-        "Personagem",
-        options=["Todos"] + get_personagens()
-    )
-    data_inicio, data_fim = st.date_input(
-        "Intervalo de Data",
-        value=(datetime.now().date() - pd.Timedelta(days=30), datetime.now().date()),
-        key="date_range"
-    )
-
 st.title("Registro de Mortes 💀")
 
 # Área para adicionar nova morte
@@ -85,7 +72,6 @@ with st.expander("Registrar Nova Morte", expanded=False):
             st.success("Morte registrada com sucesso!")
             st.balloons()
 
-# Adicionar CSS personalizado
 st.markdown("""
 <style>
 .ranking-container {
