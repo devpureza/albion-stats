@@ -156,6 +156,31 @@ ranking_mortes = dados['personagem'].value_counts().reset_index()
 ranking_mortes.columns = ['Personagem', 'Quantidade de Mortes']
 ranking_mortes = ranking_mortes.head(10)  # Limitar para top 10
 
+# Adicionar mensagem de parabéns para quem mais morreu
+if not ranking_mortes.empty:
+    campeao_mortes = ranking_mortes.iloc[0]['Personagem']
+    # st.toast(f"🏆 Parabéns {campeao_mortes}, você é o que mais morreu!", icon="🎉")
+    st.markdown(f"""
+        <div style='padding: 20px; 
+                    background-color: #1e1e1e; 
+                    border-radius: 10px; 
+                    text-align: center;
+                    margin: 20px 0;
+                    font-size: 24px;
+                    animation: pulse 2s infinite;'>
+            🏆 Parabéns <span style='color: #00ff00;'>{campeao_mortes}</span>!<br>
+            Você é o campeão de mortes! 💀
+        </div>
+        <style>
+            @keyframes pulse {{
+                0% {{ transform: scale(1); }}
+                50% {{ transform: scale(1.05); }}
+                100% {{ transform: scale(1); }}
+            }}
+        </style>
+    """, unsafe_allow_html=True)
+    st.balloons()
+
 ranking_valores = dados.groupby('personagem')['valor_perdido'].sum().reset_index()
 ranking_valores = ranking_valores.sort_values('valor_perdido', ascending=False)
 ranking_valores = ranking_valores.head(10)  # Limitar para top 10
