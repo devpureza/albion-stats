@@ -10,6 +10,26 @@ st.set_page_config(page_title="Builds", page_icon="⚔️", layout="wide")
 init_db()
 upgrade_db()
 
+# Adicionar constante para a URL base
+ALBION_RENDER_URL = "https://render.albiononline.com/v1/item/"
+
+# Função para converter nome do item para ID do Albion
+def get_item_id(item_name):
+    if not item_name:  # Se o item estiver vazio
+        return None
+        
+    # Procurar o item em todas as categorias
+    categorias = ['armas', 'cabecas', 'armaduras', 'botas', 'capas', 'pocoes', 'comidas', 'secundaria']
+    
+    for categoria in categorias:
+        items = get_equipamentos(categoria)
+        if isinstance(items, list):
+            for item in items:
+                if isinstance(item, dict) and item.get('name') == item_name:
+                    return item.get('id')
+    
+    return None
+
 # Funções do banco de dados
 def carregar_builds():
     try:
@@ -60,7 +80,7 @@ def deletar_build(id):
         st.error(f"Erro ao deletar build: {str(e)}")
         return False
 
-# Estilo CSS personalizado
+# Adicionar/modificar o CSS
 st.markdown("""
 <style>
 .build-card {
@@ -81,19 +101,52 @@ st.markdown("""
     margin-bottom: 15px;
 }
 .build-info {
-    color: white;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    color: #ffffff;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.build-info strong {
+    color: #00ff88;
+    font-size: 1.1em;
+}
+.build-info br {
+    display: block;
+    margin: 5px 0;
 }
 .equipment-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
     margin: 10px 0;
+    max-width: 400px;
+    margin: 0 auto;
 }
 .equipment-item {
     background-color: #2a2a2a;
-    padding: 8px;
+    padding: 10px;
     border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    aspect-ratio: 1;
+}
+.equipment-img {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+}
+.equipment-name {
+    font-size: 0.8em;
+    color: #ffffff;
+    text-align: center;
+    word-wrap: break-word;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -128,56 +181,85 @@ with st.expander("Adicionar Nova Build", expanded=False):
         )
     
     with col2:
+        armas = get_equipamentos("armas")
         arma = st.selectbox(
             "Arma Principal",
-            options=[""] + get_equipamentos("armas"),
-            format_func=lambda x: "Selecione uma arma" if x == "" else x
+            options=[{"name": "", "id": ""}] + armas,
+            format_func=lambda x: "Selecione uma arma" if x["name"] == "" else x["name"],
+            key="arma"
         )
+        secundarias = get_equipamentos("secundaria")
         secundaria = st.selectbox(
             "Mão Secundária",
-            options=[""] + get_equipamentos("secundaria"),
-            format_func=lambda x: "Selecione item secundário" if x == "" else x
+            options=[{"name": "", "id": ""}] + secundarias,
+            format_func=lambda x: "Selecione item secundário" if x["name"] == "" else x["name"],
+            key="secundaria"
         )
+        cabecas = get_equipamentos("cabecas")
         cabeca = st.selectbox(
             "Cabeça",
-            options=[""] + get_equipamentos("cabecas"),
-            format_func=lambda x: "Selecione um capacete" if x == "" else x
+            options=[{"name": "", "id": ""}] + cabecas,
+            format_func=lambda x: "Selecione um capacete" if x["name"] == "" else x["name"],
+            key="cabeca"
         )
+        armaduras = get_equipamentos("armaduras")
         peito = st.selectbox(
             "Armadura",
-            options=[""] + get_equipamentos("armaduras"),
-            format_func=lambda x: "Selecione uma armadura" if x == "" else x
+            options=[{"name": "", "id": ""}] + armaduras,
+            format_func=lambda x: "Selecione uma armadura" if x["name"] == "" else x["name"],
+            key="peito"
         )
+        botas_list = get_equipamentos("botas")
         botas = st.selectbox(
             "Botas",
-            options=[""] + get_equipamentos("botas"),
-            format_func=lambda x: "Selecione uma bota" if x == "" else x
+            options=[{"name": "", "id": ""}] + botas_list,
+            format_func=lambda x: "Selecione uma bota" if x["name"] == "" else x["name"],
+            key="botas"
         )
     
     col3, col4 = st.columns(2)
     with col3:
+        capas = get_equipamentos("capas")
         capa = st.selectbox(
             "Capa",
-            options=[""] + get_equipamentos("capas"),
-            format_func=lambda x: "Selecione uma capa" if x == "" else x
+            options=[{"name": "", "id": ""}] + capas,
+            format_func=lambda x: "Selecione uma capa" if x["name"] == "" else x["name"],
+            key="capa"
         )
+        pocoes = get_equipamentos("pocoes")
         potion = st.selectbox(
             "Poção",
-            options=[""] + get_equipamentos("pocoes"),
-            format_func=lambda x: "Selecione uma poção" if x == "" else x
+            options=[{"name": "", "id": ""}] + pocoes,
+            format_func=lambda x: "Selecione uma poção" if x["name"] == "" else x["name"],
+            key="potion"
         )
     with col4:
+        comidas = get_equipamentos("comidas")
         food = st.selectbox(
             "Comida",
-            options=[""] + get_equipamentos("comidas"),
-            format_func=lambda x: "Selecione uma comida" if x == "" else x
+            options=[{"name": "", "id": ""}] + comidas,
+            format_func=lambda x: "Selecione uma comida" if x["name"] == "" else x["name"],
+            key="food"
         )
     
     notas = st.text_area("Notas/Observações")
     
     if st.button("Salvar Build"):
-        if nome and arma:  # Validação básica
-            if salvar_build(nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem, secundaria):
+        if nome and arma["name"]:  # Validação básica
+            if salvar_build(
+                nome, 
+                tipo, 
+                arma["name"], 
+                cabeca["name"], 
+                peito["name"], 
+                botas["name"], 
+                capa["name"], 
+                potion["name"], 
+                food["name"], 
+                notas, 
+                personagem, 
+                secundaria["name"]
+            ):
                 st.success("Build salva com sucesso!")
                 st.balloons()
         else:
@@ -213,40 +295,47 @@ if 'editing_build' in st.session_state:
             key="edit_personagem")
     
     with col2:
+        armas = get_equipamentos("armas")
         arma = st.selectbox("Arma Principal", 
-            options=[""] + get_equipamentos("armas"),
+            options=[{"name": "", "id": ""}] + armas,
             index=get_equipamentos("armas").index(build['arma']) + 1,
             key="edit_arma")
+        secundarias = get_equipamentos("secundaria")
         secundaria = st.selectbox("Mão Secundária",
-            options=[""] + get_equipamentos("secundaria"),
+            options=[{"name": "", "id": ""}] + secundarias,
             index=(get_equipamentos("secundaria").index(build['secundaria']) + 1) if build['secundaria'] else 0,
             key="edit_secundaria")
+        cabecas = get_equipamentos("cabecas")
         cabeca = st.selectbox("Cabeça",
-            options=[""] + get_equipamentos("cabecas"),
+            options=[{"name": "", "id": ""}] + cabecas,
             index=(get_equipamentos("cabecas").index(build['cabeca']) + 1) if build['cabeca'] else 0,
             key="edit_cabeca")
+        armaduras = get_equipamentos("armaduras")
         peito = st.selectbox("Armadura",
-            options=[""] + get_equipamentos("armaduras"),
+            options=[{"name": "", "id": ""}] + armaduras,
             index=(get_equipamentos("armaduras").index(build['peito']) + 1) if build['peito'] else 0,
             key="edit_peito")
         botas = st.selectbox("Botas",
-            options=[""] + get_equipamentos("botas"),
+            options=[{"name": "", "id": ""}] + get_equipamentos("botas"),
             index=(get_equipamentos("botas").index(build['botas']) + 1) if build['botas'] else 0,
             key="edit_botas")
     
     col3, col4 = st.columns(2)
     with col3:
+        capas = get_equipamentos("capas")
         capa = st.selectbox("Capa",
-            options=[""] + get_equipamentos("capas"),
+            options=[{"name": "", "id": ""}] + capas,
             index=(get_equipamentos("capas").index(build['capa']) + 1) if build['capa'] else 0,
             key="edit_capa")
+        pocoes = get_equipamentos("pocoes")
         potion = st.selectbox("Poção",
-            options=[""] + get_equipamentos("pocoes"),
+            options=[{"name": "", "id": ""}] + pocoes,
             index=(get_equipamentos("pocoes").index(build['potion']) + 1) if build['potion'] else 0,
             key="edit_potion")
     with col4:
+        comidas = get_equipamentos("comidas")
         food = st.selectbox("Comida",
-            options=[""] + get_equipamentos("comidas"),
+            options=[{"name": "", "id": ""}] + comidas,
             index=(get_equipamentos("comidas").index(build['food']) + 1) if build['food'] else 0,
             key="edit_food")
     
@@ -255,8 +344,8 @@ if 'editing_build' in st.session_state:
     col5, col6 = st.columns(2)
     with col5:
         if st.button("Salvar Alterações"):
-            if nome and arma:
-                if atualizar_build(build['id'], nome, tipo, arma, cabeca, peito, botas, capa, potion, food, notas, personagem, secundaria):
+            if nome and arma["name"]:
+                if atualizar_build(build['id'], nome, tipo, arma["name"], cabeca["name"], peito["name"], botas["name"], capa["name"], potion["name"], food["name"], notas, personagem, secundaria["name"]):
                     st.success("Build atualizada com sucesso!")
                     del st.session_state.editing_build
                     st.rerun()
@@ -274,22 +363,48 @@ for _, build in builds.iterrows():
             st.markdown(f"""
             <div class="build-card">
                 <div class="equipment-section">
-                    <div class="equipment-item">🗡️ Arma: {build['arma']}</div>
-                    <div class="equipment-item">🛡️ Secundária: {build.get('secundaria', 'Nenhuma')}</div>
-                    <div class="equipment-item">🎭 Cabeça: {build['cabeca']}</div>
-                    <div class="equipment-item">👕 Armadura: {build['peito']}</div>
-                    <div class="equipment-item">👢 Botas: {build['botas']}</div>
-                    <div class="equipment-item">🎭 Capa: {build['capa']}</div>
-                    <div class="equipment-item">🧪 Poção: {build['potion']}</div>
-                    <div class="equipment-item">🍖 Comida: {build['food']}</div>
-                </div>
-                
-                <div class="build-info">
-                    <strong>Notas:</strong><br>
-                    {build['notas'] if build['notas'] else 'Nenhuma nota adicional.'}
+                    <div class="equipment-item">
+                        <div class="equipment-img">🎒</div>
+                        <div class="equipment-name">Mochila</div>
+                    </div>
+                    <div class="equipment-item">
+                        <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['cabeca']) or '') + '.png'}" alt="{build['cabeca'] or 'Nenhuma'}">
+                        <div class="equipment-name">{build['cabeca'] or 'Nenhuma'}</div>
+                    </div>
+                    <div class="equipment-item">
+                        <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['capa']) or '') + '.png'}" alt="{build['capa'] or 'Nenhuma'}">
+                        <div class="equipment-name">{build['capa'] or 'Nenhuma'}</div>
+                    </div>
+                    <div class="equipment-item">
+                        <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['arma']) or '') + '.png'}" alt="{build['arma'] or 'Nenhuma'}">
+                        <div class="equipment-name">{build['arma'] or 'Nenhuma'}</div>
+                    </div>
+                    <div class="equipment-item">
+                        <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['peito']) or '') + '.png'}" alt="{build['peito'] or 'Nenhuma'}">
+                        <div class="equipment-name">{build['peito'] or 'Nenhuma'}</div>
+                    </div>
+                    <div class="equipment-item">
+                        <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['secundaria']) or '') + '.png'}" alt="{build['secundaria'] or 'Nenhuma'}">
+                        <div class="equipment-name">{build['secundaria'] or 'Nenhuma'}</div>
+                    </div>
+                    <div class="equipment-item">
+                        <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['potion']) or '') + '.png'}" alt="{build['potion'] or 'Nenhuma'}">
+                        <div class="equipment-name">{build['potion'] or 'Nenhuma'}</div>
+                    </div>
+                    <div class="equipment-item">
+                        <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['botas']) or '') + '.png'}" alt="{build['botas'] or 'Nenhuma'}">
+                        <div class="equipment-name">{build['botas'] or 'Nenhuma'}</div>
+                    </div>
+                    <div class="equipment-item">
+                        <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['food']) or '') + '.png'}" alt="{build['food'] or 'Nenhuma'}">
+                        <div class="equipment-name">{build['food'] or 'Nenhuma'}</div>
+                    </div>
                 </div>
             </div>
             """, unsafe_allow_html=True)
+            
+            if build['notas']:  # Só mostra o tooltip se houver notas
+                st.markdown("ℹ️ Passe o mouse aqui para ver as notas" + " " * 100, help=build['notas'])
         
         with col2:
             if st.button("✏️ Editar", key=f"edit_{build['id']}"):

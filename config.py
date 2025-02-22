@@ -1,6 +1,7 @@
 # Configurações globais do projeto
 
 import os
+import json
 
 def get_personagens():
     """Retorna a lista de personagens disponíveis"""
@@ -8,22 +9,30 @@ def get_personagens():
 
 def get_equipamentos(tipo):
     """
-    Lê equipamentos de um arquivo txt
-    tipo: 'armas', 'cabecas', 'armaduras', 'botas', 'capas', 'pocoes', 'comidas'
+    Lê equipamentos do arquivo equipment_mapping.json
+    tipo: 'armas', 'cabecas', 'armaduras', 'botas', 'capas', 'pocoes', 'comidas', 'secundaria'
     """
-    arquivo = f"data/equipamentos/{tipo}.txt"
+    arquivo = "data/equipment_mapping.json"
     try:
-        if not os.path.exists(arquivo):
-            # Criar arquivo se não existir
-            os.makedirs(os.path.dirname(arquivo), exist_ok=True)
-            with open(arquivo, 'w', encoding='utf-8') as f:
-                f.write('')
-            return []
-        
         with open(arquivo, 'r', encoding='utf-8') as f:
-            # Remove linhas vazias e espaços em branco
-            items = [line.strip() for line in f.readlines() if line.strip()]
-            return sorted(items)
+            data = json.load(f)
+            # Mapeia os tipos em português para as chaves do JSON
+            tipo_map = {
+                'cabecas': 'cabecas',
+                'armaduras': 'armaduras',
+                'botas': 'botas',
+                'armas': 'armas',
+                'secundaria': 'secundaria',
+                'capas': 'capas',
+                'pocoes': 'pocoes',
+                'comidas': 'comidas'
+            }
+            
+            # Pega os items da categoria correta
+            items = data.get(tipo_map[tipo], [])
+            # Retorna lista de dicionários com nome e id
+            return sorted(items, key=lambda x: x['name'])
+            
     except Exception as e:
         print(f"Erro ao ler arquivo {arquivo}: {str(e)}")
         return []
