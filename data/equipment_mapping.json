@@ -159,7 +159,7 @@
     {"id": "T4_OFF_TORCH_KEEPER", "name": "Tocha do Farol"},
     {"id": "T4_OFF_DEMONSKULL_HELL", "name": "Crânio Amaldiçoado"},
     {"id": "T4_OFF_TOTEM_KEEPER", "name": "Totem Druídico"},
-    {"id": "T4_OFF_HORN_KEEPER", "name": "Muisec"},
+    {"id":"T4_OFF_DEMONSKULL_HELL", "name": "Muisec"},
     {"id": "T4_OFF_ORB_MORGANA", "name": "Cetro de Miséria"},
     {"id": "T4_OFF_CENSER_AVALON", "name": "Cetro Avalonian"}
   ],
