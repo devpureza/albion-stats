@@ -103,7 +103,13 @@
     {"id": "T4_2H_SCYTHE_HELL", "name": "Foice Infernal do Adepto"},
     {"id": "T5_2H_SCYTHE_HELL", "name": "Foice Infernal do Perito"},
     {"id": "T6_2H_SCYTHE_HELL", "name": "Foice Infernal do Mestre"},
-    {"id": "T7_2H_SCYTHE_HELL", "name": "Foice Infernal do Grão-mestre"}
+    {"id": "T7_2H_SCYTHE_HELL", "name": "Foice Infernal do Grão-mestre"},
+    {"id": "T8_2H_SCYTHE_HELL", "name": "Foice Infernal do Ancião"},
+    {"id": "T4_2H_BEARPAWS", "name": "Patas de Urso do Adepto"},
+    {"id": "T5_2H_BEARPAWS", "name": "Patas de Urso do Perito"},
+    {"id": "T6_2H_BEARPAWS", "name": "Patas de Urso do Mestre"},
+    {"id": "T7_2H_BEARPAWS", "name": "Patas de Urso do Grão-mestre"},
+    {"id": "T8_2H_BEARPAWS", "name": "Patas de Urso do Ancião"},
     
     {"id": "T4_MAIN_MACE", "name": "Maça"},
     {"id": "T4_2H_MACE", "name": "Maça de Batalha"},
