@@ -176,14 +176,678 @@
     {"id": "T4_CAPEITEM_AVALON", "name": "Capa Avaloniana"}
   ],
   "pocoes": [
-    {"id": "T4_POTION_HEAL", "name": "Poção de Cura"},
-    {"id": "T4_POTION_ENERGY", "name": "Poção de Energia"},
-    {"id": "T4_POTION_STONESKIN", "name": "Poção de Veneno"},
-    {"id": "T4_POTION_SLOWFIELD", "name": "Poção de Invisibilidade"},
-    {"id": "T4_POTION_RESISTANCE", "name": "Poção de Resistência"},
-    {"id": "T4_POTION_REGEN", "name": "Poção de Regeneração"},
-    {"id": "T4_POTION_GIANTSTRENGTH", "name": "Poção de Gigante"},
-    {"id": "T4_POTION_CLEANSE", "name": "Poção de Purificação"}
+    {
+      "id": "T2_POTION_ENERGY",
+      "name": "Poção de Energia Menor"
+  },
+  {
+      "id": "T2_POTION_ENERGY@1",
+      "name": "Poção de Energia Menor"
+  },
+  {
+      "id": "T2_POTION_ENERGY@2",
+      "name": "Poção de Energia Menor"
+  },
+  {
+      "id": "T2_POTION_ENERGY@3",
+      "name": "Poção de Energia Menor"
+  },
+  {
+      "id": "T2_POTION_HEAL",
+      "name": "Poção de Cura Menor"
+  },
+  {
+      "id": "T2_POTION_HEAL@1",
+      "name": "Poção de Cura Menor"
+  },
+  {
+      "id": "T2_POTION_HEAL@2",
+      "name": "Poção de Cura Menor"
+  },
+  {
+      "id": "T2_POTION_HEAL@3",
+      "name": "Poção de Cura Menor"
+  },
+  {
+      "id": "UNIQUE_FOCUSPOTION_TUTORIAL_01",
+      "name": "@ITEMS_UNIQUE_FOCUSPOTION_TUTORIAL_01"
+  },
+  {
+      "id": "T3_FOCUSPOTION_NONTRADABLE",
+      "name": "Poção de Restauração de Foco do Iniciante"
+  },
+  {
+      "id": "T3_POTION_ACID",
+      "name": "Poção Ácida Menor"
+  },
+  {
+      "id": "T3_POTION_ACID@1",
+      "name": "Poção Ácida Menor"
+  },
+  {
+      "id": "T3_POTION_ACID@2",
+      "name": "Poção Ácida Menor"
+  },
+  {
+      "id": "T3_POTION_ACID@3",
+      "name": "Poção Ácida Menor"
+  },
+  {
+      "id": "T3_POTION_CLEANSE2",
+      "name": "Poção Purificadora Menor"
+  },
+  {
+      "id": "T3_POTION_CLEANSE2@1",
+      "name": "Poção Purificadora Menor"
+  },
+  {
+      "id": "T3_POTION_CLEANSE2@2",
+      "name": "Poção Purificadora Menor"
+  },
+  {
+      "id": "T3_POTION_CLEANSE2@3",
+      "name": "Poção Purificadora Menor"
+  },
+  {
+      "id": "T3_POTION_MOB_RESET",
+      "name": "Poção Calmante Menor"
+  },
+  {
+      "id": "T3_POTION_MOB_RESET@1",
+      "name": "Poção Calmante Menor"
+  },
+  {
+      "id": "T3_POTION_MOB_RESET@2",
+      "name": "Poção Calmante Menor"
+  },
+  {
+      "id": "T3_POTION_MOB_RESET@3",
+      "name": "Poção Calmante Menor"
+  },
+  {
+      "id": "T3_POTION_REVIVE",
+      "name": "Poção de Crescimento Menor"
+  },
+  {
+      "id": "T3_POTION_REVIVE@1",
+      "name": "Poção de Crescimento Menor"
+  },
+  {
+      "id": "T3_POTION_REVIVE@2",
+      "name": "Poção de Crescimento Menor"
+  },
+  {
+      "id": "T3_POTION_REVIVE@3",
+      "name": "Poção de Crescimento Menor"
+  },
+  {
+      "id": "T3_POTION_SLOWFIELD",
+      "name": "Poção Pegajosa Menor"
+  },
+  {
+      "id": "T3_POTION_SLOWFIELD@1",
+      "name": "Poção Pegajosa Menor"
+  },
+  {
+      "id": "T3_POTION_SLOWFIELD@2",
+      "name": "Poção Pegajosa Menor"
+  },
+  {
+      "id": "T3_POTION_SLOWFIELD@3",
+      "name": "Poção Pegajosa Menor"
+  },
+  {
+      "id": "T3_POTION_STONESKIN",
+      "name": "Poção de Resistência Menor"
+  },
+  {
+      "id": "T3_POTION_STONESKIN@1",
+      "name": "Poção de Resistência Menor"
+  },
+  {
+      "id": "T3_POTION_STONESKIN@2",
+      "name": "Poção de Resistência Menor"
+  },
+  {
+      "id": "T3_POTION_STONESKIN@3",
+      "name": "Poção de Resistência Menor"
+  },
+  {
+      "id": "T4_FOCUSPOTION_NONTRADABLE",
+      "name": "Poção de Restauração de Foco do Adepto"
+  },
+  {
+      "id": "T4_POTION_BERSERK",
+      "name": "Poção de Fúria Menor"
+  },
+  {
+      "id": "T4_POTION_BERSERK@1",
+      "name": "Poção de Fúria Menor"
+  },
+  {
+      "id": "T4_POTION_BERSERK@2",
+      "name": "Poção de Fúria Menor"
+  },
+  {
+      "id": "T4_POTION_BERSERK@3",
+      "name": "Poção de Fúria Menor"
+  },
+  {
+      "id": "T4_POTION_COOLDOWN",
+      "name": "Poção Venenosa Menor"
+  },
+  {
+      "id": "T4_POTION_COOLDOWN@1",
+      "name": "Poção Venenosa Menor"
+  },
+  {
+      "id": "T4_POTION_COOLDOWN@2",
+      "name": "Poção Venenosa Menor"
+  },
+  {
+      "id": "T4_POTION_COOLDOWN@3",
+      "name": "Poção Venenosa Menor"
+  },
+  {
+      "id": "T4_POTION_ENERGY",
+      "name": "Poção de Energia"
+  },
+  {
+      "id": "T4_POTION_ENERGY@1",
+      "name": "Poção de Energia"
+  },
+  {
+      "id": "T4_POTION_ENERGY@2",
+      "name": "Poção de Energia"
+  },
+  {
+      "id": "T4_POTION_ENERGY@3",
+      "name": "Poção de Energia"
+  },
+  {
+      "id": "T4_POTION_GATHER",
+      "name": "Poção de Coleta Menor"
+  },
+  {
+      "id": "T4_POTION_GATHER@1",
+      "name": "Poção de Coleta Menor"
+  },
+  {
+      "id": "T4_POTION_GATHER@2",
+      "name": "Poção de Coleta Menor"
+  },
+  {
+      "id": "T4_POTION_GATHER@3",
+      "name": "Poção de Coleta Menor"
+  },
+  {
+      "id": "T4_POTION_HEAL",
+      "name": "Poção de Cura"
+  },
+  {
+      "id": "T4_POTION_HEAL@1",
+      "name": "Poção de Cura"
+  },
+  {
+      "id": "T4_POTION_HEAL@2",
+      "name": "Poção de Cura"
+  },
+  {
+      "id": "T4_POTION_HEAL@3",
+      "name": "Poção de Cura"
+  },
+  {
+      "id": "T4_POTION_LAVA",
+      "name": "Poção Infernal Menor"
+  },
+  {
+      "id": "T4_POTION_LAVA@1",
+      "name": "Poção Infernal Menor"
+  },
+  {
+      "id": "T4_POTION_LAVA@2",
+      "name": "Poção Infernal Menor"
+  },
+  {
+      "id": "T4_POTION_LAVA@3",
+      "name": "Poção Infernal Menor"
+  },
+  {
+      "id": "T4_POTION_TORNADO",
+      "name": "Tornado Engarrafado Menor"
+  },
+  {
+      "id": "T4_POTION_TORNADO@1",
+      "name": "Tornado Engarrafado Menor"
+  },
+  {
+      "id": "T4_POTION_TORNADO@2",
+      "name": "Tornado Engarrafado Menor"
+  },
+  {
+      "id": "T4_POTION_TORNADO@3",
+      "name": "Tornado Engarrafado Menor"
+  },
+  {
+      "id": "T5_FOCUSPOTION_NONTRADABLE",
+      "name": "Poção de Restauração de Foco do Perito"
+  },
+  {
+      "id": "T5_POTION_ACID",
+      "name": "Poção Ácida"
+  },
+  {
+      "id": "T5_POTION_ACID@1",
+      "name": "Poção Ácida"
+  },
+  {
+      "id": "T5_POTION_ACID@2",
+      "name": "Poção Ácida"
+  },
+  {
+      "id": "T5_POTION_ACID@3",
+      "name": "Poção Ácida"
+  },
+  {
+      "id": "T5_POTION_CLEANSE2",
+      "name": "Poção Purificadora"
+  },
+  {
+      "id": "T5_POTION_CLEANSE2@1",
+      "name": "Poção Purificadora"
+  },
+  {
+      "id": "T5_POTION_CLEANSE2@2",
+      "name": "Poção Purificadora"
+  },
+  {
+      "id": "T5_POTION_CLEANSE2@3",
+      "name": "Poção Purificadora"
+  },
+  {
+      "id": "T5_POTION_MOB_RESET",
+      "name": "Poção Calmante"
+  },
+  {
+      "id": "T5_POTION_MOB_RESET@1",
+      "name": "Poção Calmante"
+  },
+  {
+      "id": "T5_POTION_MOB_RESET@2",
+      "name": "Poção Calmante"
+  },
+  {
+      "id": "T5_POTION_MOB_RESET@3",
+      "name": "Poção Calmante"
+  },
+  {
+      "id": "T5_POTION_REVIVE",
+      "name": "Poção de Crescimento"
+  },
+  {
+      "id": "T5_POTION_REVIVE@1",
+      "name": "Poção de Crescimento"
+  },
+  {
+      "id": "T5_POTION_REVIVE@2",
+      "name": "Poção de Crescimento"
+  },
+  {
+      "id": "T5_POTION_REVIVE@3",
+      "name": "Poção de Crescimento"
+  },
+  {
+      "id": "T5_POTION_SLOWFIELD",
+      "name": "Poção Pegajosa"
+  },
+  {
+      "id": "T5_POTION_SLOWFIELD@1",
+      "name": "Poção Pegajosa"
+  },
+  {
+      "id": "T5_POTION_SLOWFIELD@2",
+      "name": "Poção Pegajosa"
+  },
+  {
+      "id": "T5_POTION_SLOWFIELD@3",
+      "name": "Poção Pegajosa"
+  },
+  {
+      "id": "T5_POTION_STONESKIN",
+      "name": "Poção de Resistência"
+  },
+  {
+      "id": "T5_POTION_STONESKIN@1",
+      "name": "Poção de Resistência"
+  },
+  {
+      "id": "T5_POTION_STONESKIN@2",
+      "name": "Poção de Resistência"
+  },
+  {
+      "id": "T5_POTION_STONESKIN@3",
+      "name": "Poção de Resistência"
+  },
+  {
+      "id": "T6_FOCUSPOTION_NONTRADABLE",
+      "name": "Poção de Restauração de Foco do Mestre"
+  },
+  {
+      "id": "T6_POTION_BERSERK",
+      "name": "Poção de Fúria"
+  },
+  {
+      "id": "T6_POTION_BERSERK@1",
+      "name": "Poção de Fúria"
+  },
+  {
+      "id": "T6_POTION_BERSERK@2",
+      "name": "Poção de Fúria"
+  },
+  {
+      "id": "T6_POTION_BERSERK@3",
+      "name": "Poção de Fúria"
+  },
+  {
+      "id": "T6_POTION_COOLDOWN",
+      "name": "Poção Venenosa"
+  },
+  {
+      "id": "T6_POTION_COOLDOWN@1",
+      "name": "Poção Venenosa"
+  },
+  {
+      "id": "T6_POTION_COOLDOWN@2",
+      "name": "Poção Venenosa"
+  },
+  {
+      "id": "T6_POTION_COOLDOWN@3",
+      "name": "Poção Venenosa"
+  },
+  {
+      "id": "T6_POTION_ENERGY",
+      "name": "Poção de Energia Maior"
+  },
+  {
+      "id": "T6_POTION_ENERGY@1",
+      "name": "Poção de Energia Maior"
+  },
+  {
+      "id": "T6_POTION_ENERGY@2",
+      "name": "Poção de Energia Maior"
+  },
+  {
+      "id": "T6_POTION_ENERGY@3",
+      "name": "Poção de Energia Maior"
+  },
+  {
+      "id": "T6_POTION_GATHER",
+      "name": "Poção de Coleta"
+  },
+  {
+      "id": "T6_POTION_GATHER@1",
+      "name": "Poção de Coleta"
+  },
+  {
+      "id": "T6_POTION_GATHER@2",
+      "name": "Poção de Coleta"
+  },
+  {
+      "id": "T6_POTION_GATHER@3",
+      "name": "Poção de Coleta"
+  },
+  {
+      "id": "T6_POTION_HEAL",
+      "name": "Poção de Cura Maior"
+  },
+  {
+      "id": "T6_POTION_HEAL@1",
+      "name": "Poção de Cura Maior"
+  },
+  {
+      "id": "T6_POTION_HEAL@2",
+      "name": "Poção de Cura Maior"
+  },
+  {
+      "id": "T6_POTION_HEAL@3",
+      "name": "Poção de Cura Maior"
+  },
+  {
+      "id": "T6_POTION_LAVA",
+      "name": "Poção Infernal"
+  },
+  {
+      "id": "T6_POTION_LAVA@1",
+      "name": "Poção Infernal"
+  },
+  {
+      "id": "T6_POTION_LAVA@2",
+      "name": "Poção Infernal"
+  },
+  {
+      "id": "T6_POTION_LAVA@3",
+      "name": "Poção Infernal"
+  },
+  {
+      "id": "T6_POTION_TORNADO",
+      "name": "Tornado Engarrafado"
+  },
+  {
+      "id": "T6_POTION_TORNADO@1",
+      "name": "Tornado Engarrafado"
+  },
+  {
+      "id": "T6_POTION_TORNADO@2",
+      "name": "Tornado Engarrafado"
+  },
+  {
+      "id": "T6_POTION_TORNADO@3",
+      "name": "Tornado Engarrafado"
+  },
+  {
+      "id": "T7_POTION_ACID",
+      "name": "Poção Ácida Maior"
+  },
+  {
+      "id": "T7_POTION_ACID@1",
+      "name": "Poção Ácida Maior"
+  },
+  {
+      "id": "T7_POTION_ACID@2",
+      "name": "Poção Ácida Maior"
+  },
+  {
+      "id": "T7_POTION_ACID@3",
+      "name": "Poção Ácida Maior"
+  },
+  {
+      "id": "T7_POTION_CLEANSE2",
+      "name": "Poção Purificadora Maior"
+  },
+  {
+      "id": "T7_POTION_CLEANSE2@1",
+      "name": "Poção Purificadora Maior"
+  },
+  {
+      "id": "T7_POTION_CLEANSE2@2",
+      "name": "Poção Purificadora Maior"
+  },
+  {
+      "id": "T7_POTION_CLEANSE2@3",
+      "name": "Poção Purificadora Maior"
+  },
+  {
+      "id": "T7_POTION_MOB_RESET",
+      "name": "Poção Calmante Maior"
+  },
+  {
+      "id": "T7_POTION_MOB_RESET@1",
+      "name": "Poção Calmante Maior"
+  },
+  {
+      "id": "T7_POTION_MOB_RESET@2",
+      "name": "Poção Calmante Maior"
+  },
+  {
+      "id": "T7_POTION_MOB_RESET@3",
+      "name": "Poção Calmante Maior"
+  },
+  {
+      "id": "T7_POTION_REVIVE",
+      "name": "Poção de Crescimento Maior"
+  },
+  {
+      "id": "T7_POTION_REVIVE@1",
+      "name": "Poção de Crescimento Maior"
+  },
+  {
+      "id": "T7_POTION_REVIVE@2",
+      "name": "Poção de Crescimento Maior"
+  },
+  {
+      "id": "T7_POTION_REVIVE@3",
+      "name": "Poção de Crescimento Maior"
+  },
+  {
+      "id": "T7_POTION_SLOWFIELD",
+      "name": "Poção Pegajosa Maior"
+  },
+  {
+      "id": "T7_POTION_SLOWFIELD@1",
+      "name": "Poção Pegajosa Maior"
+  },
+  {
+      "id": "T7_POTION_SLOWFIELD@2",
+      "name": "Poção Pegajosa Maior"
+  },
+  {
+      "id": "T7_POTION_SLOWFIELD@3",
+      "name": "Poção Pegajosa Maior"
+  },
+  {
+      "id": "T7_POTION_STONESKIN",
+      "name": "Poção de Resistência Maior"
+  },
+  {
+      "id": "T7_POTION_STONESKIN@1",
+      "name": "Poção de Resistência Maior"
+  },
+  {
+      "id": "T7_POTION_STONESKIN@2",
+      "name": "Poção de Resistência Maior"
+  },
+  {
+      "id": "T7_POTION_STONESKIN@3",
+      "name": "Poção de Resistência Maior"
+  },
+  {
+      "id": "UNIQUE_FOCUSPOTION_ADC_GENERAL_01",
+      "name": "@ITEMS_UNIQUE_FOCUSPOTION_ADC_GENERAL_01"
+  },
+  {
+      "id": "UNIQUE_FOCUSPOTION_ADC_NONTRADABLE_01",
+      "name": "Poção de Restauração de Foco"
+  },
+  {
+      "id": "T8_FOCUSPOTION_NONTRADABLE",
+      "name": "Poção de Restauração de Foco do Ancião"
+  },
+  {
+      "id": "T8_POTION_BERSERK",
+      "name": "Poção de Fúria Maior"
+  },
+  {
+      "id": "T8_POTION_BERSERK@1",
+      "name": "Poção de Fúria Maior"
+  },
+  {
+      "id": "T8_POTION_BERSERK@2",
+      "name": "Poção de Fúria Maior"
+  },
+  {
+      "id": "T8_POTION_BERSERK@3",
+      "name": "Poção de Fúria Maior"
+  },
+  {
+      "id": "T8_POTION_CLEANSE",
+      "name": "Poção de Invisibilidade"
+  },
+  {
+      "id": "T8_POTION_CLEANSE@1",
+      "name": "Poção de Invisibilidade"
+  },
+  {
+      "id": "T8_POTION_CLEANSE@2",
+      "name": "Poção de Invisibilidade"
+  },
+  {
+      "id": "T8_POTION_CLEANSE@3",
+      "name": "Poção de Invisibilidade"
+  },
+  {
+      "id": "T8_POTION_COOLDOWN",
+      "name": "Poção Venenosa Maior"
+  },
+  {
+      "id": "T8_POTION_COOLDOWN@1",
+      "name": "Poção Venenosa Maior"
+  },
+  {
+      "id": "T8_POTION_COOLDOWN@2",
+      "name": "Poção Venenosa Maior"
+  },
+  {
+      "id": "T8_POTION_COOLDOWN@3",
+      "name": "Poção Venenosa Maior"
+  },
+  {
+      "id": "T8_POTION_GATHER",
+      "name": "Poção de Coleta Maior"
+  },
+  {
+      "id": "T8_POTION_GATHER@1",
+      "name": "Poção de Coleta Maior"
+  },
+  {
+      "id": "T8_POTION_GATHER@2",
+      "name": "Poção de Coleta Maior"
+  },
+  {
+      "id": "T8_POTION_GATHER@3",
+      "name": "Poção de Coleta Maior"
+  },
+  {
+      "id": "T8_POTION_LAVA",
+      "name": "Poção Infernal Maior"
+  },
+  {
+      "id": "T8_POTION_LAVA@1",
+      "name": "Poção Infernal Maior"
+  },
+  {
+      "id": "T8_POTION_LAVA@2",
+      "name": "Poção Infernal Maior"
+  },
+  {
+      "id": "T8_POTION_LAVA@3",
+      "name": "Poção Infernal Maior"
+  },
+  {
+      "id": "T8_POTION_TORNADO",
+      "name": "Tornado Engarrafado Maior"
+  },
+  {
+      "id": "T8_POTION_TORNADO@1",
+      "name": "Tornado Engarrafado Maior"
+  },
+  {
+      "id": "T8_POTION_TORNADO@2",
+      "name": "Tornado Engarrafado Maior"
+  },
+  {
+      "id": "T8_POTION_TORNADO@3",
+      "name": "Tornado Engarrafado Maior"
+  }
   ],
   "comidas": [
     {
