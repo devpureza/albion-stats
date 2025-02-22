@@ -136,10 +136,11 @@ st.markdown("""
     align-items: center;
     gap: 8px;
     aspect-ratio: 1;
+    position: relative;
 }
 .equipment-img {
-    width: 48px;
-    height: 48px;
+    width: 96px;
+    height: 96px;
     margin: 0 auto;
 }
 .equipment-name {
@@ -147,6 +148,14 @@ st.markdown("""
     color: #ffffff;
     text-align: center;
     word-wrap: break-word;
+}
+.tooltip-trigger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: help;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -357,7 +366,7 @@ if 'editing_build' in st.session_state:
 # Exibir builds em dropdowns
 for _, build in builds.iterrows():
     with st.expander(f"📋 {build['nome']} - {build['tipo']} ({build['personagem']})", expanded=False):
-        col1, col2 = st.columns([0.85, 0.15])
+        col1, col2, col3 = st.columns([0.6, 0.25, 0.15])
         
         with col1:
             st.markdown(f"""
@@ -365,39 +374,39 @@ for _, build in builds.iterrows():
                 <div class="equipment-section">
                     <div class="equipment-item">
                         <img class="equipment-img" src="{ALBION_RENDER_URL + 'T8_BAG@4' + '.png'}">
-                        <div class="equipment-name">Mochila</div>
+                        <div class="tooltip-trigger" title="Mochila"></div>
                     </div>
                     <div class="equipment-item">
                         <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['cabeca']) or '') + '.png'}" alt="{build['cabeca'] or 'Nenhuma'}">
-                        <div class="equipment-name">{build['cabeca'] or 'Nenhuma'}</div>
+                        <div class="tooltip-trigger" title="{build['cabeca'] or 'Nenhuma'}"></div>
                     </div>
                     <div class="equipment-item">
                         <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['capa']) or '') + '.png'}" alt="{build['capa'] or 'Nenhuma'}">
-                        <div class="equipment-name">{build['capa'] or 'Nenhuma'}</div>
+                        <div class="tooltip-trigger" title="{build['capa'] or 'Nenhuma'}"></div>
                     </div>
                     <div class="equipment-item">
                         <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['arma']) or '') + '.png'}" alt="{build['arma'] or 'Nenhuma'}">
-                        <div class="equipment-name">{build['arma'] or 'Nenhuma'}</div>
+                        <div class="tooltip-trigger" title="{build['arma'] or 'Nenhuma'}"></div>
                     </div>
                     <div class="equipment-item">
                         <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['peito']) or '') + '.png'}" alt="{build['peito'] or 'Nenhuma'}">
-                        <div class="equipment-name">{build['peito'] or 'Nenhuma'}</div>
+                        <div class="tooltip-trigger" title="{build['peito'] or 'Nenhuma'}"></div>
                     </div>
                     <div class="equipment-item">
                         <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['secundaria']) or '') + '.png'}" alt="{build['secundaria'] or 'Nenhuma'}">
-                        <div class="equipment-name">{build['secundaria'] or 'Nenhuma'}</div>
+                        <div class="tooltip-trigger" title="{build['secundaria'] or 'Nenhuma'}"></div>
                     </div>
                     <div class="equipment-item">
                         <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['potion']) or '') + '.png'}" alt="{build['potion'] or 'Nenhuma'}">
-                        <div class="equipment-name">{build['potion'] or 'Nenhuma'}</div>
+                        <div class="tooltip-trigger" title="{build['potion'] or 'Nenhuma'}"></div>
                     </div>
                     <div class="equipment-item">
                         <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['botas']) or '') + '.png'}" alt="{build['botas'] or 'Nenhuma'}">
-                        <div class="equipment-name">{build['botas'] or 'Nenhuma'}</div>
+                        <div class="tooltip-trigger" title="{build['botas'] or 'Nenhuma'}"></div>
                     </div>
                     <div class="equipment-item">
                         <img class="equipment-img" src="{ALBION_RENDER_URL + (get_item_id(build['food']) or '') + '.png'}" alt="{build['food'] or 'Nenhuma'}">
-                        <div class="equipment-name">{build['food'] or 'Nenhuma'}</div>
+                        <div class="tooltip-trigger" title="{build['food'] or 'Nenhuma'}"></div>
                     </div>
                 </div>
             </div>
@@ -407,6 +416,18 @@ for _, build in builds.iterrows():
                 st.markdown("ℹ️ Passe o mouse aqui para ver as notas" + " " * 100, help=build['notas'])
         
         with col2:
+            # Lista de equipamentos
+            st.markdown("**Equipamentos:**")
+            if build['arma']: st.markdown(f"🗡️ {build['arma']}")
+            if build['secundaria']: st.markdown(f"🛡️ {build['secundaria']}")
+            if build['cabeca']: st.markdown(f"⛑️ {build['cabeca']}")
+            if build['peito']: st.markdown(f"👕 {build['peito']}")
+            if build['botas']: st.markdown(f"👢 {build['botas']}")
+            if build['capa']: st.markdown(f"🧥 {build['capa']}")
+            if build['potion']: st.markdown(f"🧪 {build['potion']}")
+            if build['food']: st.markdown(f"🍖 {build['food']}")
+
+        with col3:
             if st.button("✏️ Editar", key=f"edit_{build['id']}"):
                 st.session_state.editing_build = build
                 st.rerun()
