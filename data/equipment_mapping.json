@@ -138,11 +138,14 @@
     {"id": "T4_2H_QUARTERSTAFF_AVALON", "name": "Bastão de Grailseeker"},
     
     {"id": "T4_MAIN_CURSEDSTAFF", "name": "Cajado Amaldiçoado"},
-    {"id": "T4_2H_CURSEDSTAFF", "name": "Grande Cajado Amaldiçoado"},
+    {"id": "T4_2H_CURSEDSTAFF", "name": "Cajado Amaldiçoado Elevado"},
     {"id": "T4_2H_DEMONICSTAFF", "name": "Cajado Demoníaco"},
-    {"id": "T4_2H_CURSEDSTAFF_MORGANA", "name": "Cajado da Maldição da Vida"},
-    {"id": "T4_OFF_DEMONSKULL_HELL", "name": "Crânio Amaldiçoado"},
-    {"id": "T4_2H_SHADOWCALLER", "name": "Shadowcaller"}
+    {"id": "T4_MAIN_CURSEDSTAFF_UNDEAD", "name": "Cajado Execrado"},
+    {"id": "T4_2H_SKULLORB_HELL", "name": "Caveira Amaldiçoada"},
+    {"id": "T4_2H_CURSEDSTAFF_MORGANA", "name": "Cajado da Danação"},
+    {"id": "T4_2H_SKULLORB_HELL", "name": "Crânio Amaldiçoado"},
+    {"id": "T4_2H_SHADOWCALLER", "name": "Chama-sombra"},
+    {"id": "T4_MAIN_CURSEDSTAFF_CRYSTAL", "name": "Cajado pútrido"}
   ],
   "secundaria": [
     {"id": "T4_OFF_BOOK", "name": "Tomo de Feitiços"},
