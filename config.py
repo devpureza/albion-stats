@@ -5,7 +5,7 @@ import json
 
 def get_personagens():
     """Retorna a lista de personagens disponíveis"""
-    return ["Przdecenoura", "CapetadeCenoura", "GordoDeCenoura", "FantasiaVH", "MagoRossi", "DPSdecenoura", "Rlove"]
+    return ["Przdecenoura", "CapetadeCenoura", "GordoDeCenoura", "FantasiaVH", "MagoRossi", "DPSdecenoura", "Rlove", "Digeon"]
 
 def get_equipamentos(tipo):
     """
